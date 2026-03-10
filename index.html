@@ -756,9 +756,22 @@ function renderStandings() {
     const isArs = t.name==='Arsenal FC';
     const gdStr = t.gd>0 ? `+${t.gd}` : `${t.gd}`;
     const gdColor = t.gd>0 ? '#1A6B3A' : t.gd<0 ? 'var(--dark-red)' : 'var(--muted)';
-    return `<tr class="${isArs?'arsenal-row':''}">
-      <td><span class="rank-num ${i<3?'top3':''}">${i+1}</span></td>
-      <td><strong>${t.name}${isArs?' 🔴':''}</strong></td>
+    const pos = i + 1;
+  const isRelegation = pos >= 18;
+  const isPlayoff    = pos === 17;
+  const zoneStyle = isRelegation
+    ? 'border-left:3px solid #CC0000;background:rgba(204,0,0,0.05)!important'
+    : isPlayoff
+    ? 'border-left:3px solid #FF8C00;background:rgba(255,140,0,0.04)!important'
+    : '';
+  const zoneBadge = isRelegation
+    ? `<span style="font-family:'Barlow Condensed',sans-serif;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;background:rgba(204,0,0,0.12);color:#CC0000;border:1px solid rgba(204,0,0,0.25);padding:1px 6px;border-radius:2px;margin-left:6px">강등</span>`
+    : isPlayoff
+    ? `<span style="font-family:'Barlow Condensed',sans-serif;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;background:rgba(255,140,0,0.12);color:#CC6600;border:1px solid rgba(255,140,0,0.25);padding:1px 6px;border-radius:2px;margin-left:6px">플레이오프</span>`
+    : '';
+  return `<tr class="${isArs?'arsenal-row':''}" style="${zoneStyle}">
+      <td><span class="rank-num ${i<3?'top3':''}">${pos}</span></td>
+      <td><strong>${t.name}${isArs?' 🔴':''}${zoneBadge}</strong></td>
       <td style="color:var(--muted)">${t.played}</td>
       <td>${t.w}</td><td>${t.d}</td><td>${t.l}</td>
       <td>${t.gf}</td><td>${t.ga}</td>

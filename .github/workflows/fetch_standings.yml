@@ -1,0 +1,65 @@
+name: Fetch PL Standings
+
+on:
+  schedule:
+    - cron: '0 0,6,12,18 * * *'   # KST 09:00 / 15:00 / 21:00 / 03:00 (하루 4회)
+  workflow_dispatch:                # 수동 실행 버튼
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Fetch PL standings from football-data.org
+        run: |
+          curl -s \
+            -H "X-Auth-Token: ${{ secrets.FD_API_KEY }}" \
+            "https://api.football-data.org/v4/competitions/PL/standings" \
+            -o raw.json
+
+      - name: Parse & save data.json
+        run: |
+          python3 - <<'EOF'
+          import json, datetime
+
+          with open('raw.json') as f:
+              raw = json.load(f)
+
+          table = raw['standings'][0]['table']  # TOTAL 기준
+
+          standings = []
+          for t in table:
+              standings.append({
+                  "rank":   t["position"],
+                  "name":   t["team"]["name"],
+                  "abbr":   t["team"]["tla"],
+                  "w":      t["won"],
+                  "d":      t["draw"],
+                  "l":      t["lost"],
+                  "pts":    t["points"],
+                  "gf":     t["goalsFor"],
+                  "ga":     t["goalsAgainst"],
+                  "gd":     t["goalDifference"],
+                  "played": t["playedGames"],
+              })
+
+          output = {
+              "updated": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
+              "standings": standings
+          }
+
+          with open('data.json', 'w', encoding='utf-8') as f:
+              json.dump(output, f, ensure_ascii=False, indent=2)
+
+          print(f"✅ data.json 저장 완료 — {len(standings)}개 팀")
+          EOF
+
+      - name: Commit & push data.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git diff --staged --quiet || git commit -m "chore: update PL standings [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push

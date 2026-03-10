@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARSENAL FC — 나만의 공간</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #EF0107;
+    --maroon: #6B0F1A;
+    --dark-red: #8B1420;
+    --claret: #7D1D2E;
+    --gold: #C49A2A;
+    --gold-light: #D4AE4A;
+    --cloud-white: #F8F5EF;
+    --off-white: #EDE8DF;
+    --warm-white: #FAF7F2;
+    --muted: #9A8A7A;
+    --dark-muted: #7A6A5A;
+    --border: rgba(107,15,26,0.2);
+    --gold-border: rgba(196,154,42,0.25);
+    --card-bg: rgba(255,252,247,0.92);
+    --card-shadow: 0 2px 16px rgba(107,15,26,0.08);
+  }
+  html { font-size: 115%; }
+  * { margin: 0; padding: 0; box-sizing: border-box; font-weight: 700; }
+  body {
+    background-color: var(--cloud-white);
+    background-image:
+      repeating-linear-gradient(0deg,transparent 0px,transparent 40px,rgba(107,15,26,0.04) 40px,rgba(107,15,26,0.04) 41px),
+      repeating-linear-gradient(90deg,transparent 0px,transparent 40px,rgba(107,15,26,0.04) 40px,rgba(107,15,26,0.04) 41px),
+      repeating-linear-gradient(45deg,transparent 0px,transparent 18px,rgba(196,154,42,0.06) 18px,rgba(196,154,42,0.06) 19px,transparent 19px,transparent 37px),
+      repeating-linear-gradient(-45deg,transparent 0px,transparent 18px,rgba(196,154,42,0.06) 18px,rgba(196,154,42,0.06) 19px,transparent 19px,transparent 37px);
+    color: var(--maroon);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  header {
+    position: relative;
+    padding: 28px 40px 20px;
+    border-bottom: 2px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, var(--warm-white) 0%, var(--cloud-white) 100%);
+    box-shadow: 0 2px 20px rgba(107,15,26,0.08);
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: repeating-linear-gradient(90deg,var(--dark-red) 0px,var(--dark-red) 30px,transparent 30px,transparent 36px);
+  }
+  .logo-section { display: flex; align-items: center; gap: 18px; }
+  .crest { width: 56px; height: 56px; position: relative; }
+  .crest svg { width: 100%; height: 100%; }
+  .title-block h1 { font-family: 'Bebas Neue', sans-serif; font-size: 2.6rem; letter-spacing: 0.08em; color: var(--maroon); line-height: 1; }
+  .title-block p { font-family: 'Barlow Condensed', sans-serif; font-size: 0.78rem; letter-spacing: 0.25em; color: var(--gold); text-transform: uppercase; }
+  .header-right { text-align: right; }
+  .live-badge { display: inline-flex; align-items: center; gap: 6px; font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em; color: var(--dark-red); text-transform: uppercase; background: rgba(107,15,26,0.06); border: 1px solid var(--gold-border); padding: 5px 12px; border-radius: 2px; }
+  .live-dot { width: 6px; height: 6px; background: var(--dark-red); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  nav { display: flex; gap: 0; padding: 0 40px; border-bottom: 1px solid var(--gold-border); background: var(--warm-white); overflow-x: auto; }
+  .nav-btn { font-family: 'Barlow Condensed', sans-serif; font-size: 0.82rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 24px; color: var(--muted); background: none; border: none; cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; }
+  .nav-btn:hover { color: var(--maroon); }
+  .nav-btn.active { color: var(--dark-red); border-bottom-color: var(--gold); }
+  main { padding: 32px 40px; max-width: 1400px; margin: 0 auto; }
+  .section { display: none; }
+  .section.active { display: block; }
+  .overview-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 28px; }
+  .stat-card { background: var(--card-bg); border: 1px solid var(--gold-border); border-top: 3px solid var(--gold); padding: 24px; position: relative; overflow: hidden; box-shadow: var(--card-shadow); }
+  .stat-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--dark-red), var(--gold)); }
+  .stat-card.gold::before { background: linear-gradient(90deg, var(--gold), var(--dark-red)); }
+  .stat-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .stat-value { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; line-height: 1; color: var(--dark-red); }
+  .stat-card.gold .stat-value { color: var(--gold); }
+  .stat-sub { font-size: 0.78rem; color: var(--muted); margin-top: 6px; }
+  .stat-sub strong { color: var(--maroon); font-weight: 700; }
+  .form-row { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+  .form-dot { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0; }
+  .form-dot.W { background: #1A6B3A; color: #fff; }
+  .form-dot.D { background: #8B7A3A; color: #fff; }
+  .form-dot.L { background: var(--dark-red); color: #fff; }
+  .section-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 20px; }
+  .section-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 0.06em; color: var(--maroon); }
+  .section-line { flex: 1; height: 1px; background: linear-gradient(90deg, var(--gold-border), transparent); }
+  .matches-list { display: flex; flex-direction: column; gap: 10px; }
+  .match-card { background: var(--card-bg); border: 1px solid var(--gold-border); padding: 16px 22px; display: grid; grid-template-columns: 130px 1fr auto 1fr 100px; align-items: center; gap: 12px; transition: border-color 0.2s, box-shadow 0.2s; cursor: pointer; box-shadow: var(--card-shadow); }
+  .match-card:hover { border-color: var(--gold); box-shadow: 0 4px 20px rgba(107,15,26,0.12); }
+  .match-date { font-family: 'Barlow Condensed', sans-serif; font-size: 0.78rem; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; }
+  .team-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.05em; color: var(--maroon); }
+  .team-name.arsenal { color: var(--dark-red); }
+  .team-home { text-align: right; }
+  .score-block { text-align: center; padding: 0 8px; }
+  .score-num { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; letter-spacing: 0.1em; line-height: 1; color: var(--maroon); }
+  .vs-text { font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; }
+  .result-badge { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 4px 10px; border-radius: 2px; text-align: center; }
+  .result-badge.win { background: rgba(26,107,58,0.12); color: #1A6B3A; border: 1px solid rgba(26,107,58,0.3); }
+  .result-badge.draw { background: rgba(139,122,58,0.12); color: #8B7A3A; border: 1px solid rgba(139,122,58,0.3); }
+  .result-badge.loss { background: rgba(107,15,26,0.1); color: var(--dark-red); border: 1px solid var(--border); }
+  .result-badge.upcoming { background: rgba(196,154,42,0.1); color: var(--gold); border: 1px solid var(--gold-border); }
+  .standings-table { width: 100%; border-collapse: collapse; }
+  .standings-table th { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--gold-border); background: var(--warm-white); }
+  .standings-table th:not(:first-child):not(:nth-child(2)) { text-align: center; }
+  .standings-table td { padding: 12px 14px; font-size: 0.9rem; border-bottom: 1px solid rgba(196,154,42,0.1); color: var(--claret); background: var(--card-bg); }
+  .standings-table td:not(:first-child):not(:nth-child(2)) { text-align: center; }
+  .standings-table tr.arsenal-row { background: rgba(107,15,26,0.06); border-left: 3px solid var(--gold); }
+  .standings-table tr.arsenal-row td { color: var(--maroon); background: rgba(107,15,26,0.06); }
+  .standings-table tr:hover td { background: rgba(196,154,42,0.06); }
+  .rank-num { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; color: var(--muted); }
+  .rank-num.top3 { color: var(--gold); }
+  .pts-col { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 0.06em; color: var(--dark-red); }
+  .notes-grid { display: grid; grid-template-columns: 1fr 340px; gap: 20px; }
+  .notes-list { display: flex; flex-direction: column; gap: 12px; }
+  .note-card { background: var(--card-bg); border: 1px solid var(--gold-border); border-left: 3px solid var(--dark-red); padding: 18px 20px; box-shadow: var(--card-shadow); }
+  .note-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+  .note-match { font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; color: var(--dark-red); text-transform: uppercase; }
+  .note-date { font-size: 0.75rem; color: var(--muted); font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em; }
+  .note-text { font-size: 0.88rem; line-height: 1.65; color: var(--claret); }
+  .note-tags { display: flex; gap: 6px; margin-top: 12px; flex-wrap: wrap; }
+  .tag { font-family: 'Barlow Condensed', sans-serif; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 8px; border: 1px solid var(--gold-border); color: var(--gold); border-radius: 2px; background: rgba(196,154,42,0.08); }
+  .add-note-card { background: var(--card-bg); border: 1px solid var(--gold-border); padding: 24px; position: sticky; top: 20px; box-shadow: var(--card-shadow); }
+  .add-note-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 0.06em; margin-bottom: 16px; color: var(--maroon); }
+  .form-group { margin-bottom: 14px; }
+  .form-label { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .form-input, .form-select, .form-textarea { width: 100%; background: var(--warm-white); border: 1px solid var(--gold-border); color: var(--maroon); padding: 9px 12px; font-family: 'Barlow', sans-serif; font-size: 0.85rem; font-weight: 700; outline: none; transition: border-color 0.2s; border-radius: 0; }
+  .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--gold); }
+  .form-select option { background: var(--warm-white); color: var(--maroon); }
+  .form-textarea { resize: vertical; min-height: 90px; }
+  .submit-btn { width: 100%; padding: 12px; background: var(--dark-red); color: var(--off-white); border: none; cursor: pointer; font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 0.12em; transition: background 0.2s, box-shadow 0.2s; margin-top: 6px; border-top: 2px solid var(--gold); }
+  .submit-btn:hover { background: var(--maroon); box-shadow: 0 4px 16px rgba(107,15,26,0.25); }
+  .empty-state { text-align: center; padding: 48px; color: var(--muted); font-family: 'Barlow Condensed', sans-serif; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; border: 1px dashed var(--gold-border); background: var(--warm-white); }
+  .comp-filter { display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
+  .comp-btn { font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 7px 16px; background: var(--warm-white); border: 1px solid var(--gold-border); color: var(--muted); cursor: pointer; transition: all 0.18s; border-radius: 2px; font-weight: 700; }
+  .comp-btn:hover { color: var(--maroon); border-color: var(--gold); }
+  .comp-btn.active { background: var(--dark-red); color: var(--off-white); border-color: var(--dark-red); }
+  .comp-btn.epl.active  { background: #3D0066; border-color: #3D0066; }
+  .comp-btn.ucl.active  { background: #00338D; border-color: #00338D; }
+  .comp-btn.fa.active   { background: #00539B; border-color: #00539B; }
+  .comp-btn.efl.active  { background: #006E3B; border-color: #006E3B; }
+  .comp-badge { display: inline-block; font-family: 'Barlow Condensed', sans-serif; font-size: 0.63rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; }
+  .comp-badge.EPL { background: rgba(61,0,102,0.1);  color: #3D0066; border: 1px solid rgba(61,0,102,0.2); }
+  .comp-badge.UCL { background: rgba(0,51,141,0.1);  color: #00338D; border: 1px solid rgba(0,51,141,0.25); }
+  .comp-badge.FA  { background: rgba(0,83,155,0.1);  color: #00539B; border: 1px solid rgba(0,83,155,0.25); }
+  .comp-badge.EFL { background: rgba(0,110,59,0.1);  color: #006E3B; border: 1px solid rgba(0,110,59,0.25); }
+  .match-card.ucl-card { border-left: 3px solid #00338D; }
+  .match-card.fa-card  { border-left: 3px solid #00539B; }
+  .match-card.efl-card { border-left: 3px solid #006E3B; }
+  .match-date-block    { display: flex; flex-direction: column; gap: 2px; }
+  .analysis-layout { display: grid; grid-template-columns: 280px 1fr; gap: 20px; align-items: start; }
+  .analysis-match-list { display: flex; flex-direction: column; gap: 5px; max-height: 78vh; overflow-y: auto; padding-right: 4px; }
+  .aml-card { background: var(--card-bg); border: 1px solid var(--gold-border); padding: 11px 14px; cursor: pointer; transition: all 0.15s; border-left: 3px solid transparent; }
+  .aml-card:hover { border-left-color: var(--gold); background: rgba(196,154,42,0.05); }
+  .aml-card.active { border-left-color: var(--dark-red); background: rgba(107,15,26,0.07); }
+  .aml-matchup { font-family:'Barlow Condensed',sans-serif; font-size:0.88rem; letter-spacing:0.04em; color:var(--maroon); margin-bottom:4px; }
+  .aml-meta { display:flex; align-items:center; justify-content:space-between; }
+  .aml-date { font-size:0.68rem; color:var(--muted); font-family:'Barlow Condensed',sans-serif; letter-spacing:0.08em; }
+  .analysis-detail { background:var(--card-bg); border:1px solid var(--gold-border); box-shadow:var(--card-shadow); min-height:420px; }
+  .analysis-placeholder { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:420px; color:var(--muted); font-family:'Barlow Condensed',sans-serif; font-size:0.85rem; letter-spacing:0.12em; text-transform:uppercase; gap:10px; }
+  .ad-header { background:var(--dark-red); color:var(--off-white); padding:18px 24px; border-bottom:2px solid var(--gold); }
+  .ad-header-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:4px; }
+  .ad-matchup { font-family:'Bebas Neue',sans-serif; font-size:1.5rem; letter-spacing:0.08em; }
+  .ad-score-big { font-family:'Bebas Neue',sans-serif; font-size:2.2rem; color:var(--gold); letter-spacing:0.1em; }
+  .ad-meta { font-family:'Barlow Condensed',sans-serif; font-size:0.7rem; letter-spacing:0.15em; color:rgba(232,220,200,0.65); text-transform:uppercase; }
+  .ad-rating-row { display:flex; align-items:center; gap:12px; padding:12px 24px; border-bottom:1px solid var(--gold-border); background:rgba(196,154,42,0.04); }
+  .ad-rating-label { font-family:'Barlow Condensed',sans-serif; font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--muted); }
+  .stars { display:flex; gap:2px; }
+  .star { font-size:1.15rem; cursor:pointer; transition:transform 0.1s; color:#ccc; line-height:1; }
+  .star.filled { color:var(--gold); }
+  .star:hover { transform:scale(1.25); }
+  .ad-rating-val { font-family:'Bebas Neue',sans-serif; font-size:1.2rem; color:var(--gold); letter-spacing:0.06em; min-width:50px; }
+  .ad-body { padding:18px 24px; }
+  .ad-section-title { font-family:'Barlow Condensed',sans-serif; font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); border-bottom:1px solid var(--gold-border); padding-bottom:5px; margin-bottom:12px; margin-top:18px; }
+  .ad-section-title:first-child { margin-top:0; }
+  .stat-compare-row { display:grid; grid-template-columns:32px 1fr 80px 1fr 32px; align-items:center; gap:6px; margin-bottom:9px; }
+  .sc-val { font-family:'Bebas Neue',sans-serif; font-size:0.95rem; text-align:center; }
+  .sc-val.ars { color:var(--dark-red); }
+  .sc-val.opp { color:var(--muted); }
+  .sc-label { font-family:'Barlow Condensed',sans-serif; font-size:0.7rem; letter-spacing:0.1em; color:var(--muted); text-align:center; }
+  .timeline { display:flex; flex-direction:column; gap:5px; }
+  .tl-event { display:flex; align-items:center; gap:8px; font-family:'Barlow Condensed',sans-serif; font-size:0.82rem; }
+  .tl-time { font-family:'Bebas Neue',sans-serif; font-size:0.88rem; color:var(--gold); min-width:34px; text-align:right; }
+  .tl-desc { color:var(--maroon); }
+  .lineup-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .lineup-col-title { font-family:'Barlow Condensed',sans-serif; font-size:0.7rem; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:8px; padding-bottom:4px; border-bottom:2px solid; }
+  .lineup-col-title.ars { color:var(--dark-red); border-color:var(--dark-red); }
+  .lineup-col-title.opp { color:var(--muted); border-color:var(--muted); }
+  .lineup-player { display:flex; align-items:center; gap:7px; padding:5px 0; border-bottom:1px solid rgba(196,154,42,0.08); font-family:'Barlow Condensed',sans-serif; font-size:0.82rem; color:var(--maroon); }
+  .pos-badge { font-size:0.56rem; padding:1px 5px; border-radius:2px; text-transform:uppercase; letter-spacing:0.1em; min-width:24px; text-align:center; flex-shrink:0; }
+  .pos-badge.GK  { background:rgba(255,190,0,0.18);  color:#7A5A00; }
+  .pos-badge.DEF { background:rgba(0,51,141,0.1);    color:#00338D; }
+  .pos-badge.MID { background:rgba(0,110,59,0.1);    color:#006E3B; }
+  .pos-badge.FWD { background:rgba(107,15,26,0.1);   color:var(--dark-red); }
+  .next-matches-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:12px; margin-bottom:4px; }
+  .next-match-card { background: var(--card-bg); border: 1px solid var(--gold-border); border-top: 3px solid var(--gold); padding: 14px 16px; box-shadow: var(--card-shadow); display: flex; flex-direction: column; gap: 6px; }
+  .next-match-card.comp-UCL { border-top-color: #00338D; }
+  .next-match-card.comp-FA  { border-top-color: #00539B; }
+  .next-match-card.comp-EFL { border-top-color: #006E3B; }
+  .nm-comp-tag { font-family:'Barlow Condensed',sans-serif; font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted); }
+  .nm-matchup-row { display:flex; align-items:center; justify-content:space-between; gap:8px; font-family:'Bebas Neue',sans-serif; font-size:1.15rem; letter-spacing:0.06em; color:var(--maroon); }
+  .nm-matchup-row .ars { color:var(--dark-red); }
+  .nm-vs { font-size:0.75rem; color:var(--muted); padding:0 2px; }
+  .nm-date-row { font-family:'Barlow Condensed',sans-serif; font-size:0.75rem; letter-spacing:0.08em; color:var(--muted); display:flex; align-items:center; justify-content:space-between; }
+  .nm-prob-tag { font-size:0.68rem; background:rgba(26,107,58,0.12); color:#1A6B3A; padding:2px 7px; border-radius:10px; font-family:'Barlow Condensed',sans-serif; letter-spacing:0.06em; }
+  .standings-tabs { display:flex; gap:8px; margin-bottom:18px; flex-wrap:wrap; }
+  .std-tab { font-family:'Barlow Condensed',sans-serif; font-size:0.82rem; letter-spacing:0.12em; text-transform:uppercase; padding:7px 18px; border:1px solid var(--gold-border); background:transparent; color:var(--muted); cursor:pointer; transition:all 0.15s; border-radius:2px; }
+  .std-tab:hover { border-color:var(--gold); color:var(--maroon); }
+  .std-tab.active { background:var(--dark-red); border-color:var(--dark-red); color:var(--off-white); }
+  .sort-th { cursor:pointer; user-select:none; white-space:nowrap; transition:color 0.15s; }
+  .sort-th:hover { color:var(--gold) !important; }
+  .sort-th.active-sort { color:var(--dark-red) !important; }
+  .player-table .ars-row td { background:rgba(107,15,26,0.05); }
+  .player-table .ars-row td:first-child { border-left:3px solid var(--dark-red); }
+  .rating-chip { display:inline-block; padding:2px 8px; border-radius:10px; font-size:0.75rem; font-family:'Bebas Neue',sans-serif; letter-spacing:0.06em; }
+  .rating-chip.high { background:rgba(26,107,58,0.15); color:#1A6B3A; }
+  .rating-chip.mid  { background:rgba(196,154,42,0.15); color:#8B6A00; }
+  .rating-chip.low  { background:rgba(107,15,26,0.12); color:var(--dark-red); }
+  .delete-note-btn { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 0.8rem; padding: 2px 6px; transition: color 0.2s; }
+  .delete-note-btn:hover { color: var(--dark-red); }
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--gold-border); border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-section">
+    <div class="crest">
+      <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="28" cy="28" r="27" fill="#F8F5EF" stroke="#C49A2A" stroke-width="1.5"/>
+        <rect x="10" y="22" width="30" height="8" rx="4" fill="#8B1420"/>
+        <rect x="36" y="24" width="10" height="4" rx="2" fill="#8B1420"/>
+        <circle cx="16" cy="32" r="5" stroke="#8B1420" stroke-width="2" fill="#F8F5EF"/>
+        <circle cx="30" cy="32" r="5" stroke="#8B1420" stroke-width="2" fill="#F8F5EF"/>
+        <rect x="10" y="14" width="36" height="2" rx="1" fill="#C49A2A" opacity="0.9"/>
+        <rect x="10" y="17" width="36" height="1" rx="0.5" fill="#8B1420" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="title-block">
+      <h1>Arsenal FC</h1>
+      <p>나만의 구너 공간 — 2025/26 Season</p>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="live-badge"><span class="live-dot"></span>시즌 트래커</div>
+  </div>
+</header>
+
+<nav>
+  <button class="nav-btn active" onclick="showTab('overview',this)">오버뷰</button>
+  <button class="nav-btn" onclick="showTab('schedule',this)">경기 일정</button>
+  <button class="nav-btn" onclick="showTab('standings',this)">팀 · 개인 순위</button>
+  <button class="nav-btn" onclick="showTab('analysis',this)">경기 분석</button>
+  <button class="nav-btn" onclick="showTab('notes',this)">나의 노트</button>
+</nav>
+
+<main>
+
+  <!-- OVERVIEW -->
+  <div id="overview" class="section active">
+    <div class="section-header" style="margin-bottom:10px">
+      <span class="section-title">다음 경기</span>
+      <span class="section-line"></span>
+    </div>
+    <div id="next-matches-overview"></div>
+    <div class="overview-grid" style="margin-top:20px">
+      <div class="stat-card gold">
+        <div class="stat-label">현재 리그 순위</div>
+        <div class="stat-value">1위</div>
+        <div class="stat-sub">67점 — <strong>맨시티와 7점 차</strong> 리드</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">시즌 성적</div>
+        <div class="stat-value">20<span style="font-size:1.2rem;color:var(--muted)">W</span></div>
+        <div class="stat-sub"><strong>20승</strong> 7무 <strong style="color:#CA4A4A">3패</strong></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">최근 5경기 폼</div>
+        <div class="stat-value" style="font-size:1.6rem;padding-top:6px">
+          <div class="form-row" style="margin-top:0">
+            <div class="form-dot W">W</div>
+            <div class="form-dot W">W</div>
+            <div class="form-dot W">W</div>
+            <div class="form-dot D">D</div>
+            <div class="form-dot D">D</div>
+          </div>
+        </div>
+        <div class="stat-sub" style="margin-top:12px">4월까지 홈경기 2경기 예정</div>
+      </div>
+    </div>
+    <div class="section-header">
+      <span class="section-title">최근 경기 결과</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="matches-list" id="recent-matches-overview"></div>
+  </div>
+
+  <!-- SCHEDULE -->
+  <div id="schedule" class="section">
+    <div class="section-header">
+      <span class="section-title">전체 경기 일정</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="comp-filter">
+      <button class="comp-btn active" onclick="filterComp('all',this)">전체</button>
+      <button class="comp-btn epl"    onclick="filterComp('EPL',this)">🏴󠁧󠁢󠁥󠁮󠁧󠁿 프리미어리그</button>
+      <button class="comp-btn ucl"    onclick="filterComp('UCL',this)">⭐ 챔피언스리그</button>
+      <button class="comp-btn fa"     onclick="filterComp('FA',this)">🏆 FA컵</button>
+      <button class="comp-btn efl"    onclick="filterComp('EFL',this)">🏅 EFL컵</button>
+    </div>
+    <div class="matches-list" id="all-matches-list"></div>
+  </div>
+
+  <!-- STANDINGS -->
+  <div id="standings" class="section">
+    <div class="section-header">
+      <span class="section-title">프리미어리그 순위</span>
+      <span class="section-line"></span>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+      <div class="standings-tabs" style="margin-bottom:0">
+        <button class="std-tab active" onclick="switchStandingsTab('team',this)">🏆 팀 순위</button>
+        <button class="std-tab"        onclick="switchStandingsTab('goals',this)">⚽ 득점 순위</button>
+        <button class="std-tab"        onclick="switchStandingsTab('assists',this)">🎯 어시스트 순위</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <span id="standings-api-status" style="font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;letter-spacing:0.1em;color:var(--muted)">⏳ 불러오는 중...</span>
+        <button onclick="refreshStandings()" style="font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;padding:5px 12px;background:transparent;border:1px solid var(--gold-border);color:var(--muted);cursor:pointer;border-radius:2px;transition:all 0.15s" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--maroon)'" onmouseout="this.style.borderColor='var(--gold-border)';this.style.color='var(--muted)'">🔄 새로고침</button>
+      </div>
+    </div>
+    <div id="std-team">
+      <table class="standings-table" id="standings-table">
+        <thead>
+          <tr>
+            <th class="sort-th" onclick="sortTeam('rank')"   data-key="rank">#</th>
+            <th class="sort-th" onclick="sortTeam('name')"   data-key="name">팀</th>
+            <th class="sort-th" onclick="sortTeam('played')" data-key="played">경기</th>
+            <th class="sort-th" onclick="sortTeam('w')"      data-key="w">승</th>
+            <th class="sort-th" onclick="sortTeam('d')"      data-key="d">무</th>
+            <th class="sort-th" onclick="sortTeam('l')"      data-key="l">패</th>
+            <th class="sort-th" onclick="sortTeam('gf')"     data-key="gf">득</th>
+            <th class="sort-th" onclick="sortTeam('ga')"     data-key="ga">실</th>
+            <th class="sort-th" onclick="sortTeam('gd')"     data-key="gd">±</th>
+            <th class="sort-th active-sort" onclick="sortTeam('pts')" data-key="pts">승점 ▼</th>
+          </tr>
+        </thead>
+        <tbody id="standings-body"></tbody>
+      </table>
+    </div>
+    <div id="std-goals" style="display:none">
+      <table class="standings-table player-table" id="goals-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th class="sort-th" onclick="sortPlayers('goals','name')"    data-key="name">선수</th>
+            <th class="sort-th" onclick="sortPlayers('goals','team')"    data-key="team">팀</th>
+            <th class="sort-th" onclick="sortPlayers('goals','pos')"     data-key="pos">포지션</th>
+            <th class="sort-th" onclick="sortPlayers('goals','apps')"    data-key="apps">경기</th>
+            <th class="sort-th" onclick="sortPlayers('goals','mins')"    data-key="mins">시간</th>
+            <th class="sort-th active-sort" onclick="sortPlayers('goals','goals')"   data-key="goals">득점 ▼</th>
+            <th class="sort-th" onclick="sortPlayers('goals','assists')" data-key="assists">어시스트</th>
+            <th class="sort-th" onclick="sortPlayers('goals','ga')"      data-key="ga">G+A</th>
+            <th class="sort-th" onclick="sortPlayers('goals','rating')"  data-key="rating">평점</th>
+          </tr>
+        </thead>
+        <tbody id="goals-body"></tbody>
+      </table>
+    </div>
+    <div id="std-assists" style="display:none">
+      <table class="standings-table player-table" id="assists-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th class="sort-th" onclick="sortPlayers('assists','name')"    data-key="name">선수</th>
+            <th class="sort-th" onclick="sortPlayers('assists','team')"    data-key="team">팀</th>
+            <th class="sort-th" onclick="sortPlayers('assists','pos')"     data-key="pos">포지션</th>
+            <th class="sort-th" onclick="sortPlayers('assists','apps')"    data-key="apps">경기</th>
+            <th class="sort-th" onclick="sortPlayers('assists','mins')"    data-key="mins">시간</th>
+            <th class="sort-th" onclick="sortPlayers('assists','goals')"   data-key="goals">득점</th>
+            <th class="sort-th active-sort" onclick="sortPlayers('assists','assists')" data-key="assists">어시스트 ▼</th>
+            <th class="sort-th" onclick="sortPlayers('assists','ga')"      data-key="ga">G+A</th>
+            <th class="sort-th" onclick="sortPlayers('assists','rating')"  data-key="rating">평점</th>
+          </tr>
+        </thead>
+        <tbody id="assists-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ANALYSIS -->
+  <div id="analysis" class="section">
+    <div class="section-header">
+      <span class="section-title">경기 분석</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="analysis-layout">
+      <div class="analysis-match-list" id="analysis-match-list"></div>
+      <div class="analysis-detail" id="analysis-detail">
+        <div class="analysis-placeholder">
+          <div style="font-size:2.5rem;margin-bottom:12px">⚽</div>
+          <div>경기를 선택하면 상세 분석이 표시됩니다</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTES -->
+  <div id="notes" class="section">
+    <div class="notes-grid">
+      <div>
+        <div class="section-header">
+          <span class="section-title">나의 경기 노트</span>
+          <span class="section-line"></span>
+        </div>
+        <div class="notes-list" id="notes-list">
+          <div class="empty-state" id="notes-empty">아직 작성된 노트가 없습니다<br><span style="font-size:0.75rem;opacity:0.5;margin-top:6px;display:block">오른쪽에서 첫 노트를 작성해보세요</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="section-header">
+          <span class="section-title">노트 작성</span>
+          <span class="section-line"></span>
+        </div>
+        <div class="add-note-card">
+          <div class="form-group">
+            <label class="form-label">경기 선택</label>
+            <select class="form-select" id="note-match">
+              <option value="">-- 경기를 선택하세요 --</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">평점 (1-10)</label>
+            <input type="number" class="form-input" id="note-rating" min="1" max="10" placeholder="8">
+          </div>
+          <div class="form-group">
+            <label class="form-label">태그</label>
+            <input type="text" class="form-input" id="note-tags" placeholder="전술, 골, 수비 (쉼표로 구분)">
+          </div>
+          <div class="form-group">
+            <label class="form-label">경기 메모</label>
+            <textarea class="form-textarea" id="note-content" placeholder="경기 내용, 전술 분석, 선수 평가 등을 자유롭게 기록하세요..."></textarea>
+          </div>
+          <button class="submit-btn" onclick="addNote()">노트 저장하기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+// ===== localStorage 유틸 =====
+const LS = {
+  get: (key) => { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : null; } catch(e) { return null; } },
+  set: (key, val) => { try { localStorage.setItem(key, JSON.stringify(val)); } catch(e) {} }
+};
+
+// ===== DATA =====
+function toKST(dateStr, utcTime) {
+  if (!utcTime) return null;
+  const [h, m] = utcTime.split(':').map(Number);
+  const d = new Date(`${dateStr}T${utcTime}:00Z`);
+  const kstH = (h + 9) % 24;
+  const kstM = m.toString().padStart(2,'0');
+  const days = ['일','월','화','수','목','금','토'];
+  const kstDate = new Date(d.getTime() + 9*3600*1000);
+  const nextDay = (h+9) >= 24;
+  const dayLabel = nextDay ? ` (+1일 ${days[kstDate.getDay()]})` : ` (${days[kstDate.getDay()]})`;
+  return `${kstH}:${kstM}${dayLabel}`;
+}
+
+const matchData = [
+  { id:1,  comp:"EPL", round:"22라운드", date:"2026-01-08", utc:"20:00", home:"Arsenal",        away:"Liverpool",       homeScore:0, awayScore:0, status:"final" },
+  { id:2,  comp:"EPL", round:"23라운드", date:"2026-01-17", utc:"17:30", home:"Nottm Forest",   away:"Arsenal",         homeScore:0, awayScore:0, status:"final" },
+  { id:3,  comp:"EPL", round:"24라운드", date:"2026-01-25", utc:"16:30", home:"Arsenal",        away:"Man United",      homeScore:2, awayScore:3, status:"final" },
+  { id:4,  comp:"EPL", round:"25라운드", date:"2026-01-31", utc:"15:00", home:"Leeds United",   away:"Arsenal",         homeScore:0, awayScore:4, status:"final" },
+  { id:5,  comp:"EPL", round:"26라운드", date:"2026-02-07", utc:"15:00", home:"Arsenal",        away:"Sunderland",      homeScore:3, awayScore:0, status:"final" },
+  { id:6,  comp:"EPL", round:"27라운드", date:"2026-02-12", utc:"20:00", home:"Brentford",      away:"Arsenal",         homeScore:1, awayScore:1, status:"final" },
+  { id:7,  comp:"EPL", round:"28라운드", date:"2026-02-18", utc:"20:00", home:"Wolves",         away:"Arsenal",         homeScore:2, awayScore:2, status:"final" },
+  { id:8,  comp:"EPL", round:"29라운드", date:"2026-02-22", utc:"16:30", home:"Tottenham",      away:"Arsenal",         homeScore:1, awayScore:4, status:"final" },
+  { id:9,  comp:"EPL", round:"30라운드", date:"2026-03-01", utc:"16:30", home:"Arsenal",        away:"Chelsea",         homeScore:2, awayScore:1, status:"final" },
+  { id:10, comp:"EPL", round:"31라운드", date:"2026-03-04", utc:"19:30", home:"Brighton",       away:"Arsenal",         homeScore:0, awayScore:1, status:"final" },
+  { id:11, comp:"EPL", round:"32라운드", date:"2026-03-14", utc:"17:30", home:"Arsenal",        away:"Everton",         homeScore:null, awayScore:null, status:"scheduled", prob:72.4 },
+  { id:12, comp:"EPL", round:"33라운드", date:"2026-04-11", utc:"11:30", home:"Arsenal",        away:"Bournemouth",     homeScore:null, awayScore:null, status:"scheduled" },
+  { id:13, comp:"EPL", round:"34라운드", date:"2026-04-19", utc:"15:30", home:"Man City",       away:"Arsenal",         homeScore:null, awayScore:null, status:"scheduled" },
+  { id:14, comp:"EPL", round:"35라운드", date:"2026-04-25", utc:"16:30", home:"Arsenal",        away:"Newcastle",       homeScore:null, awayScore:null, status:"scheduled" },
+  { id:15, comp:"EPL", round:"36라운드", date:"2026-05-02", utc:"14:00", home:"Arsenal",        away:"Fulham",          homeScore:null, awayScore:null, status:"scheduled" },
+  { id:16, comp:"EPL", round:"37라운드", date:"2026-05-09", utc:"14:00", home:"West Ham",       away:"Arsenal",         homeScore:null, awayScore:null, status:"scheduled" },
+  { id:17, comp:"EPL", round:"38라운드", date:"2026-05-17", utc:"14:00", home:"Arsenal",        away:"Burnley",         homeScore:null, awayScore:null, status:"scheduled" },
+  { id:18, comp:"EPL", round:"39라운드", date:"2026-05-24", utc:"15:00", home:"Crystal Palace", away:"Arsenal",         homeScore:null, awayScore:null, status:"scheduled" },
+  { id:101,comp:"UCL", round:"리그 페이즈 MD1", date:"2025-09-16", utc:"16:45", home:"Athletic Bilbao",  away:"Arsenal",          homeScore:0, awayScore:2, status:"final" },
+  { id:102,comp:"UCL", round:"리그 페이즈 MD2", date:"2025-10-01", utc:"19:00", home:"Arsenal",           away:"Olympiacos",        homeScore:2, awayScore:0, status:"final" },
+  { id:103,comp:"UCL", round:"리그 페이즈 MD3", date:"2025-10-21", utc:"19:00", home:"Arsenal",           away:"Atletico Madrid",   homeScore:4, awayScore:0, status:"final" },
+  { id:104,comp:"UCL", round:"리그 페이즈 MD4", date:"2025-11-04", utc:"17:45", home:"Slavia Prague",     away:"Arsenal",          homeScore:0, awayScore:3, status:"final" },
+  { id:105,comp:"UCL", round:"리그 페이즈 MD5", date:"2025-11-26", utc:"20:00", home:"Arsenal",           away:"Bayern Munich",     homeScore:3, awayScore:1, status:"final" },
+  { id:106,comp:"UCL", round:"리그 페이즈 MD6", date:"2025-12-10", utc:"20:00", home:"Club Brugge",       away:"Arsenal",          homeScore:0, awayScore:3, status:"final" },
+  { id:107,comp:"UCL", round:"리그 페이즈 MD7", date:"2026-01-20", utc:"20:00", home:"Inter Milan",       away:"Arsenal",          homeScore:1, awayScore:3, status:"final" },
+  { id:108,comp:"UCL", round:"리그 페이즈 MD8", date:"2026-01-28", utc:"20:00", home:"Arsenal",           away:"FC Kairat",         homeScore:3, awayScore:2, status:"final" },
+  { id:109,comp:"UCL", round:"16강 1차전",       date:"2026-03-11", utc:"17:45", home:"Bayer Leverkusen",  away:"Arsenal",          homeScore:null, awayScore:null, status:"scheduled", prob:61.4 },
+  { id:110,comp:"UCL", round:"16강 2차전",       date:"2026-03-17", utc:"20:00", home:"Arsenal",           away:"Bayer Leverkusen",  homeScore:null, awayScore:null, status:"scheduled" },
+  { id:111,comp:"UCL", round:"8강 1차전",        date:"2026-04-08", utc:"19:00", home:"TBD",               away:"Arsenal",          homeScore:null, awayScore:null, status:"scheduled" },
+  { id:112,comp:"UCL", round:"8강 2차전",        date:"2026-04-15", utc:"19:00", home:"Arsenal",           away:"TBD",               homeScore:null, awayScore:null, status:"scheduled" },
+  { id:113,comp:"UCL", round:"4강 1차전",        date:"2026-04-29", utc:"19:00", home:"TBD",               away:"Arsenal",          homeScore:null, awayScore:null, status:"scheduled" },
+  { id:114,comp:"UCL", round:"4강 2차전",        date:"2026-05-05", utc:"19:00", home:"Arsenal",           away:"TBD",              homeScore:null, awayScore:null, status:"scheduled" },
+  { id:115,comp:"UCL", round:"결승",             date:"2026-05-30", utc:"19:00", home:"TBD",               away:"TBD",              homeScore:null, awayScore:null, status:"scheduled" },
+  { id:201,comp:"FA",  round:"3라운드",  date:"2026-01-11", utc:"15:00", home:"Portsmouth",     away:"Arsenal",        homeScore:1, awayScore:4, status:"final" },
+  { id:202,comp:"FA",  round:"4라운드",  date:"2026-02-15", utc:"19:00", home:"Arsenal",         away:"Wigan Athletic",  homeScore:4, awayScore:0, status:"final" },
+  { id:203,comp:"FA",  round:"5라운드",  date:"2026-03-07", utc:"15:00", home:"Mansfield Town",  away:"Arsenal",        homeScore:1, awayScore:2, status:"final" },
+  { id:204,comp:"FA",  round:"준준결승", date:"2026-04-04", utc:"14:00", home:"TBD",              away:"Arsenal",        homeScore:null, awayScore:null, status:"scheduled" },
+  { id:205,comp:"FA",  round:"준결승",   date:"2026-04-25", utc:"14:00", home:"TBD (Wembley)",   away:"Arsenal",        homeScore:null, awayScore:null, status:"scheduled" },
+  { id:206,comp:"FA",  round:"결승",     date:"2026-05-16", utc:"14:00", home:"Arsenal",          away:"TBD (Wembley)",  homeScore:null, awayScore:null, status:"scheduled" },
+  { id:301,comp:"EFL", round:"3라운드",     date:"2025-09-24", utc:"18:45", home:"Port Vale",       away:"Arsenal",        homeScore:0, awayScore:2, status:"final" },
+  { id:302,comp:"EFL", round:"4라운드",     date:"2025-10-29", utc:"19:30", home:"Arsenal",         away:"Brighton",       homeScore:2, awayScore:0, status:"final" },
+  { id:303,comp:"EFL", round:"8강",         date:"2025-12-23", utc:"19:45", home:"Arsenal",         away:"Crystal Palace", homeScore:1, awayScore:1, status:"final", note:"승부차기 8-7" },
+  { id:304,comp:"EFL", round:"준결승 1차전",date:"2026-01-14", utc:"19:45", home:"Chelsea",         away:"Arsenal",        homeScore:2, awayScore:3, status:"final" },
+  { id:305,comp:"EFL", round:"준결승 2차전",date:"2026-02-03", utc:"19:45", home:"Arsenal",         away:"Chelsea",        homeScore:1, awayScore:0, status:"final", note:"합산 4-2" },
+  { id:306,comp:"EFL", round:"결승",         date:"2026-03-22", utc:"15:30", home:"Arsenal",         away:"Man City",       homeScore:null, awayScore:null, status:"scheduled" },
+];
+
+const TEAM_COLORS = {
+  'Liverpool':'#C8102E','Nottm Forest':'#DD0000','Man United':'#DA291C','Leeds United':'#FFCD00',
+  'Sunderland':'#EB172B','Brentford':'#E30613','Wolves':'#FDB913','Tottenham':'#132257',
+  'Chelsea':'#034694','Brighton':'#0057B8','Everton':'#003399','Bournemouth':'#B50E12',
+  'Man City':'#6CABDD','Newcastle':'#241F20','Fulham':'#CC0000','West Ham':'#7A263A',
+  'Burnley':'#6C1D45','Crystal Palace':'#1B458F','Athletic Bilbao':'#EE2523','Olympiacos':'#D2000A',
+  'Atletico Madrid':'#CB3524','Slavia Prague':'#CC0000','Bayern Munich':'#DC052D',
+  'Club Brugge':'#003F87','Inter Milan':'#010E80','FC Kairat':'#F7C11A',
+  'Bayer Leverkusen':'#E32221','Portsmouth':'#001489','Wigan Athletic':'#0044A0',
+  'Mansfield Town':'#FFBE00','Port Vale':'#1B1C3A',
+};
+
+// ── 순위 데이터: 하드코딩 기본값 (API 실패 시 폴백) ──────────────────────────
+// 마지막 업데이트: 2026-03-10  출처: SportRadar
+const STANDINGS_FALLBACK = [
+  { rank:1,  name:'Arsenal FC',            abbr:'ARS', w:20, d:7,  l:3,  pts:67, gf:58, ga:23, played:30 },
+  { rank:2,  name:'Manchester City',        abbr:'MCI', w:18, d:6,  l:5,  pts:60, gf:61, ga:36, played:29 },
+  { rank:3,  name:'Manchester United',      abbr:'MUN', w:14, d:9,  l:6,  pts:51, gf:48, ga:40, played:29 },
+  { rank:4,  name:'Aston Villa',            abbr:'AVL', w:15, d:6,  l:8,  pts:51, gf:52, ga:41, played:29 },
+  { rank:5,  name:'Chelsea FC',             abbr:'CFC', w:13, d:9,  l:7,  pts:48, gf:50, ga:40, played:29 },
+  { rank:6,  name:'Liverpool FC',           abbr:'LFC', w:14, d:6,  l:9,  pts:48, gf:47, ga:43, played:29 },
+  { rank:7,  name:'Brentford FC',           abbr:'BRE', w:13, d:5,  l:11, pts:44, gf:51, ga:46, played:29 },
+  { rank:8,  name:'Everton FC',             abbr:'EVE', w:12, d:7,  l:10, pts:43, gf:38, ga:36, played:29 },
+  { rank:9,  name:'AFC Bournemouth',        abbr:'BOU', w:9,  d:13, l:7,  pts:40, gf:36, ga:32, played:29 },
+  { rank:10, name:'Fulham FC',              abbr:'FUL', w:12, d:4,  l:13, pts:40, gf:43, ga:47, played:29 },
+  { rank:11, name:'Sunderland AFC',         abbr:'SUN', w:10, d:10, l:9,  pts:40, gf:36, ga:38, played:29 },
+  { rank:12, name:'Newcastle United',       abbr:'NEW', w:11, d:6,  l:12, pts:39, gf:40, ga:44, played:29 },
+  { rank:13, name:'Crystal Palace',         abbr:'CRY', w:10, d:8,  l:11, pts:38, gf:36, ga:40, played:29 },
+  { rank:14, name:'Brighton & Hove Albion', abbr:'BRI', w:9,  d:10, l:10, pts:37, gf:37, ga:40, played:29 },
+  { rank:15, name:'Leeds United',           abbr:'LEE', w:7,  d:10, l:12, pts:31, gf:30, ga:44, played:29 },
+  { rank:16, name:'Tottenham Hotspur',      abbr:'TOT', w:7,  d:8,  l:14, pts:29, gf:30, ga:50, played:29 },
+  { rank:17, name:'Nottingham Forest',      abbr:'NFO', w:7,  d:7,  l:15, pts:28, gf:27, ga:49, played:29 },
+  { rank:18, name:'West Ham United',        abbr:'WHU', w:7,  d:7,  l:15, pts:28, gf:30, ga:54, played:29 },
+  { rank:19, name:'Burnley FC',             abbr:'BUR', w:4,  d:7,  l:18, pts:19, gf:22, ga:58, played:29 },
+  { rank:20, name:'Wolverhampton Wanderers',abbr:'WOL', w:3,  d:7,  l:20, pts:16, gf:22, ga:65, played:30 },
+];
+STANDINGS_FALLBACK.forEach(t => t.gd = t.gf - t.ga);
+let enrichedStandings = STANDINGS_FALLBACK;
+
+// ── API 연동: football-data.org (무료 키, 주당 10회 제한 있음) ────────────────
+// 사용법: https://www.football-data.org 에서 무료 가입 → API 키 발급 후 아래에 입력
+const API_KEY = '8ff7c295451f41f0860414771828d070';
+const API_CACHE_KEY  = 'arsenal_standings_cache';
+const API_CACHE_TTL  = 3 * 60 * 60 * 1000; // 3시간 캐시
+
+// 팀명 정규화 (API 응답 → 내부 표기 통일)
+const TEAM_NAME_MAP = {
+  'Arsenal FC':'Arsenal FC','Manchester City FC':'Manchester City',
+  'Manchester United FC':'Manchester United','Aston Villa FC':'Aston Villa',
+  'Chelsea FC':'Chelsea FC','Liverpool FC':'Liverpool FC',
+  'Brentford FC':'Brentford FC','Everton FC':'Everton FC',
+  'AFC Bournemouth':'AFC Bournemouth','Fulham FC':'Fulham FC',
+  'Sunderland AFC':'Sunderland AFC','Newcastle United FC':'Newcastle United',
+  'Crystal Palace FC':'Crystal Palace','Brighton & Hove Albion FC':'Brighton & Hove Albion',
+  'Leeds United FC':'Leeds United','Tottenham Hotspur FC':'Tottenham Hotspur',
+  'Nottingham Forest FC':'Nottingham Forest','West Ham United FC':'West Ham United',
+  'Burnley FC':'Burnley FC','Wolverhampton Wanderers FC':'Wolverhampton Wanderers',
+};
+
+async function fetchLiveStandings() {
+  const statusEl = document.getElementById('standings-api-status');
+
+  // 1) 캐시 확인
+  try {
+    const cached = localStorage.getItem(API_CACHE_KEY);
+    if (cached) {
+      const { ts, data } = JSON.parse(cached);
+      if (Date.now() - ts < API_CACHE_TTL) {
+        enrichedStandings = data;
+        if (statusEl) statusEl.textContent = `✅ 캐시 데이터 (${new Date(ts).toLocaleTimeString('ko-KR')})`;
+        renderStandings();
+        return;
+      }
+    }
+  } catch(e) {}
+
+  // 2) API 키 없으면 폴백
+  if (!API_KEY) {
+    if (statusEl) statusEl.innerHTML = `📋 하드코딩 데이터 (2026-03-10) &nbsp;·&nbsp; <a href="https://www.football-data.org" target="_blank" style="color:var(--gold)">API 키 발급받기</a>`;
+    return;
+  }
+
+  // 3) 실시간 fetch
+  if (statusEl) statusEl.textContent = '⏳ 순위 불러오는 중...';
+  try {
+    const res = await fetch('https://api.football-data.org/v4/competitions/PL/standings', {
+      headers: { 'X-Auth-Token': API_KEY }
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const json = await res.json();
+    const table = json.standings.find(s => s.type === 'TOTAL').table;
+
+    enrichedStandings = table.map(t => ({
+      rank:   t.position,
+      name:   TEAM_NAME_MAP[t.team.name] || t.team.name,
+      abbr:   t.team.tla,
+      w:      t.won,
+      d:      t.draw,
+      l:      t.lost,
+      pts:    t.points,
+      gf:     t.goalsFor,
+      ga:     t.goalsAgainst,
+      gd:     t.goalDifference,
+      played: t.playedGames,
+    }));
+
+    // 캐시 저장
+    localStorage.setItem(API_CACHE_KEY, JSON.stringify({ ts: Date.now(), data: enrichedStandings }));
+
+    if (statusEl) statusEl.textContent = `✅ 실시간 업데이트 (${new Date().toLocaleTimeString('ko-KR')})`;
+    renderStandings();
+  } catch(err) {
+    if (statusEl) statusEl.textContent = `⚠️ API 오류 — 하드코딩 데이터 표시 중 (${err.message})`;
+    enrichedStandings = STANDINGS_FALLBACK;
+    renderStandings();
+  }
+}
+
+const playerStats = [
+  { name:'Haaland, Erling',        team:'Man City',  pos:'FWD', apps:25, mins:2106, goals:22, assists:4,  rating:7.6 },
+  { name:'Thiago, Igor',           team:'Brentford', pos:'FWD', apps:26, mins:2280, goals:18, assists:3,  rating:7.4 },
+  { name:'Semenyo, Antoine',       team:'Man City',  pos:'FWD', apps:24, mins:1740, goals:14, assists:5,  rating:7.2 },
+  { name:'Joao Pedro',             team:'Chelsea',   pos:'FWD', apps:27, mins:2250, goals:11, assists:3,  rating:7.1 },
+  { name:'Ekitike, Hugo',          team:'Liverpool', pos:'FWD', apps:26, mins:2100, goals:11, assists:4,  rating:7.3 },
+  { name:'Calvert-Lewin, Dom.',    team:'Leeds',     pos:'FWD', apps:28, mins:2430, goals:10, assists:1,  rating:6.9 },
+  { name:'Gyokeres, Viktor',       team:'Arsenal',   pos:'FWD', apps:22, mins:1680, goals:10, assists:4,  rating:7.0, isArs:true },
+  { name:'Welbeck, Danny',         team:'Brighton',  pos:'FWD', apps:27, mins:2160, goals:10, assists:3,  rating:7.0 },
+  { name:'Guimaraes, Bruno',       team:'Newcastle', pos:'MID', apps:28, mins:2430, goals:9,  assists:6,  rating:7.4 },
+  { name:'Mbeumo, Bryan',          team:'Man Utd',   pos:'FWD', apps:27, mins:2244, goals:9,  assists:5,  rating:7.2 },
+  { name:'Wilson, Harry',          team:'Fulham',    pos:'MID', apps:28, mins:2310, goals:9,  assists:4,  rating:7.1 },
+  { name:'Saka, Bukayo',           team:'Arsenal',   pos:'FWD', apps:26, mins:2196, goals:8,  assists:7,  rating:7.5, isArs:true },
+  { name:'Trossard, Leandro',      team:'Arsenal',   pos:'MID', apps:25, mins:1890, goals:7,  assists:5,  rating:7.1, isArs:true },
+  { name:'Havertz, Kai',           team:'Arsenal',   pos:'FWD', apps:27, mins:2268, goals:6,  assists:6,  rating:7.2, isArs:true },
+  { name:'Norgaard, Christian',    team:'Arsenal',   pos:'MID', apps:28, mins:2520, goals:5,  assists:3,  rating:7.3, isArs:true },
+  { name:'Fernandes, Bruno',       team:'Man Utd',   pos:'MID', apps:26, mins:2184, goals:6,  assists:14, rating:7.8 },
+  { name:'Cherki, Rayan',          team:'Man City',  pos:'MID', apps:25, mins:1980, goals:5,  assists:8,  rating:7.3 },
+  { name:'Wirtz, Florian',         team:'Liverpool', pos:'MID', apps:27, mins:2268, goals:7,  assists:8,  rating:7.6 },
+  { name:'Odegaard, Martin',       team:'Arsenal',   pos:'MID', apps:18, mins:1440, goals:4,  assists:7,  rating:7.6, isArs:true },
+  { name:'Lewis-Skelly, Myles',    team:'Arsenal',   pos:'DEF', apps:28, mins:2480, goals:2,  assists:5,  rating:7.4, isArs:true },
+];
+playerStats.forEach(p => p.ga = p.goals + p.assists);
+
+const gameDetails = {
+  1:  { oppName:'Liverpool',       stats:{ars:{poss:47,shots:8,onTarget:4,corners:3,fouls:10,yellow:3},opp:{poss:53,shots:7,onTarget:0,corners:0,fouls:9,yellow:2}}, events:[{time:12,team:'ars',type:'yellow',player:'Saliba, William',desc:'🟨 경고'},{time:57,team:'ars',type:'sub',player:'Merino → Zubimendi',desc:'🔄 교체'},{time:64,team:'ars',type:'sub',player:'Saka → Madueke',desc:'🔄 교체'},{time:78,team:'ars',type:'sub',player:'Trossard → Gyokeres',desc:'🔄 교체'},{time:90,team:'opp',type:'yellow',player:'Nyoni',desc:'🟨 경고'},{time:90,team:'ars',type:'yellow',player:'Rice, Declan',desc:'🟨 경고'}], lineups:{ars:[{name:'Raya, David',pos:'GK'},{name:'Saliba, William',pos:'DEF'},{name:'White, Ben',pos:'DEF'},{name:'Timber, Jurrien',pos:'DEF'},{name:'Lewis-Skelly, Myles',pos:'DEF'},{name:'Rice, Declan',pos:'MID'},{name:'Merino, Mikel',pos:'MID'},{name:'Norgaard, Christian',pos:'MID'},{name:'Trossard, Leandro',pos:'MID'},{name:'Saka, Bukayo',pos:'FWD'},{name:'Jesus, Gabriel',pos:'FWD'}],opp:[{name:'Mamardashvili, G.',pos:'GK'},{name:'Van Dijk, Virgil',pos:'DEF'},{name:'Gomez, Joe',pos:'DEF'},{name:'Frimpong, Jeremie',pos:'DEF'},{name:'Robertson, Andy',pos:'DEF'},{name:'Gravenberch, Ryan',pos:'MID'},{name:'Mac Allister, A.',pos:'MID'},{name:'Wirtz, Florian',pos:'MID'},{name:'Chiesa, Federico',pos:'MID'},{name:'Gakpo, Cody',pos:'FWD'},{name:'Ramsay, Calvin',pos:'DEF'}]}},
+  3:  { oppName:'Man United',      stats:{ars:{poss:57,shots:15,onTarget:4,corners:9,fouls:11,yellow:2},opp:{poss:43,shots:10,onTarget:3,corners:2,fouls:9,yellow:0}}, events:[{time:29,team:'ars',type:'goal',player:'Havertz, Kai',desc:'⚽ 선제골 (1-0)'},{time:37,team:'opp',type:'goal',player:'Mbeumo, Bryan',desc:'⚽ 동점골 (1-1)'},{time:50,team:'opp',type:'goal',player:'Sesko, Benjamin',desc:'⚽ 역전골 (1-2)'},{time:64,team:'ars',type:'yellow',player:'Saka, Bukayo',desc:'🟨 경고'},{time:84,team:'ars',type:'goal',player:'Jesus, Gabriel',desc:'⚽ 동점골 (2-2)'},{time:87,team:'opp',type:'goal',player:'Fernandes, Bruno',desc:'⚽ 결승골 (2-3)'},{time:90,team:'ars',type:'yellow',player:'Rice, Declan',desc:'🟨 경고'}], lineups:{ars:[{name:'Raya, David',pos:'GK'},{name:'Saliba, William',pos:'DEF'},{name:'White, Ben',pos:'DEF'},{name:'Timber, Jurrien',pos:'DEF'},{name:'Lewis-Skelly, Myles',pos:'DEF'},{name:'Rice, Declan',pos:'MID'},{name:'Merino, Mikel',pos:'MID'},{name:'Trossard, Leandro',pos:'MID'},{name:'Saka, Bukayo',pos:'FWD'},{name:'Havertz, Kai',pos:'FWD'},{name:'Jesus, Gabriel',pos:'FWD'}],opp:[{name:'Lammens, Senne',pos:'GK'},{name:'Maguire, Harry',pos:'DEF'},{name:'Martinez, Lisandro',pos:'DEF'},{name:'Dalot, Diogo',pos:'DEF'},{name:'Dorgu, Patrick',pos:'DEF'},{name:'Casemiro',pos:'MID'},{name:'Mainoo, Kobbie',pos:'MID'},{name:'Ugarte, Manuel',pos:'MID'},{name:'Fernandes, Bruno',pos:'MID'},{name:'Mbeumo, Bryan',pos:'FWD'},{name:'Sesko, Benjamin',pos:'FWD'}]}},
+  4:  { oppName:'Leeds',           stats:{ars:{poss:49,shots:14,onTarget:8,corners:12,fouls:8,yellow:1},opp:{poss:51,shots:3,onTarget:1,corners:4,fouls:10,yellow:1}}, events:[{time:27,team:'ars',type:'goal',player:'Eze, Eberechi',desc:'⚽ 선제골 (0-1)'},{time:37,team:'opp',type:'yellow',player:'Ampadu, Ethan',desc:'🟨 경고'},{time:38,team:'ars',type:'goal',player:'Odegaard, Martin',desc:'⚽ 추가골 (0-2)'},{time:59,team:'ars',type:'yellow',player:'Havertz, Kai',desc:'🟨 경고'},{time:69,team:'ars',type:'goal',player:'Martinelli, Gabriel',desc:'⚽ 추가골 (0-3)'},{time:86,team:'ars',type:'goal',player:'Jesus, Gabriel',desc:'⚽ 쐐기골 (0-4)'}], lineups:{ars:[{name:'Arrizabalaga, Kepa',pos:'GK'},{name:'Magalhaes, Gabriel',pos:'DEF'},{name:'Mosquera, Cristhian',pos:'DEF'},{name:'Calafiori, Riccardo',pos:'DEF'},{name:'White, Ben',pos:'DEF'},{name:'Rice, Declan',pos:'MID'},{name:'Zubimendi, Martin',pos:'MID'},{name:'Odegaard, Martin',pos:'MID'},{name:'Trossard, Leandro',pos:'MID'},{name:'Eze, Eberechi',pos:'FWD'},{name:'Martinelli, Gabriel',pos:'FWD'}],opp:[{name:'Perri, Lucas',pos:'GK'},{name:'Rodon, Joe',pos:'DEF'},{name:'Struijk, Pascal',pos:'DEF'},{name:'Byram, Sam',pos:'DEF'},{name:'Bogle, Jayden',pos:'DEF'},{name:'Ampadu, Ethan',pos:'MID'},{name:'Gruev, Ilia',pos:'MID'},{name:'Tanaka, Ao',pos:'MID'},{name:'Longstaff, Sean',pos:'MID'},{name:'Okafor, Noah',pos:'FWD'},{name:'Calvert-Lewin, D.',pos:'FWD'}]}},
+  5:  { oppName:'Sunderland',      stats:{ars:{poss:49,shots:14,onTarget:5,corners:5,fouls:11,yellow:1},opp:{poss:51,shots:4,onTarget:2,corners:2,fouls:7,yellow:2}}, events:[{time:26,team:'ars',type:'yellow',player:'Norgaard, Christian',desc:'🟨 경고'},{time:39,team:'opp',type:'yellow',player:'Rigg, Chris',desc:'🟨 경고'},{time:40,team:'opp',type:'yellow',player:'Geertruida, L.',desc:'🟨 경고'},{time:42,team:'ars',type:'goal',player:'Havertz, Kai',desc:'⚽ 선제골 (1-0)'},{time:66,team:'ars',type:'goal',player:'Martinelli, Gabriel',desc:'⚽ 추가골 (2-0)'},{time:90,team:'ars',type:'goal',player:'Gyokeres, Viktor',desc:'⚽ 쐐기골 (3-0)'}], lineups:{ars:[{name:'Arrizabalaga, Kepa',pos:'GK'},{name:'Saliba, William',pos:'DEF'},{name:'Magalhaes, Gabriel',pos:'DEF'},{name:'Calafiori, Riccardo',pos:'DEF'},{name:'Hincapie, Piero',pos:'DEF'},{name:'Norgaard, Christian',pos:'MID'},{name:'White, Ben',pos:'MID'},{name:'Lewis-Skelly, Myles',pos:'MID'},{name:'Eze, Eberechi',pos:'FWD'},{name:'Martinelli, Gabriel',pos:'FWD'},{name:'Havertz, Kai',pos:'FWD'}],opp:[{name:'Ellborg, Melker',pos:'GK'},{name:'Alderete, Omar',pos:'DEF'},{name:'Ballard, Daniel',pos:'DEF'},{name:'Cirkin, Dennis',pos:'DEF'},{name:'Geertruida, L.',pos:'DEF'},{name:'Rigg, Chris',pos:'MID'},{name:"O'Nien, Luke",pos:'MID'},{name:'Diarra, Habib',pos:'MID'},{name:'Mundle, Romaine',pos:'FWD'},{name:'Isidor, Wilson',pos:'FWD'},{name:'Mayenda, Eliezer',pos:'FWD'}]}},
+  8:  { oppName:'Tottenham',       stats:{ars:{poss:60,shots:20,onTarget:6,corners:5,fouls:11,yellow:1},opp:{poss:40,shots:6,onTarget:5,corners:2,fouls:16,yellow:2}}, events:[{time:27,team:'ars',type:'yellow',player:'Lewis-Skelly, Myles',desc:'🟨 경고'},{time:32,team:'ars',type:'goal',player:'Martinelli, Gabriel',desc:'⚽ 선제골 (0-1)'},{time:34,team:'opp',type:'goal',player:'Kolo Muani, Randal',desc:'⚽ 동점골 (1-1)'},{time:35,team:'opp',type:'yellow',player:'Van de Ven, Micky',desc:'🟨 경고'},{time:47,team:'ars',type:'goal',player:'Odegaard, Martin',desc:'⚽ 역전골 (1-2)'},{time:61,team:'ars',type:'goal',player:'Jesus, Gabriel',desc:'⚽ 추가골 (1-3)'},{time:86,team:'opp',type:'yellow',player:'Bissouma, Yves',desc:'🟨 경고'},{time:90,team:'ars',type:'goal',player:'Madueke, Noni',desc:'⚽ 쐐기골 (1-4)'}], lineups:{ars:[{name:'Raya, David',pos:'GK'},{name:'Saliba, William',pos:'DEF'},{name:'Magalhaes, Gabriel',pos:'DEF'},{name:'Mosquera, Cristhian',pos:'DEF'},{name:'Calafiori, Riccardo',pos:'DEF'},{name:'Lewis-Skelly, Myles',pos:'MID'},{name:'Norgaard, Christian',pos:'MID'},{name:'Odegaard, Martin',pos:'MID'},{name:'Martinelli, Gabriel',pos:'FWD'},{name:'Madueke, Noni',pos:'FWD'},{name:'Jesus, Gabriel',pos:'FWD'}],opp:[{name:'Vicario, Guglielmo',pos:'GK'},{name:'Van de Ven, Micky',pos:'DEF'},{name:'Dragusin, Radu',pos:'DEF'},{name:'Rowswell, James',pos:'DEF'},{name:'Souza',pos:'DEF'},{name:'Bissouma, Yves',pos:'MID'},{name:'Simons, Xavi',pos:'MID'},{name:'Olusesi, Callum',pos:'MID'},{name:'Kolo Muani, Randal',pos:'FWD'},{name:'Tel, Mathys',pos:'FWD'},{name:'Solanke, Dominic',pos:'FWD'}]}},
+  9:  { oppName:'Chelsea',         stats:{ars:{poss:42,shots:10,onTarget:5,corners:5,fouls:11,yellow:1},opp:{poss:58,shots:7,onTarget:2,corners:10,fouls:13,yellow:4}}, events:[{time:21,team:'ars',type:'goal',player:'Havertz, Kai',desc:'⚽ 선제골 (1-0)'},{time:45,team:'opp',type:'goal',player:'Joao Pedro',desc:'⚽ 동점골 (1-1)'},{time:56,team:'ars',type:'sub',player:'Trossard → Eze',desc:'🔄 교체'},{time:59,team:'opp',type:'yellow',player:'Lavia, Romeo',desc:'🟨 경고'},{time:65,team:'opp',type:'yellow',player:'Fernandez, Enzo',desc:'🟨 경고'},{time:66,team:'ars',type:'goal',player:'Saka, Bukayo',desc:'⚽ 결승골 (2-1)'},{time:75,team:'ars',type:'yellow',player:'Norgaard, Christian',desc:'🟨 경고'},{time:79,team:'opp',type:'yellow',player:'Gusto, Malo',desc:'🟨 경고'}], lineups:{ars:[{name:'Raya, David',pos:'GK'},{name:'Saliba, William',pos:'DEF'},{name:'Timber, Jurrien',pos:'DEF'},{name:'Lewis-Skelly, Myles',pos:'DEF'},{name:'Norgaard, Christian',pos:'MID'},{name:'Rice, Declan',pos:'MID'},{name:'Zubimendi, Martin',pos:'MID'},{name:'Trossard, Leandro',pos:'MID'},{name:'Saka, Bukayo',pos:'FWD'},{name:'Havertz, Kai',pos:'FWD'},{name:'Jesus, Gabriel',pos:'FWD'}],opp:[{name:'Sanchez, Robert',pos:'GK'},{name:'James, Reece',pos:'DEF'},{name:'Adarabioyo, Tosin',pos:'DEF'},{name:'Badiashile, Benoit',pos:'DEF'},{name:'Gusto, Malo',pos:'DEF'},{name:'Fernandez, Enzo',pos:'MID'},{name:'Lavia, Romeo',pos:'MID'},{name:'Santos, Andrey',pos:'MID'},{name:'Madueke, Noni',pos:'FWD'},{name:'Delap, Liam',pos:'FWD'},{name:'Joao Pedro',pos:'FWD'}]}},
+  10: { oppName:'Brighton',        stats:{ars:{poss:42,shots:4,onTarget:2,corners:3,fouls:11,yellow:1},opp:{poss:58,shots:13,onTarget:3,corners:4,fouls:14,yellow:4}}, events:[{time:9,team:'ars',type:'goal',player:'Havertz, Kai',desc:'⚽ 선제골 (0-1)'},{time:11,team:'ars',type:'yellow',player:'Lewis-Skelly, Myles',desc:'🟨 경고'},{time:52,team:'opp',type:'yellow',player:'Wieffer, Mats',desc:'🟨 경고'},{time:59,team:'ars',type:'sub',player:'Havertz → Odegaard',desc:'🔄 교체'},{time:60,team:'ars',type:'sub',player:'Jesus → Gyokeres',desc:'🔄 교체'},{time:64,team:'ars',type:'sub',player:'Trossard → Madueke',desc:'🔄 교체'},{time:80,team:'opp',type:'yellow',player:"O'Riley, Matt",desc:'🟨 경고'},{time:81,team:'opp',type:'yellow',player:'Milner, James',desc:'🟨 경고'},{time:90,team:'opp',type:'yellow',player:'Gross, Pascal',desc:'🟨 경고'}], lineups:{ars:[{name:'Raya, David',pos:'GK'},{name:'Magalhaes, Gabriel',pos:'DEF'},{name:'Timber, Jurrien',pos:'DEF'},{name:'Calafiori, Riccardo',pos:'DEF'},{name:'Lewis-Skelly, Myles',pos:'DEF'},{name:'Norgaard, Christian',pos:'MID'},{name:'Zubimendi, Martin',pos:'MID'},{name:'Trossard, Leandro',pos:'MID'},{name:'Dowman, Max',pos:'MID'},{name:'Havertz, Kai',pos:'FWD'},{name:'Jesus, Gabriel',pos:'FWD'}],opp:[{name:'Verbruggen, Bart',pos:'GK'},{name:'Kadioglu, Ferdi',pos:'DEF'},{name:'Boscagli, Olivier',pos:'DEF'},{name:'Van Hecke, Jan Paul',pos:'DEF'},{name:'De Cuyper, Maxime',pos:'DEF'},{name:'Wieffer, Mats',pos:'MID'},{name:"O'Riley, Matt",pos:'MID'},{name:'Gross, Pascal',pos:'MID'},{name:'Milner, James',pos:'MID'},{name:'Minteh, Yankuba',pos:'FWD'},{name:'Welbeck, Danny',pos:'FWD'}]}},
+};
+
+// ===== STATE =====
+let notes       = LS.get('arsenal_notes')          || [];
+let matchRatings= LS.get('arsenal_match_ratings')  || {};
+let currentComp = 'all';
+let teamSortKey = 'pts';
+let teamSortDir = -1;
+const playerSort = { goals:{key:'goals',dir:-1}, assists:{key:'assists',dir:-1} };
+
+// ===== HELPERS =====
+function formatDate(d) { return new Date(d).toLocaleDateString('ko-KR',{month:'long',day:'numeric',weekday:'short'}); }
+function getResult(m) {
+  if (m.status !== 'final') return 'upcoming';
+  const a = m.home==='Arsenal' ? m.homeScore : m.awayScore;
+  const o = m.home==='Arsenal' ? m.awayScore : m.homeScore;
+  return a > o ? 'win' : a < o ? 'loss' : 'draw';
+}
+function resultLabel(r) { return {win:'승',draw:'무',loss:'패',upcoming:'예정'}[r]; }
+function compLabel(c)   { return {EPL:'프리미어리그',UCL:'챔피언스리그',FA:'FA컵',EFL:'EFL컵'}[c]||c; }
+function compCardCls(c) { return {UCL:'ucl-card',FA:'fa-card',EFL:'efl-card'}[c]||''; }
+function teamColor(n)   { return TEAM_COLORS[n]||'var(--maroon)'; }
+function posLabel(p)    { if(!p) return 'MID'; const r=p.toLowerCase(); return r.includes('goal')?'GK':r.includes('defend')?'DEF':r.includes('forward')?'FWD':'MID'; }
+
+function matchCardHTML(m) {
+  const isHome = m.home==='Arsenal';
+  const result = getResult(m);
+  const kst = m.utc ? toKST(m.date,m.utc) : null;
+  const kstLabel = kst ? `<span style="font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;color:var(--gold);margin-top:3px;display:block">🕐 ${kst} KST</span>` : '';
+  const homeName = isHome
+    ? `<span class="team-name arsenal">${m.home}</span>`
+    : `<span class="team-name" style="color:${teamColor(m.home)}">${m.home}</span>`;
+  const awayName = !isHome
+    ? `<span class="team-name arsenal">${m.away}</span>`
+    : `<span class="team-name" style="color:${teamColor(m.away)}">${m.away}</span>`;
+  const noteLabel = m.note ? `<div style="font-size:0.62rem;color:var(--muted);margin-top:2px;font-family:'Barlow Condensed',sans-serif">${m.note}</div>` : '';
+  const scoreHTML = m.status==='final'
+    ? `<div class="score-block"><div class="score-num">${m.homeScore} — ${m.awayScore}</div>${noteLabel}${kstLabel}</div>`
+    : `<div class="score-block"><div class="vs-text">VS</div>${kstLabel}${m.prob?`<div style="font-size:0.65rem;color:#1A6B3A;font-family:'Barlow Condensed',sans-serif;letter-spacing:0.06em;margin-top:2px">승리 ${m.prob}%</div>`:''}</div>`;
+  const roundBadge = `<span class="comp-badge ${m.comp}">${compLabel(m.comp)} · ${m.round||''}</span>`;
+  return `<div class="match-card ${compCardCls(m.comp)}">
+    <div class="match-date-block"><span class="match-date">${formatDate(m.date)}</span><div style="margin-top:3px">${roundBadge}</div></div>
+    <div class="team-home">${homeName}</div>
+    ${scoreHTML}
+    <div>${awayName}</div>
+    <div class="result-badge ${result}">${resultLabel(result)}</div>
+  </div>`;
+}
+
+// ===== RENDER =====
+function renderOverview() {
+  const compOrder = ['EPL','UCL','EFL','FA'];
+  const compEmoji = {EPL:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',UCL:'⭐',EFL:'🏅',FA:'🏆'};
+  const nextCards = compOrder.map(comp =>
+    matchData.filter(m => m.status!=='final' && m.comp===comp)
+             .sort((a,b) => new Date(a.date)-new Date(b.date))[0]
+  ).filter(Boolean).sort((a,b) => new Date(a.date)-new Date(b.date)).slice(0,3);
+
+  document.getElementById('next-matches-overview').innerHTML = `<div class="next-matches-grid">${
+    nextCards.map(m => {
+      const opp = m.home==='Arsenal' ? m.away : m.home;
+      const kst = m.utc ? toKST(m.date,m.utc) : '';
+      const homeSpan = m.home==='Arsenal' ? `<span class="ars">Arsenal</span>` : `<span style="color:${teamColor(m.home)}">${m.home}</span>`;
+      const awaySpan = m.away==='Arsenal' ? `<span class="ars">Arsenal</span>` : `<span style="color:${teamColor(m.away)}">${m.away}</span>`;
+      return `<div class="next-match-card comp-${m.comp}">
+        <div class="nm-comp-tag">${compEmoji[m.comp]||''} ${compLabel(m.comp)} · ${m.round||''}</div>
+        <div class="nm-matchup-row">${homeSpan}<span class="nm-vs">VS</span>${awaySpan}</div>
+        <div class="nm-date-row"><span>${formatDate(m.date)}${kst?' · 🕐 '+kst+' KST':''}</span>${m.prob?`<span class="nm-prob-tag">승리 ${m.prob}%</span>`:''}</div>
+      </div>`;
+    }).join('')
+  }</div>`;
+
+  const recent = matchData.filter(m => m.status==='final')
+    .sort((a,b) => new Date(b.date)-new Date(a.date)).slice(0,5);
+  document.getElementById('recent-matches-overview').innerHTML = recent.map(matchCardHTML).join('');
+}
+
+function renderSchedule() {
+  const sorted = [...matchData].sort((a,b) => new Date(a.date)-new Date(b.date));
+  const filtered = currentComp==='all' ? sorted : sorted.filter(m => m.comp===currentComp);
+  document.getElementById('all-matches-list').innerHTML = filtered.map(matchCardHTML).join('');
+}
+
+function filterComp(comp, btn) {
+  currentComp = comp;
+  document.querySelectorAll('.comp-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderSchedule();
+}
+
+function sortTeam(key) {
+  if (teamSortKey===key) teamSortDir *= -1;
+  else { teamSortKey=key; teamSortDir = key==='name' ? 1 : -1; }
+  renderStandings();
+}
+
+function renderStandings() {
+  const data = [...enrichedStandings].sort((a,b) => {
+    const av=a[teamSortKey], bv=b[teamSortKey];
+    return typeof av==='string' ? teamSortDir*av.localeCompare(bv) : teamSortDir*(bv-av);
+  });
+  document.querySelectorAll('#standings-table .sort-th').forEach(th => {
+    const key=th.dataset.key;
+    th.classList.toggle('active-sort', key===teamSortKey);
+    const arrow = teamSortDir===-1 ? '▼' : '▲';
+    th.textContent = th.textContent.replace(/[▼▲]/g,'').trim() + (key===teamSortKey ? ' '+arrow : '');
+  });
+  document.getElementById('standings-body').innerHTML = data.map((t,i) => {
+    const isArs = t.name==='Arsenal FC';
+    const gdStr = t.gd>0 ? `+${t.gd}` : `${t.gd}`;
+    const gdColor = t.gd>0 ? '#1A6B3A' : t.gd<0 ? 'var(--dark-red)' : 'var(--muted)';
+    return `<tr class="${isArs?'arsenal-row':''}">
+      <td><span class="rank-num ${i<3?'top3':''}">${i+1}</span></td>
+      <td><strong>${t.name}${isArs?' 🔴':''}</strong></td>
+      <td style="color:var(--muted)">${t.played}</td>
+      <td>${t.w}</td><td>${t.d}</td><td>${t.l}</td>
+      <td>${t.gf}</td><td>${t.ga}</td>
+      <td style="color:${gdColor};font-weight:700">${gdStr}</td>
+      <td><span class="pts-col">${t.pts}</span></td>
+    </tr>`;
+  }).join('');
+}
+
+function sortPlayers(tab, key) {
+  const s = playerSort[tab];
+  if (s.key===key) s.dir *= -1;
+  else { s.key=key; s.dir = (key==='name'||key==='team'||key==='pos') ? 1 : -1; }
+  renderPlayerTable(tab);
+}
+
+function renderPlayerTable(tab) {
+  const s = playerSort[tab];
+  const bodyId  = tab==='goals' ? 'goals-body'  : 'assists-body';
+  const tableId = tab==='goals' ? 'goals-table' : 'assists-table';
+  const seen = new Set();
+  const sorted = playerStats
+    .filter(p => { if(seen.has(p.name)) return false; seen.add(p.name); return true; })
+    .sort((a,b) => {
+      const av=a[s.key], bv=b[s.key];
+      return typeof av==='string' ? s.dir*av.localeCompare(bv) : s.dir*(bv-av);
+    });
+  document.querySelectorAll(`#${tableId} .sort-th`).forEach(th => {
+    const key=th.dataset.key;
+    th.classList.toggle('active-sort', key===s.key);
+    const arrow = s.dir===-1 ? '▼' : '▲';
+    th.textContent = th.textContent.replace(/[▼▲]/g,'').trim() + (key===s.key ? ' '+arrow : '');
+  });
+  const rc = r => r>=7.5?'high':r>=7.0?'mid':'low';
+  document.getElementById(bodyId).innerHTML = sorted.map((p,i) => `
+    <tr class="${p.isArs?'ars-row':''}">
+      <td><span class="rank-num ${i<3?'top3':''}">${i+1}</span></td>
+      <td><strong>${p.name}${p.isArs?' 🔴':''}</strong></td>
+      <td style="color:${TEAM_COLORS[p.team]||'var(--muted)'};font-weight:700">${p.team}</td>
+      <td><span class="pos-badge ${p.pos}">${p.pos}</span></td>
+      <td style="color:var(--muted)">${p.apps}</td>
+      <td style="color:var(--muted);font-size:0.8rem">${p.mins.toLocaleString()}'</td>
+      <td style="color:var(--dark-red);font-weight:700">${p.goals}</td>
+      <td style="color:#00338D;font-weight:700">${p.assists}</td>
+      <td style="font-weight:700">${p.ga}</td>
+      <td><span class="rating-chip ${rc(p.rating)}">${p.rating}</span></td>
+    </tr>`).join('');
+}
+
+function switchStandingsTab(tab, btn) {
+  document.querySelectorAll('.std-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('std-team').style.display    = tab==='team'    ? '' : 'none';
+  document.getElementById('std-goals').style.display   = tab==='goals'   ? '' : 'none';
+  document.getElementById('std-assists').style.display = tab==='assists' ? '' : 'none';
+  if (tab==='goals')   renderPlayerTable('goals');
+  if (tab==='assists') renderPlayerTable('assists');
+}
+
+function renderNotes() {
+  const list = document.getElementById('notes-list');
+  const empty = document.getElementById('notes-empty');
+  if (notes.length===0) { empty.style.display='block'; list.querySelectorAll('.note-card').forEach(e=>e.remove()); return; }
+  empty.style.display='none';
+  list.querySelectorAll('.note-card').forEach(e=>e.remove());
+  [...notes].reverse().forEach((note, i) => {
+    const idx = notes.length-1-i;
+    const tags = note.tags ? note.tags.split(',').map(t=>`<span class="tag">${t.trim()}</span>`).join('') : '';
+    const ratingColor = note.rating>=8?'#4ACA7A':note.rating>=6?'var(--gold)':'#CA4A4A';
+    const card = document.createElement('div');
+    card.className='note-card';
+    card.innerHTML=`<div class="note-meta">
+      <span class="note-match">${note.match}</span>
+      <div style="display:flex;align-items:center;gap:10px">
+        ${note.rating?`<span style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:${ratingColor}">${note.rating}/10</span>`:''}
+        <span class="note-date">${note.date}</span>
+        <button class="delete-note-btn" onclick="deleteNote(${idx})">✕</button>
+      </div>
+    </div>
+    <p class="note-text">${note.content}</p>
+    ${tags?`<div class="note-tags">${tags}</div>`:''}`;
+    list.appendChild(card);
+  });
+}
+
+function populateMatchSelect() {
+  const sel = document.getElementById('note-match');
+  matchData.filter(m => m.status==='final')
+    .sort((a,b) => new Date(b.date)-new Date(a.date))
+    .forEach(m => {
+      const compTag = {EPL:'PL',UCL:'UCL',FA:'FA',EFL:'EFL'}[m.comp]||m.comp;
+      const opt = document.createElement('option');
+      opt.value = `[${compTag}] ${m.round} vs ${m.home==='Arsenal'?m.away:m.home} (${m.homeScore}-${m.awayScore})`;
+      opt.textContent = `[${compTag}] ${formatDate(m.date)} — ${m.home} ${m.homeScore}-${m.awayScore} ${m.away}`;
+      sel.appendChild(opt);
+    });
+}
+
+function addNote() {
+  const match   = document.getElementById('note-match').value;
+  const content = document.getElementById('note-content').value.trim();
+  const rating  = document.getElementById('note-rating').value;
+  const tags    = document.getElementById('note-tags').value;
+  if (!match || !content) { alert('경기를 선택하고 메모를 작성해주세요.'); return; }
+  const now = new Date();
+  notes.push({ match, content, rating: rating?parseInt(rating):null, tags,
+    date: now.toLocaleDateString('ko-KR',{year:'numeric',month:'short',day:'numeric'}) });
+  LS.set('arsenal_notes', notes);
+  renderNotes();
+  document.getElementById('note-content').value='';
+  document.getElementById('note-rating').value='';
+  document.getElementById('note-tags').value='';
+  document.getElementById('note-match').value='';
+}
+
+function deleteNote(idx) {
+  if (confirm('이 노트를 삭제할까요?')) {
+    notes.splice(idx,1);
+    LS.set('arsenal_notes', notes);
+    renderNotes();
+  }
+}
+
+// ===== ANALYSIS =====
+function renderAnalysisList() {
+  const matches = matchData.filter(m => m.status==='final')
+    .sort((a,b) => new Date(b.date)-new Date(a.date));
+  document.getElementById('analysis-match-list').innerHTML = matches.map(m => {
+    const result = getResult(m);
+    const rating = matchRatings[m.id];
+    const compTag = {EPL:'PL',UCL:'UCL',FA:'FA',EFL:'EFL'}[m.comp]||m.comp;
+    return `<div class="aml-card" id="aml-${m.id}" onclick="showMatchDetail(${m.id})">
+      <div class="aml-matchup">${m.home} ${m.homeScore}–${m.awayScore} ${m.away}</div>
+      <div class="aml-meta">
+        <span class="aml-date">${formatDate(m.date)} · <span class="comp-badge ${m.comp}">${compTag}</span></span>
+        <div style="display:flex;align-items:center;gap:8px">
+          ${rating?`<span style="font-size:0.68rem;color:var(--gold);font-family:'Barlow Condensed',sans-serif">⭐ ${rating}/5</span>`:''}
+          <span class="result-badge ${result}" style="font-size:0.62rem;padding:2px 7px">${resultLabel(result)}</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function showMatchDetail(matchId) {
+  document.querySelectorAll('.aml-card').forEach(c => c.classList.remove('active'));
+  const card = document.getElementById(`aml-${matchId}`);
+  if (card) card.classList.add('active');
+  const m = matchData.find(x => x.id===matchId);
+  if (!m) return;
+  const detail = gameDetails[matchId];
+  const oppTeam = m.home==='Arsenal' ? m.away : m.home;
+  const kst = m.utc ? toKST(m.date,m.utc) : '';
+  const rating = matchRatings[matchId]||0;
+  const compTag = {EPL:'프리미어리그',UCL:'챔피언스리그',FA:'FA컵',EFL:'EFL컵'}[m.comp]||m.comp;
+
+  const starsHTML = [1,2,3,4,5].map(i =>
+    `<span class="star ${i<=rating?'filled':''}" 
+      onmouseover="hoverStars(${matchId},${i})" 
+      onmouseout="resetStars(${matchId})" 
+      onclick="setRating(${matchId},${i})">★</span>`
+  ).join('');
+
+  let statsHTML='', timelineHTML='', lineupHTML='';
+  if (detail) {
+    const s=detail.stats;
+    const rows=[
+      {label:'점유율',ars:s.ars.poss,opp:s.opp.poss,unit:'%',maxVal:100},
+      {label:'슈팅',  ars:s.ars.shots,opp:s.opp.shots},
+      {label:'유효슈팅',ars:s.ars.onTarget,opp:s.opp.onTarget},
+      {label:'코너킥',ars:s.ars.corners,opp:s.opp.corners},
+      {label:'파울',  ars:s.ars.fouls,opp:s.opp.fouls},
+      {label:'경고',  ars:s.ars.yellow,opp:s.opp.yellow},
+    ];
+    statsHTML=`<div class="ad-section-title">팀 스탯 비교</div>
+      <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+        <span style="font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;color:var(--dark-red);letter-spacing:0.1em">Arsenal</span>
+        <span style="font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;color:var(--muted);letter-spacing:0.1em">${oppTeam}</span>
+      </div>
+      ${rows.map(r => {
+        const max=r.maxVal||Math.max(r.ars,r.opp,1);
+        const ap=Math.round(r.ars/max*100), op=Math.round(r.opp/max*100);
+        return `<div class="stat-compare-row">
+          <span class="sc-val ars">${r.ars}${r.unit||''}</span>
+          <div style="height:7px;background:var(--dark-red);border-radius:3px 0 0 3px;width:${ap}%;min-width:4px"></div>
+          <span class="sc-label">${r.label}</span>
+          <div style="height:7px;background:var(--muted);border-radius:0 3px 3px 0;width:${op}%;min-width:4px"></div>
+          <span class="sc-val opp">${r.opp}${r.unit||''}</span>
+        </div>`;
+      }).join('')}`;
+
+    timelineHTML=`<div class="ad-section-title">경기 주요 이벤트</div>
+      <div class="timeline">${detail.events.map(e => {
+        const isArs=e.team==='ars';
+        const pStyle=isArs?'color:var(--dark-red);font-weight:700':'color:var(--muted);font-weight:700';
+        const pHTML=e.player?`<span style="${pStyle};margin-left:6px;font-family:'Barlow Condensed',sans-serif;letter-spacing:0.04em">${e.player}</span>`:'';
+        return `<div class="tl-event"><span class="tl-time">${e.time}'</span><span class="tl-desc">${e.desc}</span>${pHTML}</div>`;
+      }).join('')}</div>`;
+
+    const rp = pl => pl.map(p=>{
+      const pos=posLabel(p.pos);
+      return `<div class="lineup-player"><span class="pos-badge ${pos}">${pos}</span>${p.name}</div>`;
+    }).join('');
+    lineupHTML=`<div class="ad-section-title">선발 라인업</div>
+      <div class="lineup-grid">
+        <div><div class="lineup-col-title ars">🔴 Arsenal</div>${rp(detail.lineups.ars)}</div>
+        <div><div class="lineup-col-title opp">⬜ ${oppTeam}</div>${rp(detail.lineups.opp)}</div>
+      </div>`;
+  } else {
+    lineupHTML=`<div class="ad-section-title" style="margin-top:0">상세 데이터</div>
+      <div style="color:var(--muted);font-family:'Barlow Condensed',sans-serif;font-size:0.82rem;padding:16px 0">이 경기의 상세 데이터는 준비 중입니다.</div>`;
+  }
+
+  document.getElementById('analysis-detail').innerHTML=`
+    <div class="ad-header">
+      <div class="ad-header-top">
+        <div class="ad-matchup">${m.home} vs ${m.away}</div>
+        <div class="ad-score-big">${m.homeScore} – ${m.awayScore}</div>
+      </div>
+      <div class="ad-meta">${formatDate(m.date)} · ${kst} KST · ${compTag} · ${m.round||''}</div>
+    </div>
+    <div class="ad-rating-row">
+      <span class="ad-rating-label">경기 평점</span>
+      <div class="stars" id="stars-${matchId}">${starsHTML}</div>
+      <span class="ad-rating-val" id="rating-val-${matchId}">${rating ? rating+' / 5' : '—'}</span>
+    </div>
+    <div class="ad-body">${statsHTML}${timelineHTML}${lineupHTML}</div>`;
+}
+
+function hoverStars(matchId, n) {
+  document.querySelectorAll(`#stars-${matchId} .star`).forEach((s,i) => s.classList.toggle('filled', i<n));
+}
+function resetStars(matchId) {
+  const r = matchRatings[matchId]||0;
+  document.querySelectorAll(`#stars-${matchId} .star`).forEach((s,i) => s.classList.toggle('filled', i<r));
+}
+function setRating(matchId, rating) {
+  matchRatings[matchId] = rating;
+  LS.set('arsenal_match_ratings', matchRatings);
+  document.getElementById(`rating-val-${matchId}`).textContent = rating+' / 5';
+  resetStars(matchId);
+  renderAnalysisList();
+  document.getElementById(`aml-${matchId}`)?.classList.add('active');
+}
+
+// ===== NAV =====
+function showTab(tab, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(tab).classList.add('active');
+  if (btn) btn.classList.add('active');
+  if (tab==='analysis') renderAnalysisList();
+}
+
+// ===== INIT =====
+function refreshStandings() {
+  localStorage.removeItem(API_CACHE_KEY);
+  const statusEl = document.getElementById('standings-api-status');
+  if (statusEl) statusEl.textContent = '⏳ 새로고침 중...';
+  fetchLiveStandings();
+}
+
+renderOverview();
+renderSchedule();
+renderStandings();       // 폴백 데이터 즉시 표시
+fetchLiveStandings();    // 이후 API / 캐시로 덮어쓰기
+populateMatchSelect();
+renderNotes();
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "updated": "2026-03-10 10:00 UTC",
+  "standings": [
+    { "rank":1,  "name":"Arsenal FC",            "abbr":"ARS", "w":20, "d":7,  "l":3,  "pts":67, "gf":58, "ga":23, "gd":35,  "played":30 },
+    { "rank":2,  "name":"Manchester City",        "abbr":"MCI", "w":18, "d":6,  "l":5,  "pts":60, "gf":61, "ga":36, "gd":25,  "played":29 },
+    { "rank":3,  "name":"Manchester United",      "abbr":"MUN", "w":14, "d":9,  "l":6,  "pts":51, "gf":48, "ga":40, "gd":8,   "played":29 },
+    { "rank":4,  "name":"Aston Villa",            "abbr":"AVL", "w":15, "d":6,  "l":8,  "pts":51, "gf":52, "ga":41, "gd":11,  "played":29 },
+    { "rank":5,  "name":"Chelsea FC",             "abbr":"CFC", "w":13, "d":9,  "l":7,  "pts":48, "gf":50, "ga":40, "gd":10,  "played":29 },
+    { "rank":6,  "name":"Liverpool FC",           "abbr":"LFC", "w":14, "d":6,  "l":9,  "pts":48, "gf":47, "ga":43, "gd":4,   "played":29 },
+    { "rank":7,  "name":"Brentford FC",           "abbr":"BRE", "w":13, "d":5,  "l":11, "pts":44, "gf":51, "ga":46, "gd":5,   "played":29 },
+    { "rank":8,  "name":"Everton FC",             "abbr":"EVE", "w":12, "d":7,  "l":10, "pts":43, "gf":38, "ga":36, "gd":2,   "played":29 },
+    { "rank":9,  "name":"AFC Bournemouth",        "abbr":"BOU", "w":9,  "d":13, "l":7,  "pts":40, "gf":36, "ga":32, "gd":4,   "played":29 },
+    { "rank":10, "name":"Fulham FC",              "abbr":"FUL", "w":12, "d":4,  "l":13, "pts":40, "gf":43, "ga":47, "gd":-4,  "played":29 },
+    { "rank":11, "name":"Sunderland AFC",         "abbr":"SUN", "w":10, "d":10, "l":9,  "pts":40, "gf":36, "ga":38, "gd":-2,  "played":29 },
+    { "rank":12, "name":"Newcastle United",       "abbr":"NEW", "w":11, "d":6,  "l":12, "pts":39, "gf":40, "ga":44, "gd":-4,  "played":29 },
+    { "rank":13, "name":"Crystal Palace",         "abbr":"CRY", "w":10, "d":8,  "l":11, "pts":38, "gf":36, "ga":40, "gd":-4,  "played":29 },
+    { "rank":14, "name":"Brighton & Hove Albion", "abbr":"BRI", "w":9,  "d":10, "l":10, "pts":37, "gf":37, "ga":40, "gd":-3,  "played":29 },
+    { "rank":15, "name":"Leeds United",           "abbr":"LEE", "w":7,  "d":10, "l":12, "pts":31, "gf":30, "ga":44, "gd":-14, "played":29 },
+    { "rank":16, "name":"Tottenham Hotspur",      "abbr":"TOT", "w":7,  "d":8,  "l":14, "pts":29, "gf":30, "ga":50, "gd":-20, "played":29 },
+    { "rank":17, "name":"Nottingham Forest",      "abbr":"NFO", "w":7,  "d":7,  "l":15, "pts":28, "gf":27, "ga":49, "gd":-22, "played":29 },
+    { "rank":18, "name":"West Ham United",        "abbr":"WHU", "w":7,  "d":7,  "l":15, "pts":28, "gf":30, "ga":54, "gd":-24, "played":29 },
+    { "rank":19, "name":"Burnley FC",             "abbr":"BUR", "w":4,  "d":7,  "l":18, "pts":19, "gf":22, "ga":58, "gd":-36, "played":29 },
+    { "rank":20, "name":"Wolverhampton Wanderers","abbr":"WOL", "w":3,  "d":7,  "l":20, "pts":16, "gf":22, "ga":65, "gd":-43, "played":30 }
+  ]
+}

@@ -614,7 +614,7 @@ async function fetchLiveStandings() {
     const json = await res.json();
     const table = json.standings.find(s => s.type === 'TOTAL').table;
 
-    enrichedStandings = table.map(t => ({
+    enrichedStandings = table.sort((a,b) => b.points - a.points || b.goalDifference - a.goalDifference).map(t => ({
       rank:   t.position,
       name:   TEAM_NAME_MAP[t.team.name] || t.team.name,
       abbr:   t.team.tla,
@@ -678,8 +678,8 @@ const gameDetails = {
 let notes       = LS.get('arsenal_notes')          || [];
 let matchRatings= LS.get('arsenal_match_ratings')  || {};
 let currentComp = 'all';
-let teamSortKey = 'pts';
-let teamSortDir = -1;
+let teamSortKey = 'rank';
+let teamSortDir = 1;
 const playerSort = { goals:{key:'goals',dir:-1}, assists:{key:'assists',dir:-1} };
 
 // ===== HELPERS =====
@@ -771,7 +771,8 @@ function sortTeam(key) {
 function renderStandings() {
   const data = [...enrichedStandings].sort((a,b) => {
     const av=a[teamSortKey], bv=b[teamSortKey];
-    return typeof av==='string' ? teamSortDir*av.localeCompare(bv) : teamSortDir*(bv-av);
+    if (typeof av==='string') return teamSortDir*av.localeCompare(bv);
+    return teamSortKey==='rank' ? teamSortDir*(av-bv) : teamSortDir*(bv-av);
   });
   document.querySelectorAll('#standings-table .sort-th').forEach(th => {
     const key=th.dataset.key;

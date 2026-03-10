@@ -583,58 +583,19 @@ const TEAM_NAME_MAP = {
 
 async function fetchLiveStandings() {
   const statusEl = document.getElementById('standings-api-status');
-
-  // 1) 캐시 확인
-  try {
-    const cached = localStorage.getItem(API_CACHE_KEY);
-    if (cached) {
-      const { ts, data } = JSON.parse(cached);
-      if (Date.now() - ts < API_CACHE_TTL) {
-        enrichedStandings = data;
-        if (statusEl) statusEl.textContent = `✅ 캐시 데이터 (${new Date(ts).toLocaleTimeString('ko-KR')})`;
-        renderStandings();
-        return;
-      }
-    }
-  } catch(e) {}
-
-  // 2) API 키 없으면 폴백
-  if (!API_KEY) {
-    if (statusEl) statusEl.innerHTML = `📋 하드코딩 데이터 (2026-03-10) &nbsp;·&nbsp; <a href="https://www.football-data.org" target="_blank" style="color:var(--gold)">API 키 발급받기</a>`;
-    return;
-  }
-
-  // 3) 실시간 fetch
   if (statusEl) statusEl.textContent = '⏳ 순위 불러오는 중...';
   try {
-    const res = await fetch('https://api.football-data.org/v4/competitions/PL/standings', {
-      headers: { 'X-Auth-Token': API_KEY }
-    });
+    // GitHub Actions가 자동 생성한 data.json을 읽음 (CORS 문제 없음)
+    const res = await fetch('data.json?t=' + Date.now()); // 캐시 방지
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const json = await res.json();
-    const table = json.standings.find(s => s.type === 'TOTAL').table;
 
-    enrichedStandings = table.sort((a,b) => b.points - a.points || b.goalDifference - a.goalDifference).map(t => ({
-      rank:   t.position,
-      name:   TEAM_NAME_MAP[t.team.name] || t.team.name,
-      abbr:   t.team.tla,
-      w:      t.won,
-      d:      t.draw,
-      l:      t.lost,
-      pts:    t.points,
-      gf:     t.goalsFor,
-      ga:     t.goalsAgainst,
-      gd:     t.goalDifference,
-      played: t.playedGames,
-    }));
+    enrichedStandings = json.standings.sort((a,b) => a.rank - b.rank);
 
-    // 캐시 저장
-    localStorage.setItem(API_CACHE_KEY, JSON.stringify({ ts: Date.now(), data: enrichedStandings }));
-
-    if (statusEl) statusEl.textContent = `✅ 실시간 업데이트 (${new Date().toLocaleTimeString('ko-KR')})`;
+    if (statusEl) statusEl.textContent = `✅ 업데이트: ${json.updated}`;
     renderStandings();
   } catch(err) {
-    if (statusEl) statusEl.textContent = `⚠️ API 오류 — 하드코딩 데이터 표시 중 (${err.message})`;
+    if (statusEl) statusEl.textContent = `⚠️ data.json 로드 실패 — 기본 데이터 표시 중`;
     enrichedStandings = STANDINGS_FALLBACK;
     renderStandings();
   }

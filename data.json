@@ -1,17 +1,17 @@
 {
-  "updated": "2026-03-14 18:28 UTC",
+  "updated": "2026-03-15 01:48 UTC",
   "standings": [
     {
       "rank": 1,
       "name": "Arsenal FC",
       "abbr": "ARS",
-      "w": 20,
-      "d": 8,
+      "w": 21,
+      "d": 7,
       "l": 3,
-      "pts": 68,
-      "gf": 59,
+      "pts": 70,
+      "gf": 61,
       "ga": 22,
-      "gd": 37,
+      "gd": 39,
       "played": 31
     },
     {
@@ -19,13 +19,13 @@
       "name": "Manchester City FC",
       "abbr": "MCI",
       "w": 18,
-      "d": 6,
+      "d": 7,
       "l": 5,
-      "pts": 60,
-      "gf": 59,
-      "ga": 27,
+      "pts": 61,
+      "gf": 60,
+      "ga": 28,
       "gd": 32,
-      "played": 29
+      "played": 30
     },
     {
       "rank": 3,
@@ -97,12 +97,12 @@
       "name": "Everton FC",
       "abbr": "EVE",
       "w": 12,
-      "d": 8,
-      "l": 10,
-      "pts": 44,
+      "d": 7,
+      "l": 11,
+      "pts": 43,
       "gf": 34,
-      "ga": 33,
-      "gd": 1,
+      "ga": 35,
+      "gd": -1,
       "played": 30
     },
     {
@@ -211,6 +211,19 @@
     },
     {
       "rank": 17,
+      "name": "West Ham United FC",
+      "abbr": "WHU",
+      "w": 7,
+      "d": 8,
+      "l": 15,
+      "pts": 29,
+      "gf": 36,
+      "ga": 55,
+      "gd": -19,
+      "played": 30
+    },
+    {
+      "rank": 18,
       "name": "Nottingham Forest FC",
       "abbr": "NOT",
       "w": 7,
@@ -220,19 +233,6 @@
       "gf": 28,
       "ga": 43,
       "gd": -15,
-      "played": 29
-    },
-    {
-      "rank": 18,
-      "name": "West Ham United FC",
-      "abbr": "WHU",
-      "w": 7,
-      "d": 7,
-      "l": 15,
-      "pts": 28,
-      "gf": 35,
-      "ga": 54,
-      "gd": -19,
       "played": 29
     },
     {

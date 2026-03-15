@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-15 12:37 UTC",
+  "updated": "2026-03-15 18:29 UTC",
   "standings": [
     {
       "rank": 1,
@@ -31,30 +31,43 @@
       "rank": 3,
       "name": "Manchester United FC",
       "abbr": "MUN",
-      "w": 14,
+      "w": 15,
       "d": 9,
       "l": 6,
-      "pts": 51,
-      "gf": 51,
-      "ga": 40,
-      "gd": 11,
-      "played": 29
+      "pts": 54,
+      "gf": 54,
+      "ga": 41,
+      "gd": 13,
+      "played": 30
     },
     {
       "rank": 4,
+      "name": "Liverpool FC",
+      "abbr": "LIV",
+      "w": 15,
+      "d": 6,
+      "l": 9,
+      "pts": 51,
+      "gf": 49,
+      "ga": 39,
+      "gd": 10,
+      "played": 30
+    },
+    {
+      "rank": 5,
       "name": "Aston Villa FC",
       "abbr": "AVL",
       "w": 15,
       "d": 6,
-      "l": 8,
+      "l": 9,
       "pts": 51,
-      "gf": 39,
-      "ga": 34,
-      "gd": 5,
-      "played": 29
+      "gf": 40,
+      "ga": 37,
+      "gd": 3,
+      "played": 30
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "Chelsea FC",
       "abbr": "CHE",
       "w": 13,
@@ -65,19 +78,6 @@
       "ga": 35,
       "gd": 18,
       "played": 30
-    },
-    {
-      "rank": 6,
-      "name": "Liverpool FC",
-      "abbr": "LIV",
-      "w": 14,
-      "d": 6,
-      "l": 9,
-      "pts": 48,
-      "gf": 48,
-      "ga": 39,
-      "gd": 9,
-      "played": 29
     },
     {
       "rank": 7,
@@ -133,6 +133,19 @@
     },
     {
       "rank": 11,
+      "name": "Fulham FC",
+      "abbr": "FUL",
+      "w": 12,
+      "d": 5,
+      "l": 13,
+      "pts": 41,
+      "gf": 40,
+      "ga": 43,
+      "gd": -3,
+      "played": 30
+    },
+    {
+      "rank": 12,
       "name": "Brighton & Hove Albion FC",
       "abbr": "BHA",
       "w": 10,
@@ -143,19 +156,6 @@
       "ga": 36,
       "gd": 3,
       "played": 30
-    },
-    {
-      "rank": 12,
-      "name": "Fulham FC",
-      "abbr": "FUL",
-      "w": 12,
-      "d": 4,
-      "l": 13,
-      "pts": 40,
-      "gf": 40,
-      "ga": 43,
-      "gd": -3,
-      "played": 29
     },
     {
       "rank": 13,
@@ -175,26 +175,26 @@
       "name": "Crystal Palace FC",
       "abbr": "CRY",
       "w": 10,
-      "d": 8,
+      "d": 9,
       "l": 11,
-      "pts": 38,
+      "pts": 39,
       "gf": 33,
       "ga": 35,
       "gd": -2,
-      "played": 29
+      "played": 30
     },
     {
       "rank": 15,
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 7,
-      "d": 10,
+      "d": 11,
       "l": 12,
-      "pts": 31,
+      "pts": 32,
       "gf": 37,
       "ga": 48,
       "gd": -11,
-      "played": 29
+      "played": 30
     },
     {
       "rank": 16,
@@ -202,15 +202,28 @@
       "abbr": "TOT",
       "w": 7,
       "d": 8,
-      "l": 14,
+      "l": 15,
       "pts": 29,
       "gf": 39,
-      "ga": 46,
-      "gd": -7,
-      "played": 29
+      "ga": 47,
+      "gd": -8,
+      "played": 30
     },
     {
       "rank": 17,
+      "name": "Nottingham Forest FC",
+      "abbr": "NOT",
+      "w": 7,
+      "d": 8,
+      "l": 15,
+      "pts": 29,
+      "gf": 28,
+      "ga": 43,
+      "gd": -15,
+      "played": 30
+    },
+    {
+      "rank": 18,
       "name": "West Ham United FC",
       "abbr": "WHU",
       "w": 7,
@@ -221,19 +234,6 @@
       "ga": 55,
       "gd": -19,
       "played": 30
-    },
-    {
-      "rank": 18,
-      "name": "Nottingham Forest FC",
-      "abbr": "NOT",
-      "w": 7,
-      "d": 7,
-      "l": 15,
-      "pts": 28,
-      "gf": 28,
-      "ga": 43,
-      "gd": -15,
-      "played": 29
     },
     {
       "rank": 19,

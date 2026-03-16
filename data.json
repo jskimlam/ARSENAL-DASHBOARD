@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-15 18:29 UTC",
+  "updated": "2026-03-16 01:49 UTC",
   "standings": [
     {
       "rank": 1,
@@ -42,19 +42,6 @@
     },
     {
       "rank": 4,
-      "name": "Liverpool FC",
-      "abbr": "LIV",
-      "w": 15,
-      "d": 6,
-      "l": 9,
-      "pts": 51,
-      "gf": 49,
-      "ga": 39,
-      "gd": 10,
-      "played": 30
-    },
-    {
-      "rank": 5,
       "name": "Aston Villa FC",
       "abbr": "AVL",
       "w": 15,
@@ -64,6 +51,19 @@
       "gf": 40,
       "ga": 37,
       "gd": 3,
+      "played": 30
+    },
+    {
+      "rank": 5,
+      "name": "Liverpool FC",
+      "abbr": "LIV",
+      "w": 14,
+      "d": 7,
+      "l": 9,
+      "pts": 49,
+      "gf": 49,
+      "ga": 40,
+      "gd": 9,
       "played": 30
     },
     {
@@ -201,12 +201,12 @@
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 7,
-      "d": 8,
-      "l": 15,
-      "pts": 29,
-      "gf": 39,
+      "d": 9,
+      "l": 14,
+      "pts": 30,
+      "gf": 40,
       "ga": 47,
-      "gd": -8,
+      "gd": -7,
       "played": 30
     },
     {

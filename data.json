@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-16 18:52 UTC",
+  "updated": "2026-03-17 01:26 UTC",
   "standings": [
     {
       "rank": 1,
@@ -84,13 +84,13 @@
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 13,
-      "d": 5,
+      "d": 6,
       "l": 11,
-      "pts": 44,
-      "gf": 44,
-      "ga": 40,
+      "pts": 45,
+      "gf": 46,
+      "ga": 42,
       "gd": 4,
-      "played": 29
+      "played": 30
     },
     {
       "rank": 8,
@@ -253,13 +253,13 @@
       "name": "Wolverhampton Wanderers FC",
       "abbr": "WOL",
       "w": 3,
-      "d": 7,
+      "d": 8,
       "l": 20,
-      "pts": 16,
-      "gf": 22,
-      "ga": 52,
+      "pts": 17,
+      "gf": 24,
+      "ga": 54,
       "gd": -30,
-      "played": 30
+      "played": 31
     }
   ]
 }

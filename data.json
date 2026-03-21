@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-21 06:34 UTC",
+  "updated": "2026-03-21 12:33 UTC",
   "standings": [
     {
       "rank": 1,
@@ -58,13 +58,13 @@
       "name": "Liverpool FC",
       "abbr": "LIV",
       "w": 14,
-      "d": 7,
+      "d": 8,
       "l": 9,
-      "pts": 49,
+      "pts": 50,
       "gf": 49,
       "ga": 40,
       "gd": 9,
-      "played": 30
+      "played": 31
     },
     {
       "rank": 6,
@@ -133,6 +133,19 @@
     },
     {
       "rank": 11,
+      "name": "Brighton & Hove Albion FC",
+      "abbr": "BHA",
+      "w": 10,
+      "d": 11,
+      "l": 10,
+      "pts": 41,
+      "gf": 39,
+      "ga": 36,
+      "gd": 3,
+      "played": 31
+    },
+    {
+      "rank": 12,
       "name": "Fulham FC",
       "abbr": "FUL",
       "w": 12,
@@ -142,19 +155,6 @@
       "gf": 40,
       "ga": 43,
       "gd": -3,
-      "played": 30
-    },
-    {
-      "rank": 12,
-      "name": "Brighton & Hove Albion FC",
-      "abbr": "BHA",
-      "w": 10,
-      "d": 10,
-      "l": 10,
-      "pts": 40,
-      "gf": 39,
-      "ga": 36,
-      "gd": 3,
       "played": 30
     },
     {

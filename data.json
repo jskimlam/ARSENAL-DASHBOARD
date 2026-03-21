@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-21 12:33 UTC",
+  "updated": "2026-03-21 18:27 UTC",
   "standings": [
     {
       "rank": 1,
@@ -55,29 +55,29 @@
     },
     {
       "rank": 5,
-      "name": "Liverpool FC",
-      "abbr": "LIV",
-      "w": 14,
-      "d": 8,
-      "l": 9,
-      "pts": 50,
-      "gf": 49,
-      "ga": 40,
-      "gd": 9,
+      "name": "Chelsea FC",
+      "abbr": "CHE",
+      "w": 13,
+      "d": 10,
+      "l": 8,
+      "pts": 49,
+      "gf": 53,
+      "ga": 35,
+      "gd": 18,
       "played": 31
     },
     {
       "rank": 6,
-      "name": "Chelsea FC",
-      "abbr": "CHE",
-      "w": 13,
-      "d": 9,
-      "l": 8,
-      "pts": 48,
-      "gf": 53,
-      "ga": 35,
-      "gd": 18,
-      "played": 30
+      "name": "Liverpool FC",
+      "abbr": "LIV",
+      "w": 14,
+      "d": 7,
+      "l": 10,
+      "pts": 49,
+      "gf": 50,
+      "ga": 42,
+      "gd": 8,
+      "played": 31
     },
     {
       "rank": 7,
@@ -94,19 +94,45 @@
     },
     {
       "rank": 8,
-      "name": "Everton FC",
-      "abbr": "EVE",
-      "w": 12,
-      "d": 7,
-      "l": 11,
-      "pts": 43,
-      "gf": 34,
-      "ga": 35,
+      "name": "Fulham FC",
+      "abbr": "FUL",
+      "w": 13,
+      "d": 5,
+      "l": 13,
+      "pts": 44,
+      "gf": 43,
+      "ga": 44,
       "gd": -1,
-      "played": 30
+      "played": 31
     },
     {
       "rank": 9,
+      "name": "Everton FC",
+      "abbr": "EVE",
+      "w": 12,
+      "d": 8,
+      "l": 11,
+      "pts": 44,
+      "gf": 34,
+      "ga": 35,
+      "gd": -1,
+      "played": 31
+    },
+    {
+      "rank": 10,
+      "name": "Brighton & Hove Albion FC",
+      "abbr": "BHA",
+      "w": 11,
+      "d": 10,
+      "l": 10,
+      "pts": 43,
+      "gf": 41,
+      "ga": 37,
+      "gd": 4,
+      "played": 31
+    },
+    {
+      "rank": 11,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 12,
@@ -119,7 +145,7 @@
       "played": 30
     },
     {
-      "rank": 10,
+      "rank": 12,
       "name": "AFC Bournemouth",
       "abbr": "BOU",
       "w": 9,
@@ -130,32 +156,6 @@
       "ga": 48,
       "gd": -2,
       "played": 31
-    },
-    {
-      "rank": 11,
-      "name": "Brighton & Hove Albion FC",
-      "abbr": "BHA",
-      "w": 10,
-      "d": 11,
-      "l": 10,
-      "pts": 41,
-      "gf": 39,
-      "ga": 36,
-      "gd": 3,
-      "played": 31
-    },
-    {
-      "rank": 12,
-      "name": "Fulham FC",
-      "abbr": "FUL",
-      "w": 12,
-      "d": 5,
-      "l": 13,
-      "pts": 41,
-      "gf": 40,
-      "ga": 43,
-      "gd": -3,
-      "played": 30
     },
     {
       "rank": 13,
@@ -241,12 +241,12 @@
       "abbr": "BUR",
       "w": 4,
       "d": 8,
-      "l": 18,
+      "l": 19,
       "pts": 20,
-      "gf": 32,
-      "ga": 58,
-      "gd": -26,
-      "played": 30
+      "gf": 33,
+      "ga": 61,
+      "gd": -28,
+      "played": 31
     },
     {
       "rank": 20,

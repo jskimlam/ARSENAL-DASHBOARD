@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-21 18:27 UTC",
+  "updated": "2026-03-22 01:41 UTC",
   "standings": [
     {
       "rank": 1,
@@ -55,19 +55,6 @@
     },
     {
       "rank": 5,
-      "name": "Chelsea FC",
-      "abbr": "CHE",
-      "w": 13,
-      "d": 10,
-      "l": 8,
-      "pts": 49,
-      "gf": 53,
-      "ga": 35,
-      "gd": 18,
-      "played": 31
-    },
-    {
-      "rank": 6,
       "name": "Liverpool FC",
       "abbr": "LIV",
       "w": 14,
@@ -80,20 +67,46 @@
       "played": 31
     },
     {
+      "rank": 6,
+      "name": "Chelsea FC",
+      "abbr": "CHE",
+      "w": 13,
+      "d": 9,
+      "l": 9,
+      "pts": 48,
+      "gf": 53,
+      "ga": 38,
+      "gd": 15,
+      "played": 31
+    },
+    {
       "rank": 7,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 13,
-      "d": 6,
+      "d": 7,
       "l": 11,
-      "pts": 45,
+      "pts": 46,
       "gf": 46,
       "ga": 42,
       "gd": 4,
-      "played": 30
+      "played": 31
     },
     {
       "rank": 8,
+      "name": "Everton FC",
+      "abbr": "EVE",
+      "w": 13,
+      "d": 7,
+      "l": 11,
+      "pts": 46,
+      "gf": 37,
+      "ga": 35,
+      "gd": 2,
+      "played": 31
+    },
+    {
+      "rank": 9,
       "name": "Fulham FC",
       "abbr": "FUL",
       "w": 13,
@@ -102,19 +115,6 @@
       "pts": 44,
       "gf": 43,
       "ga": 44,
-      "gd": -1,
-      "played": 31
-    },
-    {
-      "rank": 9,
-      "name": "Everton FC",
-      "abbr": "EVE",
-      "w": 12,
-      "d": 8,
-      "l": 11,
-      "pts": 44,
-      "gf": 34,
-      "ga": 35,
       "gd": -1,
       "played": 31
     },
@@ -188,13 +188,13 @@
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 7,
-      "d": 11,
+      "d": 12,
       "l": 12,
-      "pts": 32,
+      "pts": 33,
       "gf": 37,
       "ga": 48,
       "gd": -11,
-      "played": 30
+      "played": 31
     },
     {
       "rank": 16,

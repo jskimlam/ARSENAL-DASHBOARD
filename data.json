@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-22 12:35 UTC",
+  "updated": "2026-03-22 18:27 UTC",
   "standings": [
     {
       "rank": 1,
@@ -44,14 +44,14 @@
       "rank": 4,
       "name": "Aston Villa FC",
       "abbr": "AVL",
-      "w": 15,
+      "w": 16,
       "d": 6,
       "l": 9,
-      "pts": 51,
-      "gf": 40,
+      "pts": 54,
+      "gf": 42,
       "ga": 37,
-      "gd": 3,
-      "played": 30
+      "gd": 5,
+      "played": 31
     },
     {
       "rank": 5,
@@ -107,19 +107,6 @@
     },
     {
       "rank": 9,
-      "name": "Newcastle United FC",
-      "abbr": "NEW",
-      "w": 13,
-      "d": 6,
-      "l": 12,
-      "pts": 45,
-      "gf": 44,
-      "ga": 43,
-      "gd": 1,
-      "played": 31
-    },
-    {
-      "rank": 10,
       "name": "Fulham FC",
       "abbr": "FUL",
       "w": 13,
@@ -132,7 +119,7 @@
       "played": 31
     },
     {
-      "rank": 11,
+      "rank": 10,
       "name": "Brighton & Hove Albion FC",
       "abbr": "BHA",
       "w": 11,
@@ -145,7 +132,33 @@
       "played": 31
     },
     {
+      "rank": 11,
+      "name": "Sunderland AFC",
+      "abbr": "SUN",
+      "w": 11,
+      "d": 10,
+      "l": 10,
+      "pts": 43,
+      "gf": 32,
+      "ga": 36,
+      "gd": -4,
+      "played": 31
+    },
+    {
       "rank": 12,
+      "name": "Newcastle United FC",
+      "abbr": "NEW",
+      "w": 12,
+      "d": 6,
+      "l": 13,
+      "pts": 42,
+      "gf": 44,
+      "ga": 45,
+      "gd": -1,
+      "played": 31
+    },
+    {
+      "rank": 13,
       "name": "AFC Bournemouth",
       "abbr": "BOU",
       "w": 9,
@@ -155,19 +168,6 @@
       "gf": 46,
       "ga": 48,
       "gd": -2,
-      "played": 31
-    },
-    {
-      "rank": 13,
-      "name": "Sunderland AFC",
-      "abbr": "SUN",
-      "w": 10,
-      "d": 10,
-      "l": 11,
-      "pts": 40,
-      "gf": 30,
-      "ga": 36,
-      "gd": -6,
       "played": 31
     },
     {
@@ -198,29 +198,29 @@
     },
     {
       "rank": 16,
+      "name": "Nottingham Forest FC",
+      "abbr": "NOT",
+      "w": 8,
+      "d": 8,
+      "l": 15,
+      "pts": 32,
+      "gf": 31,
+      "ga": 43,
+      "gd": -12,
+      "played": 31
+    },
+    {
+      "rank": 17,
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 7,
       "d": 9,
-      "l": 14,
+      "l": 15,
       "pts": 30,
       "gf": 40,
-      "ga": 47,
-      "gd": -7,
-      "played": 30
-    },
-    {
-      "rank": 17,
-      "name": "Nottingham Forest FC",
-      "abbr": "NOT",
-      "w": 7,
-      "d": 8,
-      "l": 15,
-      "pts": 29,
-      "gf": 28,
-      "ga": 43,
-      "gd": -15,
-      "played": 30
+      "ga": 50,
+      "gd": -10,
+      "played": 31
     },
     {
       "rank": 18,
@@ -228,12 +228,12 @@
       "abbr": "WHU",
       "w": 7,
       "d": 8,
-      "l": 15,
+      "l": 16,
       "pts": 29,
       "gf": 36,
-      "ga": 55,
-      "gd": -19,
-      "played": 30
+      "ga": 57,
+      "gd": -21,
+      "played": 31
     },
     {
       "rank": 19,

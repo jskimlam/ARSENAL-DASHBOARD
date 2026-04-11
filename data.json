@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-10 18:41 UTC",
+  "updated": "2026-04-11 01:45 UTC",
   "standings": [
     {
       "rank": 1,
@@ -211,6 +211,19 @@
     },
     {
       "rank": 17,
+      "name": "West Ham United FC",
+      "abbr": "WHU",
+      "w": 8,
+      "d": 8,
+      "l": 16,
+      "pts": 32,
+      "gf": 40,
+      "ga": 57,
+      "gd": -17,
+      "played": 32
+    },
+    {
+      "rank": 18,
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 7,
@@ -220,19 +233,6 @@
       "gf": 40,
       "ga": 50,
       "gd": -10,
-      "played": 31
-    },
-    {
-      "rank": 18,
-      "name": "West Ham United FC",
-      "abbr": "WHU",
-      "w": 7,
-      "d": 8,
-      "l": 16,
-      "pts": 29,
-      "gf": 36,
-      "ga": 57,
-      "gd": -21,
       "played": 31
     },
     {
@@ -254,12 +254,12 @@
       "abbr": "WOL",
       "w": 3,
       "d": 8,
-      "l": 20,
+      "l": 21,
       "pts": 17,
       "gf": 24,
-      "ga": 54,
-      "gd": -30,
-      "played": 31
+      "ga": 58,
+      "gd": -34,
+      "played": 32
     }
   ]
 }

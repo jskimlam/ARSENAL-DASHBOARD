@@ -1,18 +1,18 @@
 {
-  "updated": "2026-04-11 06:53 UTC",
+  "updated": "2026-04-11 12:40 UTC",
   "standings": [
     {
       "rank": 1,
       "name": "Arsenal FC",
       "abbr": "ARS",
       "w": 21,
-      "d": 7,
+      "d": 8,
       "l": 3,
-      "pts": 70,
-      "gf": 61,
-      "ga": 22,
+      "pts": 71,
+      "gf": 62,
+      "ga": 23,
       "gd": 39,
-      "played": 31
+      "played": 32
     },
     {
       "rank": 2,
@@ -133,6 +133,19 @@
     },
     {
       "rank": 11,
+      "name": "AFC Bournemouth",
+      "abbr": "BOU",
+      "w": 9,
+      "d": 16,
+      "l": 7,
+      "pts": 43,
+      "gf": 47,
+      "ga": 49,
+      "gd": -2,
+      "played": 32
+    },
+    {
+      "rank": 12,
       "name": "Sunderland AFC",
       "abbr": "SUN",
       "w": 11,
@@ -145,7 +158,7 @@
       "played": 31
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 12,
@@ -155,19 +168,6 @@
       "gf": 44,
       "ga": 45,
       "gd": -1,
-      "played": 31
-    },
-    {
-      "rank": 13,
-      "name": "AFC Bournemouth",
-      "abbr": "BOU",
-      "w": 9,
-      "d": 15,
-      "l": 7,
-      "pts": 42,
-      "gf": 46,
-      "ga": 48,
-      "gd": -2,
       "played": 31
     },
     {

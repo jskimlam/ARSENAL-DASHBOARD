@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-12 12:44 UTC",
+  "updated": "2026-04-12 18:37 UTC",
   "standings": [
     {
       "rank": 1,
@@ -18,14 +18,14 @@
       "rank": 2,
       "name": "Manchester City FC",
       "abbr": "MCI",
-      "w": 18,
+      "w": 19,
       "d": 7,
       "l": 5,
-      "pts": 61,
-      "gf": 60,
+      "pts": 64,
+      "gf": 63,
       "ga": 28,
-      "gd": 32,
-      "played": 30
+      "gd": 35,
+      "played": 31
     },
     {
       "rank": 3,
@@ -45,13 +45,13 @@
       "name": "Aston Villa FC",
       "abbr": "AVL",
       "w": 16,
-      "d": 6,
+      "d": 7,
       "l": 9,
-      "pts": 54,
-      "gf": 42,
-      "ga": 37,
+      "pts": 55,
+      "gf": 43,
+      "ga": 38,
       "gd": 5,
-      "played": 31
+      "played": 32
     },
     {
       "rank": 5,
@@ -72,12 +72,12 @@
       "abbr": "CHE",
       "w": 13,
       "d": 9,
-      "l": 9,
+      "l": 10,
       "pts": 48,
       "gf": 53,
-      "ga": 38,
-      "gd": 15,
-      "played": 31
+      "ga": 41,
+      "gd": 12,
+      "played": 32
     },
     {
       "rank": 7,
@@ -120,6 +120,19 @@
     },
     {
       "rank": 10,
+      "name": "Sunderland AFC",
+      "abbr": "SUN",
+      "w": 12,
+      "d": 10,
+      "l": 10,
+      "pts": 46,
+      "gf": 33,
+      "ga": 36,
+      "gd": -3,
+      "played": 32
+    },
+    {
+      "rank": 11,
       "name": "AFC Bournemouth",
       "abbr": "BOU",
       "w": 10,
@@ -132,7 +145,7 @@
       "played": 32
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Fulham FC",
       "abbr": "FUL",
       "w": 13,
@@ -145,43 +158,30 @@
       "played": 32
     },
     {
-      "rank": 12,
-      "name": "Sunderland AFC",
-      "abbr": "SUN",
-      "w": 11,
-      "d": 10,
-      "l": 10,
-      "pts": 43,
-      "gf": 32,
-      "ga": 36,
-      "gd": -4,
-      "played": 31
-    },
-    {
       "rank": 13,
-      "name": "Newcastle United FC",
-      "abbr": "NEW",
-      "w": 12,
-      "d": 6,
-      "l": 13,
+      "name": "Crystal Palace FC",
+      "abbr": "CRY",
+      "w": 11,
+      "d": 9,
+      "l": 11,
       "pts": 42,
-      "gf": 44,
-      "ga": 45,
+      "gf": 35,
+      "ga": 36,
       "gd": -1,
       "played": 31
     },
     {
       "rank": 14,
-      "name": "Crystal Palace FC",
-      "abbr": "CRY",
-      "w": 10,
-      "d": 9,
-      "l": 11,
-      "pts": 39,
-      "gf": 33,
-      "ga": 35,
+      "name": "Newcastle United FC",
+      "abbr": "NEW",
+      "w": 12,
+      "d": 6,
+      "l": 14,
+      "pts": 42,
+      "gf": 45,
+      "ga": 47,
       "gd": -2,
-      "played": 30
+      "played": 32
     },
     {
       "rank": 15,
@@ -201,13 +201,13 @@
       "name": "Nottingham Forest FC",
       "abbr": "NOT",
       "w": 8,
-      "d": 8,
+      "d": 9,
       "l": 15,
-      "pts": 32,
-      "gf": 31,
-      "ga": 43,
+      "pts": 33,
+      "gf": 32,
+      "ga": 44,
       "gd": -12,
-      "played": 31
+      "played": 32
     },
     {
       "rank": 17,
@@ -228,12 +228,12 @@
       "abbr": "TOT",
       "w": 7,
       "d": 9,
-      "l": 15,
+      "l": 16,
       "pts": 30,
       "gf": 40,
-      "ga": 50,
-      "gd": -10,
-      "played": 31
+      "ga": 51,
+      "gd": -11,
+      "played": 32
     },
     {
       "rank": 19,

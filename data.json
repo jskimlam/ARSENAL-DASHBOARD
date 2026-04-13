@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-13 13:08 UTC",
+  "updated": "2026-04-13 19:05 UTC",
   "standings": [
     {
       "rank": 1,
@@ -32,13 +32,13 @@
       "name": "Manchester United FC",
       "abbr": "MUN",
       "w": 15,
-      "d": 10,
+      "d": 11,
       "l": 6,
-      "pts": 55,
+      "pts": 56,
       "gf": 56,
       "ga": 43,
       "gd": 13,
-      "played": 31
+      "played": 32
     },
     {
       "rank": 4,
@@ -188,13 +188,13 @@
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 7,
-      "d": 12,
+      "d": 13,
       "l": 12,
-      "pts": 33,
+      "pts": 34,
       "gf": 37,
       "ga": 48,
       "gd": -11,
-      "played": 31
+      "played": 32
     },
     {
       "rank": 16,

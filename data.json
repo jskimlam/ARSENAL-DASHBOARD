@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-18 06:59 UTC",
+  "updated": "2026-04-18 12:44 UTC",
   "standings": [
     {
       "rank": 1,
@@ -84,13 +84,13 @@
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 13,
-      "d": 8,
+      "d": 9,
       "l": 11,
-      "pts": 47,
+      "pts": 48,
       "gf": 48,
       "ga": 44,
       "gd": 4,
-      "played": 32
+      "played": 33
     },
     {
       "rank": 8,
@@ -149,13 +149,13 @@
       "name": "Fulham FC",
       "abbr": "FUL",
       "w": 13,
-      "d": 5,
+      "d": 6,
       "l": 14,
-      "pts": 44,
+      "pts": 45,
       "gf": 43,
       "ga": 46,
       "gd": -3,
-      "played": 32
+      "played": 33
     },
     {
       "rank": 13,

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-19 12:43 UTC",
+  "updated": "2026-04-19 18:38 UTC",
   "standings": [
     {
       "rank": 1,
@@ -7,25 +7,25 @@
       "abbr": "ARS",
       "w": 21,
       "d": 7,
-      "l": 4,
+      "l": 5,
       "pts": 70,
-      "gf": 62,
-      "ga": 24,
-      "gd": 38,
-      "played": 32
+      "gf": 63,
+      "ga": 26,
+      "gd": 37,
+      "played": 33
     },
     {
       "rank": 2,
       "name": "Manchester City FC",
       "abbr": "MCI",
-      "w": 19,
+      "w": 20,
       "d": 7,
       "l": 5,
-      "pts": 64,
-      "gf": 63,
-      "ga": 28,
-      "gd": 35,
-      "played": 31
+      "pts": 67,
+      "gf": 65,
+      "ga": 29,
+      "gd": 36,
+      "played": 32
     },
     {
       "rank": 3,
@@ -44,27 +44,27 @@
       "rank": 4,
       "name": "Aston Villa FC",
       "abbr": "AVL",
-      "w": 16,
+      "w": 17,
       "d": 7,
       "l": 9,
-      "pts": 55,
-      "gf": 43,
-      "ga": 38,
-      "gd": 5,
-      "played": 32
+      "pts": 58,
+      "gf": 47,
+      "ga": 41,
+      "gd": 6,
+      "played": 33
     },
     {
       "rank": 5,
       "name": "Liverpool FC",
       "abbr": "LIV",
-      "w": 15,
+      "w": 16,
       "d": 7,
       "l": 10,
-      "pts": 52,
-      "gf": 52,
-      "ga": 42,
-      "gd": 10,
-      "played": 32
+      "pts": 55,
+      "gf": 54,
+      "ga": 43,
+      "gd": 11,
+      "played": 33
     },
     {
       "rank": 6,
@@ -124,12 +124,12 @@
       "abbr": "EVE",
       "w": 13,
       "d": 8,
-      "l": 11,
+      "l": 12,
       "pts": 47,
-      "gf": 39,
-      "ga": 37,
-      "gd": 2,
-      "played": 32
+      "gf": 40,
+      "ga": 39,
+      "gd": 1,
+      "played": 33
     },
     {
       "rank": 11,
@@ -137,12 +137,12 @@
       "abbr": "SUN",
       "w": 12,
       "d": 10,
-      "l": 10,
+      "l": 11,
       "pts": 46,
-      "gf": 33,
-      "ga": 36,
-      "gd": -3,
-      "played": 32
+      "gf": 36,
+      "ga": 40,
+      "gd": -4,
+      "played": 33
     },
     {
       "rank": 12,
@@ -200,14 +200,14 @@
       "rank": 16,
       "name": "Nottingham Forest FC",
       "abbr": "NOT",
-      "w": 8,
+      "w": 9,
       "d": 9,
       "l": 15,
-      "pts": 33,
-      "gf": 32,
-      "ga": 44,
-      "gd": -12,
-      "played": 32
+      "pts": 36,
+      "gf": 36,
+      "ga": 45,
+      "gd": -9,
+      "played": 33
     },
     {
       "rank": 17,
@@ -241,12 +241,12 @@
       "abbr": "BUR",
       "w": 4,
       "d": 8,
-      "l": 20,
+      "l": 21,
       "pts": 20,
-      "gf": 33,
-      "ga": 63,
-      "gd": -30,
-      "played": 32
+      "gf": 34,
+      "ga": 67,
+      "gd": -33,
+      "played": 33
     },
     {
       "rank": 20,

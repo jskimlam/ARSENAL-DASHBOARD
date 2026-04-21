@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-20 18:56 UTC",
+  "updated": "2026-04-21 01:57 UTC",
   "standings": [
     {
       "rank": 1,
@@ -162,13 +162,13 @@
       "name": "Crystal Palace FC",
       "abbr": "CRY",
       "w": 11,
-      "d": 9,
+      "d": 10,
       "l": 11,
-      "pts": 42,
+      "pts": 43,
       "gf": 35,
       "ga": 36,
       "gd": -1,
-      "played": 31
+      "played": 32
     },
     {
       "rank": 14,
@@ -214,13 +214,13 @@
       "name": "West Ham United FC",
       "abbr": "WHU",
       "w": 8,
-      "d": 8,
+      "d": 9,
       "l": 16,
-      "pts": 32,
+      "pts": 33,
       "gf": 40,
       "ga": 57,
       "gd": -17,
-      "played": 32
+      "played": 33
     },
     {
       "rank": 18,

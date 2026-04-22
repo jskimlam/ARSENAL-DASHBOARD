@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22 13:11 UTC",
+  "updated": "2026-04-22 19:03 UTC",
   "standings": [
     {
       "rank": 1,
@@ -19,13 +19,13 @@
       "name": "Manchester City FC",
       "abbr": "MCI",
       "w": 20,
-      "d": 7,
+      "d": 8,
       "l": 5,
-      "pts": 67,
+      "pts": 68,
       "gf": 65,
       "ga": 29,
       "gd": 36,
-      "played": 32
+      "played": 33
     },
     {
       "rank": 3,
@@ -81,6 +81,19 @@
     },
     {
       "rank": 7,
+      "name": "AFC Bournemouth",
+      "abbr": "BOU",
+      "w": 11,
+      "d": 16,
+      "l": 7,
+      "pts": 49,
+      "gf": 50,
+      "ga": 50,
+      "gd": 0,
+      "played": 34
+    },
+    {
+      "rank": 8,
       "name": "Chelsea FC",
       "abbr": "CHE",
       "w": 13,
@@ -93,7 +106,7 @@
       "played": 34
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 13,
@@ -103,19 +116,6 @@
       "gf": 48,
       "ga": 44,
       "gd": 4,
-      "played": 33
-    },
-    {
-      "rank": 9,
-      "name": "AFC Bournemouth",
-      "abbr": "BOU",
-      "w": 11,
-      "d": 15,
-      "l": 7,
-      "pts": 48,
-      "gf": 50,
-      "ga": 50,
-      "gd": 0,
       "played": 33
     },
     {
@@ -188,13 +188,13 @@
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 9,
-      "d": 12,
+      "d": 13,
       "l": 12,
-      "pts": 39,
+      "pts": 40,
       "gf": 42,
       "ga": 49,
       "gd": -7,
-      "played": 33
+      "played": 34
     },
     {
       "rank": 16,
@@ -240,13 +240,13 @@
       "name": "Burnley FC",
       "abbr": "BUR",
       "w": 4,
-      "d": 8,
+      "d": 9,
       "l": 21,
-      "pts": 20,
+      "pts": 21,
       "gf": 34,
       "ga": 67,
       "gd": -33,
-      "played": 33
+      "played": 34
     },
     {
       "rank": 20,

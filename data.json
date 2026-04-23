@@ -1,8 +1,21 @@
 {
-  "updated": "2026-04-22 19:03 UTC",
+  "updated": "2026-04-23 02:00 UTC",
   "standings": [
     {
       "rank": 1,
+      "name": "Manchester City FC",
+      "abbr": "MCI",
+      "w": 21,
+      "d": 7,
+      "l": 5,
+      "pts": 70,
+      "gf": 66,
+      "ga": 29,
+      "gd": 37,
+      "played": 33
+    },
+    {
+      "rank": 2,
       "name": "Arsenal FC",
       "abbr": "ARS",
       "w": 21,
@@ -12,19 +25,6 @@
       "gf": 63,
       "ga": 26,
       "gd": 37,
-      "played": 33
-    },
-    {
-      "rank": 2,
-      "name": "Manchester City FC",
-      "abbr": "MCI",
-      "w": 20,
-      "d": 8,
-      "l": 5,
-      "pts": 68,
-      "gf": 65,
-      "ga": 29,
-      "gd": 36,
       "played": 33
     },
     {
@@ -87,8 +87,8 @@
       "d": 16,
       "l": 7,
       "pts": 49,
-      "gf": 50,
-      "ga": 50,
+      "gf": 52,
+      "ga": 52,
       "gd": 0,
       "played": 34
     },
@@ -191,8 +191,8 @@
       "d": 13,
       "l": 12,
       "pts": 40,
-      "gf": 42,
-      "ga": 49,
+      "gf": 44,
+      "ga": 51,
       "gd": -7,
       "played": 34
     },
@@ -240,12 +240,12 @@
       "name": "Burnley FC",
       "abbr": "BUR",
       "w": 4,
-      "d": 9,
-      "l": 21,
-      "pts": 21,
+      "d": 8,
+      "l": 22,
+      "pts": 20,
       "gf": 34,
-      "ga": 67,
-      "gd": -33,
+      "ga": 68,
+      "gd": -34,
       "played": 34
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-25 07:04 UTC",
+  "updated": "2026-04-25 12:45 UTC",
   "standings": [
     {
       "rank": 1,
@@ -46,12 +46,12 @@
       "abbr": "AVL",
       "w": 17,
       "d": 7,
-      "l": 9,
+      "l": 10,
       "pts": 58,
       "gf": 47,
-      "ga": 41,
-      "gd": 6,
-      "played": 33
+      "ga": 42,
+      "gd": 5,
+      "played": 34
     },
     {
       "rank": 5,
@@ -120,6 +120,19 @@
     },
     {
       "rank": 10,
+      "name": "Fulham FC",
+      "abbr": "FUL",
+      "w": 14,
+      "d": 6,
+      "l": 14,
+      "pts": 48,
+      "gf": 44,
+      "ga": 46,
+      "gd": -2,
+      "played": 34
+    },
+    {
+      "rank": 11,
       "name": "Everton FC",
       "abbr": "EVE",
       "w": 13,
@@ -132,7 +145,7 @@
       "played": 33
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Sunderland AFC",
       "abbr": "SUN",
       "w": 12,
@@ -143,19 +156,6 @@
       "ga": 45,
       "gd": -9,
       "played": 34
-    },
-    {
-      "rank": 12,
-      "name": "Fulham FC",
-      "abbr": "FUL",
-      "w": 13,
-      "d": 6,
-      "l": 14,
-      "pts": 45,
-      "gf": 43,
-      "ga": 46,
-      "gd": -3,
-      "played": 33
     },
     {
       "rank": 13,

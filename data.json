@@ -1,8 +1,21 @@
 {
-  "updated": "2026-04-25 12:45 UTC",
+  "updated": "2026-04-25 18:39 UTC",
   "standings": [
     {
       "rank": 1,
+      "name": "Arsenal FC",
+      "abbr": "ARS",
+      "w": 22,
+      "d": 7,
+      "l": 5,
+      "pts": 73,
+      "gf": 64,
+      "ga": 26,
+      "gd": 38,
+      "played": 34
+    },
+    {
+      "rank": 2,
       "name": "Manchester City FC",
       "abbr": "MCI",
       "w": 21,
@@ -11,19 +24,6 @@
       "pts": 70,
       "gf": 66,
       "ga": 29,
-      "gd": 37,
-      "played": 33
-    },
-    {
-      "rank": 2,
-      "name": "Arsenal FC",
-      "abbr": "ARS",
-      "w": 21,
-      "d": 7,
-      "l": 5,
-      "pts": 70,
-      "gf": 63,
-      "ga": 26,
       "gd": 37,
       "played": 33
     },
@@ -42,6 +42,19 @@
     },
     {
       "rank": 4,
+      "name": "Liverpool FC",
+      "abbr": "LIV",
+      "w": 17,
+      "d": 7,
+      "l": 10,
+      "pts": 58,
+      "gf": 57,
+      "ga": 44,
+      "gd": 13,
+      "played": 34
+    },
+    {
+      "rank": 5,
       "name": "Aston Villa FC",
       "abbr": "AVL",
       "w": 17,
@@ -52,19 +65,6 @@
       "ga": 42,
       "gd": 5,
       "played": 34
-    },
-    {
-      "rank": 5,
-      "name": "Liverpool FC",
-      "abbr": "LIV",
-      "w": 16,
-      "d": 7,
-      "l": 10,
-      "pts": 55,
-      "gf": 54,
-      "ga": 43,
-      "gd": 11,
-      "played": 33
     },
     {
       "rank": 6,
@@ -137,12 +137,12 @@
       "abbr": "EVE",
       "w": 13,
       "d": 8,
-      "l": 12,
+      "l": 13,
       "pts": 47,
-      "gf": 40,
-      "ga": 39,
-      "gd": 1,
-      "played": 33
+      "gf": 41,
+      "ga": 41,
+      "gd": 0,
+      "played": 34
     },
     {
       "rank": 12,
@@ -163,12 +163,12 @@
       "abbr": "CRY",
       "w": 11,
       "d": 10,
-      "l": 11,
+      "l": 12,
       "pts": 43,
-      "gf": 35,
-      "ga": 36,
-      "gd": -1,
-      "played": 32
+      "gf": 36,
+      "ga": 39,
+      "gd": -3,
+      "played": 33
     },
     {
       "rank": 14,
@@ -176,12 +176,12 @@
       "abbr": "NEW",
       "w": 12,
       "d": 6,
-      "l": 15,
+      "l": 16,
       "pts": 42,
       "gf": 46,
-      "ga": 49,
-      "gd": -3,
-      "played": 33
+      "ga": 50,
+      "gd": -4,
+      "played": 34
     },
     {
       "rank": 15,
@@ -213,27 +213,27 @@
       "rank": 17,
       "name": "West Ham United FC",
       "abbr": "WHU",
-      "w": 8,
+      "w": 9,
       "d": 9,
       "l": 16,
-      "pts": 33,
-      "gf": 40,
-      "ga": 57,
-      "gd": -17,
-      "played": 33
+      "pts": 36,
+      "gf": 42,
+      "ga": 58,
+      "gd": -16,
+      "played": 34
     },
     {
       "rank": 18,
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
-      "w": 7,
+      "w": 8,
       "d": 10,
       "l": 16,
-      "pts": 31,
-      "gf": 42,
+      "pts": 34,
+      "gf": 43,
       "ga": 53,
-      "gd": -11,
-      "played": 33
+      "gd": -10,
+      "played": 34
     },
     {
       "rank": 19,
@@ -254,12 +254,12 @@
       "abbr": "WOL",
       "w": 3,
       "d": 8,
-      "l": 22,
+      "l": 23,
       "pts": 17,
       "gf": 24,
-      "ga": 61,
-      "gd": -37,
-      "played": 33
+      "ga": 62,
+      "gd": -38,
+      "played": 34
     }
   ]
 }

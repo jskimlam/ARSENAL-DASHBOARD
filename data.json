@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-24 18:39 UTC",
+  "updated": "2026-04-25 01:50 UTC",
   "standings": [
     {
       "rank": 1,
@@ -137,12 +137,12 @@
       "abbr": "SUN",
       "w": 12,
       "d": 10,
-      "l": 11,
+      "l": 12,
       "pts": 46,
       "gf": 36,
-      "ga": 40,
-      "gd": -4,
-      "played": 33
+      "ga": 45,
+      "gd": -9,
+      "played": 34
     },
     {
       "rank": 12,
@@ -200,14 +200,14 @@
       "rank": 16,
       "name": "Nottingham Forest FC",
       "abbr": "NOT",
-      "w": 9,
+      "w": 10,
       "d": 9,
       "l": 15,
-      "pts": 36,
-      "gf": 36,
+      "pts": 39,
+      "gf": 41,
       "ga": 45,
-      "gd": -9,
-      "played": 33
+      "gd": -4,
+      "played": 34
     },
     {
       "rank": 17,

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-27 13:23 UTC",
+  "updated": "2026-04-27 19:07 UTC",
   "standings": [
     {
       "rank": 1,
@@ -32,13 +32,13 @@
       "name": "Manchester United FC",
       "abbr": "MUN",
       "w": 16,
-      "d": 10,
+      "d": 11,
       "l": 7,
-      "pts": 58,
+      "pts": 59,
       "gf": 58,
       "ga": 45,
       "gd": 13,
-      "played": 33
+      "played": 34
     },
     {
       "rank": 4,
@@ -81,6 +81,19 @@
     },
     {
       "rank": 7,
+      "name": "Brentford FC",
+      "abbr": "BRE",
+      "w": 13,
+      "d": 10,
+      "l": 11,
+      "pts": 49,
+      "gf": 48,
+      "ga": 44,
+      "gd": 4,
+      "played": 34
+    },
+    {
+      "rank": 8,
       "name": "AFC Bournemouth",
       "abbr": "BOU",
       "w": 11,
@@ -93,7 +106,7 @@
       "played": 34
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Chelsea FC",
       "abbr": "CHE",
       "w": 13,
@@ -104,19 +117,6 @@
       "ga": 45,
       "gd": 8,
       "played": 34
-    },
-    {
-      "rank": 9,
-      "name": "Brentford FC",
-      "abbr": "BRE",
-      "w": 13,
-      "d": 9,
-      "l": 11,
-      "pts": 48,
-      "gf": 48,
-      "ga": 44,
-      "gd": 4,
-      "played": 33
     },
     {
       "rank": 10,

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-01 13:03 UTC",
+  "updated": "2026-05-01 19:01 UTC",
   "standings": [
     {
       "rank": 1,
@@ -188,13 +188,13 @@
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 9,
-      "d": 13,
+      "d": 14,
       "l": 12,
-      "pts": 40,
+      "pts": 41,
       "gf": 44,
       "ga": 51,
       "gd": -7,
-      "played": 34
+      "played": 35
     },
     {
       "rank": 16,
@@ -240,13 +240,13 @@
       "name": "Burnley FC",
       "abbr": "BUR",
       "w": 4,
-      "d": 8,
+      "d": 9,
       "l": 22,
-      "pts": 20,
+      "pts": 21,
       "gf": 34,
       "ga": 68,
       "gd": -34,
-      "played": 34
+      "played": 35
     },
     {
       "rank": 20,

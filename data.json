@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-01 19:01 UTC",
+  "updated": "2026-05-02 02:04 UTC",
   "standings": [
     {
       "rank": 1,
@@ -172,6 +172,19 @@
     },
     {
       "rank": 14,
+      "name": "Leeds United FC",
+      "abbr": "LEE",
+      "w": 10,
+      "d": 13,
+      "l": 12,
+      "pts": 43,
+      "gf": 47,
+      "ga": 52,
+      "gd": -5,
+      "played": 35
+    },
+    {
+      "rank": 15,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 12,
@@ -182,19 +195,6 @@
       "ga": 50,
       "gd": -4,
       "played": 34
-    },
-    {
-      "rank": 15,
-      "name": "Leeds United FC",
-      "abbr": "LEE",
-      "w": 9,
-      "d": 14,
-      "l": 12,
-      "pts": 41,
-      "gf": 44,
-      "ga": 51,
-      "gd": -7,
-      "played": 35
     },
     {
       "rank": 16,
@@ -240,12 +240,12 @@
       "name": "Burnley FC",
       "abbr": "BUR",
       "w": 4,
-      "d": 9,
-      "l": 22,
-      "pts": 21,
-      "gf": 34,
-      "ga": 68,
-      "gd": -34,
+      "d": 8,
+      "l": 23,
+      "pts": 20,
+      "gf": 35,
+      "ga": 71,
+      "gd": -36,
       "played": 35
     },
     {

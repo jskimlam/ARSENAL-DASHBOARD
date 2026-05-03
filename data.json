@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-03 12:53 UTC",
+  "updated": "2026-05-03 18:48 UTC",
   "standings": [
     {
       "rank": 1,
@@ -31,14 +31,14 @@
       "rank": 3,
       "name": "Manchester United FC",
       "abbr": "MUN",
-      "w": 17,
+      "w": 18,
       "d": 10,
       "l": 7,
-      "pts": 61,
-      "gf": 60,
-      "ga": 46,
-      "gd": 14,
-      "played": 34
+      "pts": 64,
+      "gf": 63,
+      "ga": 48,
+      "gd": 15,
+      "played": 35
     },
     {
       "rank": 4,
@@ -46,12 +46,12 @@
       "abbr": "LIV",
       "w": 17,
       "d": 7,
-      "l": 10,
+      "l": 11,
       "pts": 58,
-      "gf": 57,
-      "ga": 44,
-      "gd": 13,
-      "played": 34
+      "gf": 59,
+      "ga": 47,
+      "gd": 12,
+      "played": 35
     },
     {
       "rank": 5,
@@ -59,15 +59,28 @@
       "abbr": "AVL",
       "w": 17,
       "d": 7,
-      "l": 10,
+      "l": 11,
       "pts": 58,
       "gf": 47,
-      "ga": 42,
-      "gd": 5,
-      "played": 34
+      "ga": 44,
+      "gd": 3,
+      "played": 35
     },
     {
       "rank": 6,
+      "name": "AFC Bournemouth",
+      "abbr": "BOU",
+      "w": 12,
+      "d": 16,
+      "l": 7,
+      "pts": 52,
+      "gf": 55,
+      "ga": 52,
+      "gd": 3,
+      "played": 35
+    },
+    {
+      "rank": 7,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 14,
@@ -80,7 +93,7 @@
       "played": 35
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "Brighton & Hove Albion FC",
       "abbr": "BHA",
       "w": 13,
@@ -91,19 +104,6 @@
       "ga": 42,
       "gd": 7,
       "played": 35
-    },
-    {
-      "rank": 8,
-      "name": "AFC Bournemouth",
-      "abbr": "BOU",
-      "w": 11,
-      "d": 16,
-      "l": 7,
-      "pts": 49,
-      "gf": 52,
-      "ga": 52,
-      "gd": 0,
-      "played": 34
     },
     {
       "rank": 9,
@@ -172,19 +172,6 @@
     },
     {
       "rank": 14,
-      "name": "Crystal Palace FC",
-      "abbr": "CRY",
-      "w": 11,
-      "d": 10,
-      "l": 12,
-      "pts": 43,
-      "gf": 36,
-      "ga": 39,
-      "gd": -3,
-      "played": 33
-    },
-    {
-      "rank": 15,
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 10,
@@ -195,6 +182,19 @@
       "ga": 52,
       "gd": -5,
       "played": 35
+    },
+    {
+      "rank": 15,
+      "name": "Crystal Palace FC",
+      "abbr": "CRY",
+      "w": 11,
+      "d": 10,
+      "l": 13,
+      "pts": 43,
+      "gf": 36,
+      "ga": 42,
+      "gd": -6,
+      "played": 34
     },
     {
       "rank": 16,
@@ -211,6 +211,19 @@
     },
     {
       "rank": 17,
+      "name": "Tottenham Hotspur FC",
+      "abbr": "TOT",
+      "w": 9,
+      "d": 10,
+      "l": 16,
+      "pts": 37,
+      "gf": 45,
+      "ga": 53,
+      "gd": -8,
+      "played": 35
+    },
+    {
+      "rank": 18,
       "name": "West Ham United FC",
       "abbr": "WHU",
       "w": 9,
@@ -221,19 +234,6 @@
       "ga": 61,
       "gd": -19,
       "played": 35
-    },
-    {
-      "rank": 18,
-      "name": "Tottenham Hotspur FC",
-      "abbr": "TOT",
-      "w": 8,
-      "d": 10,
-      "l": 16,
-      "pts": 34,
-      "gf": 43,
-      "ga": 53,
-      "gd": -10,
-      "played": 34
     },
     {
       "rank": 19,

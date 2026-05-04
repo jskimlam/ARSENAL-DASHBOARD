@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-04 13:27 UTC",
+  "updated": "2026-05-04 19:18 UTC",
   "standings": [
     {
       "rank": 1,
@@ -19,13 +19,13 @@
       "name": "Manchester City FC",
       "abbr": "MCI",
       "w": 21,
-      "d": 7,
+      "d": 8,
       "l": 5,
-      "pts": 70,
+      "pts": 71,
       "gf": 66,
       "ga": 29,
       "gd": 37,
-      "played": 33
+      "played": 34
     },
     {
       "rank": 3,
@@ -111,15 +111,28 @@
       "abbr": "CHE",
       "w": 13,
       "d": 9,
-      "l": 12,
+      "l": 13,
       "pts": 48,
-      "gf": 53,
-      "ga": 45,
-      "gd": 8,
-      "played": 34
+      "gf": 54,
+      "ga": 48,
+      "gd": 6,
+      "played": 35
     },
     {
       "rank": 10,
+      "name": "Everton FC",
+      "abbr": "EVE",
+      "w": 13,
+      "d": 9,
+      "l": 13,
+      "pts": 48,
+      "gf": 41,
+      "ga": 41,
+      "gd": 0,
+      "played": 35
+    },
+    {
+      "rank": 11,
       "name": "Fulham FC",
       "abbr": "FUL",
       "w": 14,
@@ -130,19 +143,6 @@
       "ga": 49,
       "gd": -5,
       "played": 35
-    },
-    {
-      "rank": 11,
-      "name": "Everton FC",
-      "abbr": "EVE",
-      "w": 13,
-      "d": 8,
-      "l": 13,
-      "pts": 47,
-      "gf": 41,
-      "ga": 41,
-      "gd": 0,
-      "played": 34
     },
     {
       "rank": 12,
@@ -200,14 +200,14 @@
       "rank": 16,
       "name": "Nottingham Forest FC",
       "abbr": "NOT",
-      "w": 10,
+      "w": 11,
       "d": 9,
       "l": 15,
-      "pts": 39,
-      "gf": 41,
-      "ga": 45,
-      "gd": -4,
-      "played": 34
+      "pts": 42,
+      "gf": 44,
+      "ga": 46,
+      "gd": -2,
+      "played": 35
     },
     {
       "rank": 17,

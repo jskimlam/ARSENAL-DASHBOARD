@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-09 13:00 UTC",
+  "updated": "2026-05-09 18:50 UTC",
   "standings": [
     {
       "rank": 1,
@@ -18,27 +18,27 @@
       "rank": 2,
       "name": "Manchester City FC",
       "abbr": "MCI",
-      "w": 21,
+      "w": 22,
       "d": 8,
       "l": 5,
-      "pts": 71,
-      "gf": 69,
+      "pts": 74,
+      "gf": 72,
       "ga": 32,
-      "gd": 37,
-      "played": 34
+      "gd": 40,
+      "played": 35
     },
     {
       "rank": 3,
       "name": "Manchester United FC",
       "abbr": "MUN",
       "w": 18,
-      "d": 10,
+      "d": 11,
       "l": 7,
-      "pts": 64,
+      "pts": 65,
       "gf": 63,
       "ga": 48,
       "gd": 15,
-      "played": 35
+      "played": 36
     },
     {
       "rank": 4,
@@ -70,40 +70,40 @@
       "rank": 6,
       "name": "AFC Bournemouth",
       "abbr": "BOU",
-      "w": 12,
+      "w": 13,
       "d": 16,
       "l": 7,
-      "pts": 52,
-      "gf": 55,
+      "pts": 55,
+      "gf": 56,
       "ga": 52,
-      "gd": 3,
-      "played": 35
+      "gd": 4,
+      "played": 36
     },
     {
       "rank": 7,
+      "name": "Brighton & Hove Albion FC",
+      "abbr": "BHA",
+      "w": 14,
+      "d": 11,
+      "l": 11,
+      "pts": 53,
+      "gf": 52,
+      "ga": 42,
+      "gd": 10,
+      "played": 36
+    },
+    {
+      "rank": 8,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 14,
       "d": 9,
-      "l": 12,
+      "l": 13,
       "pts": 51,
       "gf": 52,
-      "ga": 46,
-      "gd": 6,
-      "played": 35
-    },
-    {
-      "rank": 8,
-      "name": "Brighton & Hove Albion FC",
-      "abbr": "BHA",
-      "w": 13,
-      "d": 11,
-      "l": 11,
-      "pts": 50,
-      "gf": 49,
-      "ga": 42,
-      "gd": 7,
-      "played": 35
+      "ga": 49,
+      "gd": 3,
+      "played": 36
     },
     {
       "rank": 9,
@@ -137,25 +137,25 @@
       "abbr": "FUL",
       "w": 14,
       "d": 6,
-      "l": 15,
+      "l": 16,
       "pts": 48,
       "gf": 44,
-      "ga": 49,
-      "gd": -5,
-      "played": 35
+      "ga": 50,
+      "gd": -6,
+      "played": 36
     },
     {
       "rank": 12,
       "name": "Sunderland AFC",
       "abbr": "SUN",
       "w": 12,
-      "d": 11,
+      "d": 12,
       "l": 12,
-      "pts": 47,
+      "pts": 48,
       "gf": 37,
       "ga": 46,
       "gd": -9,
-      "played": 35
+      "played": 36
     },
     {
       "rank": 13,
@@ -254,12 +254,12 @@
       "abbr": "WOL",
       "w": 3,
       "d": 9,
-      "l": 23,
+      "l": 24,
       "pts": 18,
       "gf": 25,
-      "ga": 63,
-      "gd": -38,
-      "played": 35
+      "ga": 66,
+      "gd": -41,
+      "played": 36
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-10 07:59 UTC",
+  "updated": "2026-05-10 13:02 UTC",
   "standings": [
     {
       "rank": 1,
@@ -58,13 +58,13 @@
       "name": "Aston Villa FC",
       "abbr": "AVL",
       "w": 17,
-      "d": 7,
+      "d": 8,
       "l": 11,
-      "pts": 58,
+      "pts": 59,
       "gf": 48,
       "ga": 44,
       "gd": 4,
-      "played": 35
+      "played": 36
     },
     {
       "rank": 6,
@@ -123,13 +123,13 @@
       "name": "Everton FC",
       "abbr": "EVE",
       "w": 13,
-      "d": 9,
+      "d": 10,
       "l": 13,
-      "pts": 48,
+      "pts": 49,
       "gf": 44,
       "ga": 44,
       "gd": 0,
-      "played": 35
+      "played": 36
     },
     {
       "rank": 11,
@@ -162,16 +162,42 @@
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 13,
-      "d": 6,
+      "d": 7,
       "l": 16,
-      "pts": 45,
+      "pts": 46,
       "gf": 49,
       "ga": 51,
       "gd": -2,
-      "played": 35
+      "played": 36
     },
     {
       "rank": 14,
+      "name": "Crystal Palace FC",
+      "abbr": "CRY",
+      "w": 11,
+      "d": 11,
+      "l": 13,
+      "pts": 44,
+      "gf": 36,
+      "ga": 42,
+      "gd": -6,
+      "played": 35
+    },
+    {
+      "rank": 15,
+      "name": "Nottingham Forest FC",
+      "abbr": "NOT",
+      "w": 11,
+      "d": 10,
+      "l": 15,
+      "pts": 43,
+      "gf": 44,
+      "ga": 46,
+      "gd": -2,
+      "played": 36
+    },
+    {
+      "rank": 16,
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 10,
@@ -181,32 +207,6 @@
       "gf": 47,
       "ga": 52,
       "gd": -5,
-      "played": 35
-    },
-    {
-      "rank": 15,
-      "name": "Crystal Palace FC",
-      "abbr": "CRY",
-      "w": 11,
-      "d": 10,
-      "l": 13,
-      "pts": 43,
-      "gf": 36,
-      "ga": 42,
-      "gd": -6,
-      "played": 34
-    },
-    {
-      "rank": 16,
-      "name": "Nottingham Forest FC",
-      "abbr": "NOT",
-      "w": 11,
-      "d": 9,
-      "l": 15,
-      "pts": 42,
-      "gf": 44,
-      "ga": 46,
-      "gd": -2,
       "played": 35
     },
     {
@@ -240,13 +240,13 @@
       "name": "Burnley FC",
       "abbr": "BUR",
       "w": 4,
-      "d": 8,
+      "d": 9,
       "l": 23,
-      "pts": 20,
+      "pts": 21,
       "gf": 35,
       "ga": 71,
       "gd": -36,
-      "played": 35
+      "played": 36
     },
     {
       "rank": 20,

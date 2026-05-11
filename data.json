@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-11 14:33 UTC",
+  "updated": "2026-05-11 19:29 UTC",
   "standings": [
     {
       "rank": 1,
@@ -172,6 +172,19 @@
     },
     {
       "rank": 14,
+      "name": "Leeds United FC",
+      "abbr": "LEE",
+      "w": 10,
+      "d": 14,
+      "l": 12,
+      "pts": 44,
+      "gf": 47,
+      "ga": 52,
+      "gd": -5,
+      "played": 36
+    },
+    {
+      "rank": 15,
       "name": "Crystal Palace FC",
       "abbr": "CRY",
       "w": 11,
@@ -184,7 +197,7 @@
       "played": 35
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "Nottingham Forest FC",
       "abbr": "NOT",
       "w": 11,
@@ -197,30 +210,17 @@
       "played": 36
     },
     {
-      "rank": 16,
-      "name": "Leeds United FC",
-      "abbr": "LEE",
-      "w": 10,
-      "d": 13,
-      "l": 12,
-      "pts": 43,
-      "gf": 47,
-      "ga": 52,
-      "gd": -5,
-      "played": 35
-    },
-    {
       "rank": 17,
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 9,
-      "d": 10,
+      "d": 11,
       "l": 16,
-      "pts": 37,
+      "pts": 38,
       "gf": 45,
       "ga": 54,
       "gd": -9,
-      "played": 35
+      "played": 36
     },
     {
       "rank": 18,

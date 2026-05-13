@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-13 14:12 UTC",
+  "updated": "2026-05-13 19:44 UTC",
   "standings": [
     {
       "rank": 1,
@@ -19,13 +19,13 @@
       "name": "Manchester City FC",
       "abbr": "MCI",
       "w": 22,
-      "d": 8,
+      "d": 9,
       "l": 5,
-      "pts": 74,
+      "pts": 75,
       "gf": 72,
       "ga": 32,
       "gd": 40,
-      "played": 35
+      "played": 36
     },
     {
       "rank": 3,
@@ -172,6 +172,19 @@
     },
     {
       "rank": 14,
+      "name": "Crystal Palace FC",
+      "abbr": "CRY",
+      "w": 11,
+      "d": 12,
+      "l": 13,
+      "pts": 45,
+      "gf": 38,
+      "ga": 44,
+      "gd": -6,
+      "played": 36
+    },
+    {
+      "rank": 15,
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 10,
@@ -182,19 +195,6 @@
       "ga": 53,
       "gd": -5,
       "played": 36
-    },
-    {
-      "rank": 15,
-      "name": "Crystal Palace FC",
-      "abbr": "CRY",
-      "w": 11,
-      "d": 11,
-      "l": 13,
-      "pts": 44,
-      "gf": 38,
-      "ga": 44,
-      "gd": -6,
-      "played": 35
     },
     {
       "rank": 16,

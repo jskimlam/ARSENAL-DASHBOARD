@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-15 13:48 UTC",
+  "updated": "2026-05-15 19:21 UTC",
   "standings": [
     {
       "rank": 1,
@@ -45,26 +45,26 @@
       "name": "Liverpool FC",
       "abbr": "LIV",
       "w": 17,
-      "d": 8,
+      "d": 9,
       "l": 11,
-      "pts": 59,
+      "pts": 60,
       "gf": 60,
       "ga": 48,
       "gd": 12,
-      "played": 36
+      "played": 37
     },
     {
       "rank": 5,
       "name": "Aston Villa FC",
       "abbr": "AVL",
       "w": 17,
-      "d": 8,
+      "d": 9,
       "l": 11,
-      "pts": 59,
+      "pts": 60,
       "gf": 50,
       "ga": 46,
       "gd": 4,
-      "played": 36
+      "played": 37
     },
     {
       "rank": 6,

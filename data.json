@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-17 13:03 UTC",
+  "updated": "2026-05-17 18:57 UTC",
   "standings": [
     {
       "rank": 1,
@@ -35,8 +35,8 @@
       "d": 11,
       "l": 7,
       "pts": 68,
-      "gf": 65,
-      "ga": 49,
+      "gf": 66,
+      "ga": 50,
       "gd": 16,
       "played": 37
     },
@@ -85,28 +85,41 @@
       "abbr": "BHA",
       "w": 14,
       "d": 11,
-      "l": 11,
+      "l": 12,
       "pts": 53,
       "gf": 52,
-      "ga": 42,
-      "gd": 10,
-      "played": 36
+      "ga": 43,
+      "gd": 9,
+      "played": 37
     },
     {
       "rank": 8,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 14,
-      "d": 9,
+      "d": 10,
       "l": 13,
-      "pts": 51,
-      "gf": 52,
-      "ga": 49,
+      "pts": 52,
+      "gf": 54,
+      "ga": 51,
       "gd": 3,
-      "played": 36
+      "played": 37
     },
     {
       "rank": 9,
+      "name": "Sunderland AFC",
+      "abbr": "SUN",
+      "w": 13,
+      "d": 12,
+      "l": 12,
+      "pts": 51,
+      "gf": 40,
+      "ga": 47,
+      "gd": -7,
+      "played": 37
+    },
+    {
+      "rank": 10,
       "name": "Chelsea FC",
       "abbr": "CHE",
       "w": 13,
@@ -119,82 +132,69 @@
       "played": 36
     },
     {
-      "rank": 10,
+      "rank": 11,
+      "name": "Newcastle United FC",
+      "abbr": "NEW",
+      "w": 14,
+      "d": 7,
+      "l": 16,
+      "pts": 49,
+      "gf": 53,
+      "ga": 53,
+      "gd": 0,
+      "played": 37
+    },
+    {
+      "rank": 12,
       "name": "Everton FC",
       "abbr": "EVE",
       "w": 13,
       "d": 10,
-      "l": 13,
+      "l": 14,
       "pts": 49,
-      "gf": 46,
-      "ga": 46,
-      "gd": 0,
-      "played": 36
-    },
-    {
-      "rank": 11,
-      "name": "Fulham FC",
-      "abbr": "FUL",
-      "w": 14,
-      "d": 6,
-      "l": 16,
-      "pts": 48,
-      "gf": 44,
-      "ga": 50,
-      "gd": -6,
-      "played": 36
-    },
-    {
-      "rank": 12,
-      "name": "Sunderland AFC",
-      "abbr": "SUN",
-      "w": 12,
-      "d": 12,
-      "l": 12,
-      "pts": 48,
-      "gf": 37,
-      "ga": 46,
-      "gd": -9,
-      "played": 36
+      "gf": 47,
+      "ga": 49,
+      "gd": -2,
+      "played": 37
     },
     {
       "rank": 13,
-      "name": "Newcastle United FC",
-      "abbr": "NEW",
-      "w": 13,
+      "name": "Fulham FC",
+      "abbr": "FUL",
+      "w": 14,
       "d": 7,
       "l": 16,
-      "pts": 46,
-      "gf": 50,
-      "ga": 52,
-      "gd": -2,
-      "played": 36
+      "pts": 49,
+      "gf": 45,
+      "ga": 51,
+      "gd": -6,
+      "played": 37
     },
     {
       "rank": 14,
       "name": "Leeds United FC",
       "abbr": "LEE",
-      "w": 10,
+      "w": 11,
       "d": 14,
       "l": 12,
-      "pts": 44,
-      "gf": 48,
+      "pts": 47,
+      "gf": 49,
       "ga": 53,
-      "gd": -5,
-      "played": 36
+      "gd": -4,
+      "played": 37
     },
     {
       "rank": 15,
       "name": "Crystal Palace FC",
       "abbr": "CRY",
       "w": 11,
-      "d": 11,
+      "d": 12,
       "l": 14,
-      "pts": 44,
-      "gf": 38,
-      "ga": 47,
+      "pts": 45,
+      "gf": 40,
+      "ga": 49,
       "gd": -9,
-      "played": 36
+      "played": 37
     },
     {
       "rank": 16,
@@ -204,8 +204,8 @@
       "d": 10,
       "l": 16,
       "pts": 43,
-      "gf": 46,
-      "ga": 49,
+      "gf": 47,
+      "ga": 50,
       "gd": -3,
       "played": 37
     },
@@ -228,12 +228,12 @@
       "abbr": "WHU",
       "w": 9,
       "d": 9,
-      "l": 18,
+      "l": 19,
       "pts": 36,
-      "gf": 42,
-      "ga": 62,
-      "gd": -20,
-      "played": 36
+      "gf": 43,
+      "ga": 65,
+      "gd": -22,
+      "played": 37
     },
     {
       "rank": 19,
@@ -253,13 +253,13 @@
       "name": "Wolverhampton Wanderers FC",
       "abbr": "WOL",
       "w": 3,
-      "d": 9,
+      "d": 10,
       "l": 24,
-      "pts": 18,
-      "gf": 25,
-      "ga": 66,
+      "pts": 19,
+      "gf": 26,
+      "ga": 67,
       "gd": -41,
-      "played": 36
+      "played": 37
     }
   ]
 }

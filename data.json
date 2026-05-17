@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-17 08:12 UTC",
+  "updated": "2026-05-17 13:03 UTC",
   "standings": [
     {
       "rank": 1,
@@ -31,14 +31,14 @@
       "rank": 3,
       "name": "Manchester United FC",
       "abbr": "MUN",
-      "w": 18,
+      "w": 19,
       "d": 11,
       "l": 7,
-      "pts": 65,
-      "gf": 63,
-      "ga": 48,
-      "gd": 15,
-      "played": 36
+      "pts": 68,
+      "gf": 65,
+      "ga": 49,
+      "gd": 16,
+      "played": 37
     },
     {
       "rank": 4,
@@ -202,12 +202,12 @@
       "abbr": "NOT",
       "w": 11,
       "d": 10,
-      "l": 15,
+      "l": 16,
       "pts": 43,
-      "gf": 45,
-      "ga": 47,
-      "gd": -2,
-      "played": 36
+      "gf": 46,
+      "ga": 49,
+      "gd": -3,
+      "played": 37
     },
     {
       "rank": 17,

@@ -1,18 +1,18 @@
 {
-  "updated": "2026-05-18 14:57 UTC",
+  "updated": "2026-05-18 19:28 UTC",
   "standings": [
     {
       "rank": 1,
       "name": "Arsenal FC",
       "abbr": "ARS",
       "w": 24,
-      "d": 7,
+      "d": 8,
       "l": 5,
-      "pts": 79,
+      "pts": 80,
       "gf": 68,
       "ga": 26,
       "gd": 42,
-      "played": 36
+      "played": 37
     },
     {
       "rank": 2,
@@ -240,13 +240,13 @@
       "name": "Burnley FC",
       "abbr": "BUR",
       "w": 4,
-      "d": 9,
+      "d": 10,
       "l": 23,
-      "pts": 21,
+      "pts": 22,
       "gf": 37,
       "ga": 73,
       "gd": -36,
-      "played": 36
+      "played": 37
     },
     {
       "rank": 20,

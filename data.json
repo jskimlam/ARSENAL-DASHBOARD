@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-19 19:44 UTC",
+  "updated": "2026-05-20 02:38 UTC",
   "standings": [
     {
       "rank": 1,
@@ -19,12 +19,12 @@
       "name": "Manchester City FC",
       "abbr": "MCI",
       "w": 23,
-      "d": 8,
-      "l": 6,
-      "pts": 77,
-      "gf": 75,
+      "d": 9,
+      "l": 5,
+      "pts": 78,
+      "gf": 76,
       "ga": 33,
-      "gd": 42,
+      "gd": 43,
       "played": 37
     },
     {
@@ -70,13 +70,13 @@
       "rank": 6,
       "name": "AFC Bournemouth",
       "abbr": "BOU",
-      "w": 14,
-      "d": 16,
+      "w": 13,
+      "d": 17,
       "l": 7,
-      "pts": 58,
+      "pts": 56,
       "gf": 57,
-      "ga": 52,
-      "gd": 5,
+      "ga": 53,
+      "gd": 4,
       "played": 37
     },
     {
@@ -94,6 +94,19 @@
     },
     {
       "rank": 8,
+      "name": "Chelsea FC",
+      "abbr": "CHE",
+      "w": 14,
+      "d": 10,
+      "l": 13,
+      "pts": 52,
+      "gf": 57,
+      "ga": 50,
+      "gd": 7,
+      "played": 37
+    },
+    {
+      "rank": 9,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 14,
@@ -106,7 +119,7 @@
       "played": 37
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Sunderland AFC",
       "abbr": "SUN",
       "w": 13,
@@ -116,19 +129,6 @@
       "gf": 40,
       "ga": 47,
       "gd": -7,
-      "played": 37
-    },
-    {
-      "rank": 10,
-      "name": "Chelsea FC",
-      "abbr": "CHE",
-      "w": 13,
-      "d": 11,
-      "l": 13,
-      "pts": 50,
-      "gf": 55,
-      "ga": 49,
-      "gd": 6,
       "played": 37
     },
     {
@@ -214,12 +214,12 @@
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 9,
-      "d": 12,
-      "l": 16,
-      "pts": 39,
-      "gf": 46,
-      "ga": 55,
-      "gd": -9,
+      "d": 11,
+      "l": 17,
+      "pts": 38,
+      "gf": 47,
+      "ga": 57,
+      "gd": -10,
       "played": 37
     },
     {

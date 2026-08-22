@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22 12:23 UTC",
+  "updated": "2026-08-22 18:17 UTC",
   "standings": [
     {
       "rank": 1,
@@ -15,7 +15,33 @@
       "played": 1
     },
     {
-      "rank": 2,
+      "rank": 1,
+      "name": "Brentford FC",
+      "abbr": "BRE",
+      "w": 1,
+      "d": 0,
+      "l": 0,
+      "pts": 3,
+      "gf": 3,
+      "ga": 0,
+      "gd": 3,
+      "played": 1
+    },
+    {
+      "rank": 3,
+      "name": "Everton FC",
+      "abbr": "EVE",
+      "w": 1,
+      "d": 0,
+      "l": 0,
+      "pts": 3,
+      "gf": 2,
+      "ga": 0,
+      "gd": 2,
+      "played": 1
+    },
+    {
+      "rank": 3,
       "name": "Hull City AFC",
       "abbr": "HUL",
       "w": 1,
@@ -28,7 +54,33 @@
       "played": 1
     },
     {
-      "rank": 3,
+      "rank": 5,
+      "name": "Ipswich Town FC",
+      "abbr": "IPS",
+      "w": 1,
+      "d": 0,
+      "l": 0,
+      "pts": 3,
+      "gf": 2,
+      "ga": 1,
+      "gd": 1,
+      "played": 1
+    },
+    {
+      "rank": 6,
+      "name": "Leeds United FC",
+      "abbr": "LEE",
+      "w": 1,
+      "d": 0,
+      "l": 0,
+      "pts": 3,
+      "gf": 1,
+      "ga": 0,
+      "gd": 1,
+      "played": 1
+    },
+    {
+      "rank": 7,
       "name": "AFC Bournemouth",
       "abbr": "BOU",
       "w": 0,
@@ -41,7 +93,7 @@
       "played": 0
     },
     {
-      "rank": 3,
+      "rank": 7,
       "name": "Aston Villa FC",
       "abbr": "AVL",
       "w": 0,
@@ -54,20 +106,7 @@
       "played": 0
     },
     {
-      "rank": 3,
-      "name": "Brentford FC",
-      "abbr": "BRE",
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "played": 0
-    },
-    {
-      "rank": 3,
+      "rank": 7,
       "name": "Brighton & Hove Albion FC",
       "abbr": "BHA",
       "w": 0,
@@ -80,7 +119,7 @@
       "played": 0
     },
     {
-      "rank": 3,
+      "rank": 7,
       "name": "Chelsea FC",
       "abbr": "CHE",
       "w": 0,
@@ -93,33 +132,7 @@
       "played": 0
     },
     {
-      "rank": 3,
-      "name": "Crystal Palace FC",
-      "abbr": "CRY",
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "played": 0
-    },
-    {
-      "rank": 3,
-      "name": "Everton FC",
-      "abbr": "EVE",
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "played": 0
-    },
-    {
-      "rank": 3,
+      "rank": 7,
       "name": "Fulham FC",
       "abbr": "FUL",
       "w": 0,
@@ -132,33 +145,7 @@
       "played": 0
     },
     {
-      "rank": 3,
-      "name": "Ipswich Town FC",
-      "abbr": "IPS",
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "played": 0
-    },
-    {
-      "rank": 3,
-      "name": "Leeds United FC",
-      "abbr": "LEE",
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "played": 0
-    },
-    {
-      "rank": 3,
+      "rank": 7,
       "name": "Liverpool FC",
       "abbr": "LIV",
       "w": 0,
@@ -171,7 +158,7 @@
       "played": 0
     },
     {
-      "rank": 3,
+      "rank": 7,
       "name": "Manchester City FC",
       "abbr": "MCI",
       "w": 0,
@@ -184,7 +171,7 @@
       "played": 0
     },
     {
-      "rank": 3,
+      "rank": 7,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 0,
@@ -197,46 +184,46 @@
       "played": 0
     },
     {
-      "rank": 3,
-      "name": "Nottingham Forest FC",
-      "abbr": "NOT",
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "played": 0
-    },
-    {
-      "rank": 3,
+      "rank": 15,
       "name": "Sunderland AFC",
       "abbr": "SUN",
       "w": 0,
       "d": 0,
-      "l": 0,
+      "l": 1,
       "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "played": 0
+      "gf": 1,
+      "ga": 2,
+      "gd": -1,
+      "played": 1
     },
     {
-      "rank": 3,
-      "name": "Tottenham Hotspur FC",
-      "abbr": "TOT",
+      "rank": 16,
+      "name": "Nottingham Forest FC",
+      "abbr": "NOT",
       "w": 0,
       "d": 0,
-      "l": 0,
+      "l": 1,
       "pts": 0,
       "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "played": 0
+      "ga": 1,
+      "gd": -1,
+      "played": 1
     },
     {
-      "rank": 19,
+      "rank": 17,
+      "name": "Crystal Palace FC",
+      "abbr": "CRY",
+      "w": 0,
+      "d": 0,
+      "l": 1,
+      "pts": 0,
+      "gf": 0,
+      "ga": 2,
+      "gd": -2,
+      "played": 1
+    },
+    {
+      "rank": 17,
       "name": "Manchester United FC",
       "abbr": "MUN",
       "w": 0,
@@ -249,9 +236,22 @@
       "played": 1
     },
     {
-      "rank": 20,
+      "rank": 19,
       "name": "Coventry City FC",
       "abbr": "COV",
+      "w": 0,
+      "d": 0,
+      "l": 1,
+      "pts": 0,
+      "gf": 0,
+      "ga": 3,
+      "gd": -3,
+      "played": 1
+    },
+    {
+      "rank": 19,
+      "name": "Tottenham Hotspur FC",
+      "abbr": "TOT",
       "w": 0,
       "d": 0,
       "l": 1,

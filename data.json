@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24 18:28 UTC",
+  "updated": "2026-08-25 00:50 UTC",
   "standings": [
     {
       "rank": 1,
@@ -68,6 +68,19 @@
     },
     {
       "rank": 6,
+      "name": "Chelsea FC",
+      "abbr": "CHE",
+      "w": 1,
+      "d": 0,
+      "l": 0,
+      "pts": 3,
+      "gf": 3,
+      "ga": 2,
+      "gd": 1,
+      "played": 1
+    },
+    {
+      "rank": 7,
       "name": "Ipswich Town FC",
       "abbr": "IPS",
       "w": 1,
@@ -80,7 +93,7 @@
       "played": 1
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Manchester City FC",
       "abbr": "MCI",
       "w": 1,
@@ -93,7 +106,7 @@
       "played": 1
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 1,
@@ -106,7 +119,7 @@
       "played": 1
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Liverpool FC",
       "abbr": "LIV",
       "w": 0,
@@ -119,7 +132,7 @@
       "played": 1
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 0,
@@ -132,30 +145,17 @@
       "played": 1
     },
     {
-      "rank": 11,
-      "name": "Chelsea FC",
-      "abbr": "CHE",
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "played": 0
-    },
-    {
-      "rank": 11,
+      "rank": 12,
       "name": "Fulham FC",
       "abbr": "FUL",
       "w": 0,
       "d": 0,
-      "l": 0,
+      "l": 1,
       "pts": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "played": 0
+      "gf": 2,
+      "ga": 3,
+      "gd": -1,
+      "played": 1
     },
     {
       "rank": 13,

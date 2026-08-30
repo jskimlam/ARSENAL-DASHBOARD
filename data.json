@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30 10:59 UTC",
+  "updated": "2026-08-30 15:49 UTC",
   "standings": [
     {
       "rank": 1,
@@ -29,6 +29,32 @@
     },
     {
       "rank": 3,
+      "name": "Chelsea FC",
+      "abbr": "CHE",
+      "w": 2,
+      "d": 0,
+      "l": 0,
+      "pts": 6,
+      "gf": 7,
+      "ga": 5,
+      "gd": 2,
+      "played": 2
+    },
+    {
+      "rank": 4,
+      "name": "Brentford FC",
+      "abbr": "BRE",
+      "w": 1,
+      "d": 1,
+      "l": 0,
+      "pts": 4,
+      "gf": 4,
+      "ga": 1,
+      "gd": 3,
+      "played": 2
+    },
+    {
+      "rank": 5,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 1,
@@ -41,7 +67,7 @@
       "played": 2
     },
     {
-      "rank": 4,
+      "rank": 6,
       "name": "Everton FC",
       "abbr": "EVE",
       "w": 1,
@@ -54,20 +80,46 @@
       "played": 2
     },
     {
-      "rank": 5,
+      "rank": 7,
+      "name": "Ipswich Town FC",
+      "abbr": "IPS",
+      "w": 1,
+      "d": 1,
+      "l": 0,
+      "pts": 4,
+      "gf": 2,
+      "ga": 1,
+      "gd": 1,
+      "played": 2
+    },
+    {
+      "rank": 7,
+      "name": "Leeds United FC",
+      "abbr": "LEE",
+      "w": 1,
+      "d": 1,
+      "l": 0,
+      "pts": 4,
+      "gf": 2,
+      "ga": 1,
+      "gd": 1,
+      "played": 2
+    },
+    {
+      "rank": 9,
       "name": "Brighton & Hove Albion FC",
       "abbr": "BHA",
       "w": 1,
       "d": 0,
-      "l": 0,
+      "l": 1,
       "pts": 3,
-      "gf": 4,
-      "ga": 0,
-      "gd": 4,
-      "played": 1
+      "gf": 7,
+      "ga": 4,
+      "gd": 3,
+      "played": 2
     },
     {
-      "rank": 6,
+      "rank": 10,
       "name": "Arsenal FC",
       "abbr": "ARS",
       "w": 1,
@@ -80,59 +132,20 @@
       "played": 1
     },
     {
-      "rank": 6,
-      "name": "Brentford FC",
-      "abbr": "BRE",
+      "rank": 11,
+      "name": "Sunderland AFC",
+      "abbr": "SUN",
       "w": 1,
       "d": 0,
-      "l": 0,
-      "pts": 3,
-      "gf": 3,
-      "ga": 0,
-      "gd": 3,
-      "played": 1
-    },
-    {
-      "rank": 8,
-      "name": "Chelsea FC",
-      "abbr": "CHE",
-      "w": 1,
-      "d": 0,
-      "l": 0,
-      "pts": 3,
-      "gf": 3,
-      "ga": 2,
-      "gd": 1,
-      "played": 1
-    },
-    {
-      "rank": 9,
-      "name": "Ipswich Town FC",
-      "abbr": "IPS",
-      "w": 1,
-      "d": 0,
-      "l": 0,
+      "l": 1,
       "pts": 3,
       "gf": 2,
-      "ga": 1,
-      "gd": 1,
-      "played": 1
+      "ga": 2,
+      "gd": 0,
+      "played": 2
     },
     {
-      "rank": 10,
-      "name": "Leeds United FC",
-      "abbr": "LEE",
-      "w": 1,
-      "d": 0,
-      "l": 0,
-      "pts": 3,
-      "gf": 1,
-      "ga": 0,
-      "gd": 1,
-      "played": 1
-    },
-    {
-      "rank": 11,
+      "rank": 12,
       "name": "Liverpool FC",
       "abbr": "LIV",
       "w": 0,
@@ -145,7 +158,7 @@
       "played": 2
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "AFC Bournemouth",
       "abbr": "BOU",
       "w": 0,
@@ -158,7 +171,7 @@
       "played": 2
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Nottingham Forest FC",
       "abbr": "NOT",
       "w": 0,
@@ -171,43 +184,30 @@
       "played": 2
     },
     {
-      "rank": 14,
+      "rank": 15,
+      "name": "Manchester United FC",
+      "abbr": "MUN",
+      "w": 0,
+      "d": 1,
+      "l": 1,
+      "pts": 1,
+      "gf": 0,
+      "ga": 2,
+      "gd": -2,
+      "played": 2
+    },
+    {
+      "rank": 16,
       "name": "Fulham FC",
       "abbr": "FUL",
       "w": 0,
       "d": 0,
-      "l": 1,
+      "l": 2,
       "pts": 0,
       "gf": 2,
-      "ga": 3,
-      "gd": -1,
-      "played": 1
-    },
-    {
-      "rank": 15,
-      "name": "Sunderland AFC",
-      "abbr": "SUN",
-      "w": 0,
-      "d": 0,
-      "l": 1,
-      "pts": 0,
-      "gf": 1,
-      "ga": 2,
-      "gd": -1,
-      "played": 1
-    },
-    {
-      "rank": 16,
-      "name": "Manchester United FC",
-      "abbr": "MUN",
-      "w": 0,
-      "d": 0,
-      "l": 1,
-      "pts": 0,
-      "gf": 0,
-      "ga": 2,
+      "ga": 4,
       "gd": -2,
-      "played": 1
+      "played": 2
     },
     {
       "rank": 17,

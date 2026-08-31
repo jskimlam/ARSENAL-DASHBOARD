@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31 12:19 UTC",
+  "updated": "2026-08-31 22:14 UTC",
   "standings": [
     {
       "rank": 1,
@@ -16,6 +16,19 @@
     },
     {
       "rank": 2,
+      "name": "Arsenal FC",
+      "abbr": "ARS",
+      "w": 2,
+      "d": 0,
+      "l": 0,
+      "pts": 6,
+      "gf": 4,
+      "ga": 0,
+      "gd": 4,
+      "played": 2
+    },
+    {
+      "rank": 3,
       "name": "Hull City AFC",
       "abbr": "HUL",
       "w": 2,
@@ -28,7 +41,7 @@
       "played": 2
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "Chelsea FC",
       "abbr": "CHE",
       "w": 2,
@@ -41,7 +54,7 @@
       "played": 2
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 1,
@@ -54,7 +67,7 @@
       "played": 2
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 1,
@@ -67,7 +80,7 @@
       "played": 2
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Everton FC",
       "abbr": "EVE",
       "w": 1,
@@ -80,7 +93,7 @@
       "played": 2
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 1,
@@ -93,7 +106,7 @@
       "played": 2
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Brighton & Hove Albion FC",
       "abbr": "BHA",
       "w": 1,
@@ -104,19 +117,6 @@
       "ga": 4,
       "gd": 3,
       "played": 2
-    },
-    {
-      "rank": 9,
-      "name": "Arsenal FC",
-      "abbr": "ARS",
-      "w": 1,
-      "d": 0,
-      "l": 0,
-      "pts": 3,
-      "gf": 3,
-      "ga": 0,
-      "gd": 3,
-      "played": 1
     },
     {
       "rank": 10,
@@ -211,19 +211,6 @@
     },
     {
       "rank": 17,
-      "name": "Aston Villa FC",
-      "abbr": "AVL",
-      "w": 0,
-      "d": 0,
-      "l": 1,
-      "pts": 0,
-      "gf": 0,
-      "ga": 4,
-      "gd": -4,
-      "played": 1
-    },
-    {
-      "rank": 17,
       "name": "Coventry City FC",
       "abbr": "COV",
       "w": 0,
@@ -236,7 +223,7 @@
       "played": 2
     },
     {
-      "rank": 19,
+      "rank": 18,
       "name": "Crystal Palace FC",
       "abbr": "CRY",
       "w": 0,
@@ -249,7 +236,20 @@
       "played": 2
     },
     {
-      "rank": 20,
+      "rank": 19,
+      "name": "Aston Villa FC",
+      "abbr": "AVL",
+      "w": 0,
+      "d": 0,
+      "l": 2,
+      "pts": 0,
+      "gf": 0,
+      "ga": 5,
+      "gd": -5,
+      "played": 2
+    },
+    {
+      "rank": 19,
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 0,

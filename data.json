@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04 15:32 UTC",
+  "updated": "2026-09-04 20:06 UTC",
   "standings": [
     {
       "rank": 1,
@@ -55,6 +55,19 @@
     },
     {
       "rank": 5,
+      "name": "Liverpool FC",
+      "abbr": "LIV",
+      "w": 1,
+      "d": 2,
+      "l": 0,
+      "pts": 5,
+      "gf": 6,
+      "ga": 4,
+      "gd": 2,
+      "played": 3
+    },
+    {
+      "rank": 6,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 1,
@@ -67,7 +80,7 @@
       "played": 2
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 1,
@@ -80,7 +93,7 @@
       "played": 2
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "Everton FC",
       "abbr": "EVE",
       "w": 1,
@@ -93,7 +106,7 @@
       "played": 2
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 1,
@@ -106,7 +119,7 @@
       "played": 2
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Brighton & Hove Albion FC",
       "abbr": "BHA",
       "w": 1,
@@ -119,7 +132,7 @@
       "played": 2
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Manchester United FC",
       "abbr": "MUN",
       "w": 1,
@@ -132,7 +145,7 @@
       "played": 2
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Sunderland AFC",
       "abbr": "SUN",
       "w": 1,
@@ -145,30 +158,17 @@
       "played": 2
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Ipswich Town FC",
       "abbr": "IPS",
       "w": 1,
       "d": 0,
-      "l": 1,
+      "l": 2,
       "pts": 3,
       "gf": 4,
-      "ga": 6,
-      "gd": -2,
-      "played": 2
-    },
-    {
-      "rank": 13,
-      "name": "Liverpool FC",
-      "abbr": "LIV",
-      "w": 0,
-      "d": 2,
-      "l": 0,
-      "pts": 2,
-      "gf": 4,
-      "ga": 4,
-      "gd": 0,
-      "played": 2
+      "ga": 8,
+      "gd": -4,
+      "played": 3
     },
     {
       "rank": 14,

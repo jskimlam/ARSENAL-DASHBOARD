@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06 14:43 UTC",
+  "updated": "2026-09-06 19:49 UTC",
   "standings": [
     {
       "rank": 1,
@@ -16,6 +16,19 @@
     },
     {
       "rank": 2,
+      "name": "Arsenal FC",
+      "abbr": "ARS",
+      "w": 3,
+      "d": 0,
+      "l": 0,
+      "pts": 9,
+      "gf": 6,
+      "ga": 1,
+      "gd": 5,
+      "played": 3
+    },
+    {
+      "rank": 3,
       "name": "Hull City AFC",
       "abbr": "HUL",
       "w": 2,
@@ -28,46 +41,20 @@
       "played": 3
     },
     {
-      "rank": 3,
-      "name": "Arsenal FC",
-      "abbr": "ARS",
-      "w": 2,
-      "d": 0,
-      "l": 0,
-      "pts": 6,
-      "gf": 4,
-      "ga": 0,
-      "gd": 4,
-      "played": 2
-    },
-    {
       "rank": 4,
       "name": "Chelsea FC",
       "abbr": "CHE",
       "w": 2,
       "d": 0,
-      "l": 0,
-      "pts": 6,
-      "gf": 7,
-      "ga": 5,
-      "gd": 2,
-      "played": 2
-    },
-    {
-      "rank": 5,
-      "name": "Manchester United FC",
-      "abbr": "MUN",
-      "w": 2,
-      "d": 0,
       "l": 1,
       "pts": 6,
-      "gf": 6,
-      "ga": 4,
-      "gd": 2,
+      "gf": 8,
+      "ga": 7,
+      "gd": 1,
       "played": 3
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 1,
@@ -80,7 +67,7 @@
       "played": 3
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "Liverpool FC",
       "abbr": "LIV",
       "w": 1,
@@ -93,7 +80,7 @@
       "played": 3
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 1,
@@ -102,6 +89,19 @@
       "pts": 5,
       "gf": 6,
       "ga": 4,
+      "gd": 2,
+      "played": 3
+    },
+    {
+      "rank": 8,
+      "name": "Everton FC",
+      "abbr": "EVE",
+      "w": 1,
+      "d": 2,
+      "l": 0,
+      "pts": 5,
+      "gf": 5,
+      "ga": 3,
       "gd": 2,
       "played": 3
     },
@@ -133,14 +133,14 @@
     },
     {
       "rank": 11,
-      "name": "Everton FC",
-      "abbr": "EVE",
+      "name": "Manchester United FC",
+      "abbr": "MUN",
       "w": 1,
       "d": 1,
       "l": 1,
       "pts": 4,
-      "gf": 3,
-      "ga": 2,
+      "gf": 7,
+      "ga": 6,
       "gd": 1,
       "played": 3
     },

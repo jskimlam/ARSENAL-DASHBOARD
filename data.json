@@ -1,17 +1,17 @@
 {
-  "updated": "2026-09-12 19:57 UTC",
+  "updated": "2026-09-13 02:28 UTC",
   "standings": [
     {
       "rank": 1,
       "name": "Arsenal FC",
       "abbr": "ARS",
-      "w": 3,
-      "d": 1,
+      "w": 4,
+      "d": 0,
       "l": 0,
-      "pts": 10,
-      "gf": 6,
+      "pts": 12,
+      "gf": 8,
       "ga": 1,
-      "gd": 5,
+      "gd": 7,
       "played": 4
     },
     {
@@ -146,19 +146,6 @@
     },
     {
       "rank": 12,
-      "name": "Sunderland AFC",
-      "abbr": "SUN",
-      "w": 1,
-      "d": 2,
-      "l": 1,
-      "pts": 5,
-      "gf": 3,
-      "ga": 3,
-      "gd": 0,
-      "played": 4
-    },
-    {
-      "rank": 13,
       "name": "Brighton & Hove Albion FC",
       "abbr": "BHA",
       "w": 1,
@@ -171,7 +158,7 @@
       "played": 3
     },
     {
-      "rank": 14,
+      "rank": 13,
       "name": "Manchester United FC",
       "abbr": "MUN",
       "w": 1,
@@ -182,6 +169,19 @@
       "ga": 6,
       "gd": 1,
       "played": 3
+    },
+    {
+      "rank": 14,
+      "name": "Sunderland AFC",
+      "abbr": "SUN",
+      "w": 1,
+      "d": 1,
+      "l": 2,
+      "pts": 4,
+      "gf": 3,
+      "ga": 5,
+      "gd": -2,
+      "played": 4
     },
     {
       "rank": 15,

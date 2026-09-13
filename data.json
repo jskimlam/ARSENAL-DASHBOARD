@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13 10:52 UTC",
+  "updated": "2026-09-13 15:24 UTC",
   "standings": [
     {
       "rank": 1,
@@ -42,6 +42,19 @@
     },
     {
       "rank": 4,
+      "name": "Brighton & Hove Albion FC",
+      "abbr": "BHA",
+      "w": 2,
+      "d": 1,
+      "l": 1,
+      "pts": 7,
+      "gf": 13,
+      "ga": 5,
+      "gd": 8,
+      "played": 4
+    },
+    {
+      "rank": 5,
       "name": "Chelsea FC",
       "abbr": "CHE",
       "w": 2,
@@ -54,7 +67,7 @@
       "played": 4
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 1,
@@ -67,7 +80,7 @@
       "played": 4
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Liverpool FC",
       "abbr": "LIV",
       "w": 1,
@@ -80,7 +93,7 @@
       "played": 4
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "Everton FC",
       "abbr": "EVE",
       "w": 1,
@@ -93,7 +106,7 @@
       "played": 4
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Ipswich Town FC",
       "abbr": "IPS",
       "w": 2,
@@ -106,7 +119,7 @@
       "played": 4
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 1,
@@ -119,7 +132,7 @@
       "played": 3
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 1,
@@ -132,7 +145,7 @@
       "played": 3
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Nottingham Forest FC",
       "abbr": "NOT",
       "w": 1,
@@ -143,19 +156,6 @@
       "ga": 4,
       "gd": 0,
       "played": 4
-    },
-    {
-      "rank": 12,
-      "name": "Brighton & Hove Albion FC",
-      "abbr": "BHA",
-      "w": 1,
-      "d": 1,
-      "l": 1,
-      "pts": 4,
-      "gf": 8,
-      "ga": 5,
-      "gd": 3,
-      "played": 3
     },
     {
       "rank": 13,
@@ -254,12 +254,12 @@
       "abbr": "COV",
       "w": 0,
       "d": 0,
-      "l": 3,
+      "l": 4,
       "pts": 0,
       "gf": 0,
-      "ga": 5,
-      "gd": -5,
-      "played": 3
+      "ga": 10,
+      "gd": -10,
+      "played": 4
     }
   ]
 }

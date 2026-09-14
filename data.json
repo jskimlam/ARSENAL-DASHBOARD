@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14 17:20 UTC",
+  "updated": "2026-09-14 21:14 UTC",
   "standings": [
     {
       "rank": 1,
@@ -29,6 +29,19 @@
     },
     {
       "rank": 3,
+      "name": "Leeds United FC",
+      "abbr": "LEE",
+      "w": 2,
+      "d": 2,
+      "l": 0,
+      "pts": 8,
+      "gf": 7,
+      "ga": 3,
+      "gd": 4,
+      "played": 4
+    },
+    {
+      "rank": 4,
       "name": "Hull City AFC",
       "abbr": "HUL",
       "w": 2,
@@ -41,7 +54,7 @@
       "played": 4
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "Brighton & Hove Albion FC",
       "abbr": "BHA",
       "w": 2,
@@ -54,7 +67,7 @@
       "played": 4
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "Chelsea FC",
       "abbr": "CHE",
       "w": 2,
@@ -67,7 +80,7 @@
       "played": 4
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 1,
@@ -80,7 +93,7 @@
       "played": 4
     },
     {
-      "rank": 7,
+      "rank": 8,
       "name": "Liverpool FC",
       "abbr": "LIV",
       "w": 1,
@@ -93,7 +106,7 @@
       "played": 4
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Everton FC",
       "abbr": "EVE",
       "w": 1,
@@ -106,7 +119,7 @@
       "played": 4
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Ipswich Town FC",
       "abbr": "IPS",
       "w": 2,
@@ -119,33 +132,7 @@
       "played": 4
     },
     {
-      "rank": 10,
-      "name": "Newcastle United FC",
-      "abbr": "NEW",
-      "w": 1,
-      "d": 2,
-      "l": 0,
-      "pts": 5,
-      "gf": 6,
-      "ga": 4,
-      "gd": 2,
-      "played": 3
-    },
-    {
       "rank": 11,
-      "name": "Leeds United FC",
-      "abbr": "LEE",
-      "w": 1,
-      "d": 2,
-      "l": 0,
-      "pts": 5,
-      "gf": 3,
-      "ga": 2,
-      "gd": 1,
-      "played": 3
-    },
-    {
-      "rank": 12,
       "name": "Nottingham Forest FC",
       "abbr": "NOT",
       "w": 1,
@@ -155,6 +142,19 @@
       "gf": 4,
       "ga": 4,
       "gd": 0,
+      "played": 4
+    },
+    {
+      "rank": 12,
+      "name": "Newcastle United FC",
+      "abbr": "NEW",
+      "w": 1,
+      "d": 2,
+      "l": 1,
+      "pts": 5,
+      "gf": 7,
+      "ga": 8,
+      "gd": -1,
       "played": 4
     },
     {

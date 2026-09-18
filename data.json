@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18 15:33 UTC",
+  "updated": "2026-09-18 20:13 UTC",
   "standings": [
     {
       "rank": 1,
@@ -55,6 +55,19 @@
     },
     {
       "rank": 5,
+      "name": "Chelsea FC",
+      "abbr": "CHE",
+      "w": 2,
+      "d": 2,
+      "l": 1,
+      "pts": 8,
+      "gf": 10,
+      "ga": 9,
+      "gd": 1,
+      "played": 5
+    },
+    {
+      "rank": 6,
       "name": "Brighton & Hove Albion FC",
       "abbr": "BHA",
       "w": 2,
@@ -67,30 +80,17 @@
       "played": 4
     },
     {
-      "rank": 6,
-      "name": "Chelsea FC",
-      "abbr": "CHE",
-      "w": 2,
-      "d": 1,
-      "l": 1,
-      "pts": 7,
-      "gf": 10,
-      "ga": 9,
-      "gd": 1,
-      "played": 4
-    },
-    {
       "rank": 7,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 1,
-      "d": 3,
+      "d": 4,
       "l": 0,
-      "pts": 6,
+      "pts": 7,
       "gf": 7,
       "ga": 4,
       "gd": 3,
-      "played": 4
+      "played": 5
     },
     {
       "rank": 8,

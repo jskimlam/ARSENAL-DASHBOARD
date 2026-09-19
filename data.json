@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19 15:07 UTC",
+  "updated": "2026-09-19 19:50 UTC",
   "standings": [
     {
       "rank": 1,
@@ -23,8 +23,8 @@
       "l": 1,
       "pts": 12,
       "gf": 8,
-      "ga": 3,
-      "gd": 5,
+      "ga": 4,
+      "gd": 4,
       "played": 5
     },
     {
@@ -35,9 +35,9 @@
       "d": 1,
       "l": 1,
       "pts": 10,
-      "gf": 15,
+      "gf": 16,
       "ga": 5,
-      "gd": 10,
+      "gd": 11,
       "played": 5
     },
     {
@@ -81,6 +81,19 @@
     },
     {
       "rank": 7,
+      "name": "Hull City AFC",
+      "abbr": "HUL",
+      "w": 2,
+      "d": 2,
+      "l": 1,
+      "pts": 8,
+      "gf": 6,
+      "ga": 4,
+      "gd": 2,
+      "played": 5
+    },
+    {
+      "rank": 8,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 2,
@@ -88,21 +101,8 @@
       "l": 1,
       "pts": 8,
       "gf": 9,
-      "ga": 8,
-      "gd": 1,
-      "played": 5
-    },
-    {
-      "rank": 8,
-      "name": "Hull City AFC",
-      "abbr": "HUL",
-      "w": 2,
-      "d": 2,
-      "l": 1,
-      "pts": 8,
-      "gf": 5,
-      "ga": 4,
-      "gd": 1,
+      "ga": 9,
+      "gd": 0,
       "played": 5
     },
     {
@@ -150,12 +150,12 @@
       "abbr": "NOT",
       "w": 1,
       "d": 2,
-      "l": 1,
+      "l": 2,
       "pts": 5,
       "gf": 4,
-      "ga": 4,
-      "gd": 0,
-      "played": 4
+      "ga": 5,
+      "gd": -1,
+      "played": 5
     },
     {
       "rank": 13,
@@ -224,6 +224,19 @@
     },
     {
       "rank": 18,
+      "name": "Coventry City FC",
+      "abbr": "COV",
+      "w": 1,
+      "d": 0,
+      "l": 4,
+      "pts": 3,
+      "gf": 1,
+      "ga": 10,
+      "gd": -9,
+      "played": 5
+    },
+    {
+      "rank": 19,
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 0,
@@ -236,7 +249,7 @@
       "played": 5
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "Fulham FC",
       "abbr": "FUL",
       "w": 0,
@@ -246,19 +259,6 @@
       "gf": 4,
       "ga": 7,
       "gd": -3,
-      "played": 4
-    },
-    {
-      "rank": 20,
-      "name": "Coventry City FC",
-      "abbr": "COV",
-      "w": 0,
-      "d": 0,
-      "l": 4,
-      "pts": 0,
-      "gf": 0,
-      "ga": 10,
-      "gd": -10,
       "played": 4
     }
   ]

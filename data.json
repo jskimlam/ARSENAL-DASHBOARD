@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20 15:11 UTC",
+  "updated": "2026-09-20 20:05 UTC",
   "standings": [
     {
       "rank": 1,
@@ -146,6 +146,19 @@
     },
     {
       "rank": 12,
+      "name": "Manchester United FC",
+      "abbr": "MUN",
+      "w": 1,
+      "d": 2,
+      "l": 2,
+      "pts": 5,
+      "gf": 8,
+      "ga": 8,
+      "gd": 0,
+      "played": 5
+    },
+    {
+      "rank": 13,
       "name": "Nottingham Forest FC",
       "abbr": "NOT",
       "w": 1,
@@ -156,19 +169,6 @@
       "ga": 5,
       "gd": -1,
       "played": 5
-    },
-    {
-      "rank": 13,
-      "name": "Manchester United FC",
-      "abbr": "MUN",
-      "w": 1,
-      "d": 1,
-      "l": 2,
-      "pts": 4,
-      "gf": 7,
-      "ga": 7,
-      "gd": 0,
-      "played": 4
     },
     {
       "rank": 14,
@@ -237,6 +237,19 @@
     },
     {
       "rank": 19,
+      "name": "Fulham FC",
+      "abbr": "FUL",
+      "w": 0,
+      "d": 2,
+      "l": 3,
+      "pts": 2,
+      "gf": 5,
+      "ga": 8,
+      "gd": -3,
+      "played": 5
+    },
+    {
+      "rank": 20,
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 0,
@@ -247,19 +260,6 @@
       "ga": 8,
       "gd": -6,
       "played": 5
-    },
-    {
-      "rank": 20,
-      "name": "Fulham FC",
-      "abbr": "FUL",
-      "w": 0,
-      "d": 1,
-      "l": 3,
-      "pts": 1,
-      "gf": 4,
-      "ga": 7,
-      "gd": -3,
-      "played": 4
     }
   ]
 }

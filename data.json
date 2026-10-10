@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10 03:42 UTC",
+  "updated": "2026-10-10 11:41 UTC",
   "standings": [
     {
       "rank": 1,
@@ -19,13 +19,13 @@
       "name": "Arsenal FC",
       "abbr": "ARS",
       "w": 4,
-      "d": 0,
+      "d": 1,
       "l": 1,
-      "pts": 12,
+      "pts": 13,
       "gf": 8,
       "ga": 4,
       "gd": 4,
-      "played": 5
+      "played": 6
     },
     {
       "rank": 3,
@@ -42,6 +42,19 @@
     },
     {
       "rank": 4,
+      "name": "Leeds United FC",
+      "abbr": "LEE",
+      "w": 2,
+      "d": 4,
+      "l": 0,
+      "pts": 10,
+      "gf": 7,
+      "ga": 3,
+      "gd": 4,
+      "played": 6
+    },
+    {
+      "rank": 5,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 2,
@@ -51,19 +64,6 @@
       "gf": 10,
       "ga": 4,
       "gd": 6,
-      "played": 5
-    },
-    {
-      "rank": 5,
-      "name": "Leeds United FC",
-      "abbr": "LEE",
-      "w": 2,
-      "d": 3,
-      "l": 0,
-      "pts": 9,
-      "gf": 7,
-      "ga": 3,
-      "gd": 4,
       "played": 5
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12 14:03 UTC",
+  "updated": "2026-10-13 00:00 UTC",
   "standings": [
     {
       "rank": 1,
@@ -137,12 +137,12 @@
       "abbr": "NEW",
       "w": 2,
       "d": 2,
-      "l": 1,
+      "l": 2,
       "pts": 8,
-      "gf": 9,
-      "ga": 9,
-      "gd": 0,
-      "played": 5
+      "gf": 10,
+      "ga": 13,
+      "gd": -3,
+      "played": 6
     },
     {
       "rank": 12,
@@ -172,6 +172,19 @@
     },
     {
       "rank": 14,
+      "name": "Coventry City FC",
+      "abbr": "COV",
+      "w": 2,
+      "d": 0,
+      "l": 4,
+      "pts": 6,
+      "gf": 5,
+      "ga": 11,
+      "gd": -6,
+      "played": 6
+    },
+    {
+      "rank": 15,
       "name": "Nottingham Forest FC",
       "abbr": "NOT",
       "w": 1,
@@ -184,7 +197,7 @@
       "played": 6
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "Aston Villa FC",
       "abbr": "AVL",
       "w": 1,
@@ -197,7 +210,7 @@
       "played": 6
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "Sunderland AFC",
       "abbr": "SUN",
       "w": 1,
@@ -210,7 +223,7 @@
       "played": 6
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "AFC Bournemouth",
       "abbr": "BOU",
       "w": 0,
@@ -223,7 +236,7 @@
       "played": 6
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 0,
@@ -234,19 +247,6 @@
       "ga": 9,
       "gd": -6,
       "played": 6
-    },
-    {
-      "rank": 19,
-      "name": "Coventry City FC",
-      "abbr": "COV",
-      "w": 1,
-      "d": 0,
-      "l": 4,
-      "pts": 3,
-      "gf": 1,
-      "ga": 10,
-      "gd": -9,
-      "played": 5
     },
     {
       "rank": 20,

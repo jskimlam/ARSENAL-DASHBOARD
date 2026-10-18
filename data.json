@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18 15:11 UTC",
+  "updated": "2026-10-18 19:55 UTC",
   "standings": [
     {
       "rank": 1,
@@ -16,6 +16,19 @@
     },
     {
       "rank": 2,
+      "name": "Arsenal FC",
+      "abbr": "ARS",
+      "w": 6,
+      "d": 0,
+      "l": 1,
+      "pts": 18,
+      "gf": 11,
+      "ga": 5,
+      "gd": 6,
+      "played": 7
+    },
+    {
+      "rank": 3,
       "name": "Brighton & Hove Albion FC",
       "abbr": "BHA",
       "w": 5,
@@ -26,19 +39,6 @@
       "ga": 5,
       "gd": 18,
       "played": 7
-    },
-    {
-      "rank": 3,
-      "name": "Arsenal FC",
-      "abbr": "ARS",
-      "w": 5,
-      "d": 0,
-      "l": 1,
-      "pts": 15,
-      "gf": 10,
-      "ga": 5,
-      "gd": 5,
-      "played": 6
     },
     {
       "rank": 4,
@@ -228,12 +228,12 @@
       "abbr": "NOT",
       "w": 1,
       "d": 2,
-      "l": 3,
+      "l": 4,
       "pts": 5,
       "gf": 5,
-      "ga": 8,
-      "gd": -3,
-      "played": 6
+      "ga": 9,
+      "gd": -4,
+      "played": 7
     },
     {
       "rank": 19,

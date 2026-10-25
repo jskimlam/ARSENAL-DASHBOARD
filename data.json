@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25 15:21 UTC",
+  "updated": "2026-10-25 20:13 UTC",
   "standings": [
     {
       "rank": 1,
@@ -68,19 +68,32 @@
     },
     {
       "rank": 6,
-      "name": "Hull City AFC",
-      "abbr": "HUL",
-      "w": 3,
-      "d": 3,
-      "l": 2,
-      "pts": 12,
-      "gf": 9,
-      "ga": 7,
-      "gd": 2,
+      "name": "Brentford FC",
+      "abbr": "BRE",
+      "w": 2,
+      "d": 5,
+      "l": 1,
+      "pts": 11,
+      "gf": 14,
+      "ga": 9,
+      "gd": 5,
       "played": 8
     },
     {
       "rank": 7,
+      "name": "Leeds United FC",
+      "abbr": "LEE",
+      "w": 2,
+      "d": 5,
+      "l": 1,
+      "pts": 11,
+      "gf": 9,
+      "ga": 6,
+      "gd": 3,
+      "played": 8
+    },
+    {
+      "rank": 8,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 3,
@@ -93,7 +106,7 @@
       "played": 8
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Aston Villa FC",
       "abbr": "AVL",
       "w": 3,
@@ -106,30 +119,17 @@
       "played": 8
     },
     {
-      "rank": 9,
-      "name": "Brentford FC",
-      "abbr": "BRE",
+      "rank": 10,
+      "name": "Hull City AFC",
+      "abbr": "HUL",
       "w": 2,
       "d": 4,
       "l": 2,
       "pts": 10,
-      "gf": 13,
-      "ga": 9,
-      "gd": 4,
-      "played": 8
-    },
-    {
-      "rank": 10,
-      "name": "Leeds United FC",
-      "abbr": "LEE",
-      "w": 2,
-      "d": 4,
-      "l": 1,
-      "pts": 10,
       "gf": 9,
-      "ga": 6,
-      "gd": 3,
-      "played": 7
+      "ga": 8,
+      "gd": 1,
+      "played": 8
     },
     {
       "rank": 11,
@@ -165,9 +165,9 @@
       "d": 3,
       "l": 3,
       "pts": 9,
-      "gf": 11,
+      "gf": 12,
       "ga": 13,
-      "gd": -2,
+      "gd": -1,
       "played": 8
     },
     {
@@ -205,8 +205,8 @@
       "l": 3,
       "pts": 7,
       "gf": 10,
-      "ga": 12,
-      "gd": -2,
+      "ga": 13,
+      "gd": -3,
       "played": 8
     },
     {
@@ -253,13 +253,13 @@
       "name": "Sunderland AFC",
       "abbr": "SUN",
       "w": 1,
-      "d": 1,
+      "d": 2,
       "l": 5,
-      "pts": 4,
+      "pts": 5,
       "gf": 6,
       "ga": 14,
       "gd": -8,
-      "played": 7
+      "played": 8
     }
   ]
 }

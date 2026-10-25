@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25 10:29 UTC",
+  "updated": "2026-10-25 15:21 UTC",
   "standings": [
     {
       "rank": 1,
@@ -33,15 +33,28 @@
       "abbr": "BHA",
       "w": 5,
       "d": 1,
-      "l": 1,
+      "l": 2,
       "pts": 16,
       "gf": 23,
-      "ga": 5,
-      "gd": 18,
-      "played": 7
+      "ga": 7,
+      "gd": 16,
+      "played": 8
     },
     {
       "rank": 4,
+      "name": "Liverpool FC",
+      "abbr": "LIV",
+      "w": 4,
+      "d": 3,
+      "l": 1,
+      "pts": 15,
+      "gf": 11,
+      "ga": 8,
+      "gd": 3,
+      "played": 8
+    },
+    {
+      "rank": 5,
       "name": "Chelsea FC",
       "abbr": "CHE",
       "w": 4,
@@ -54,20 +67,33 @@
       "played": 8
     },
     {
-      "rank": 5,
-      "name": "Liverpool FC",
-      "abbr": "LIV",
+      "rank": 6,
+      "name": "Hull City AFC",
+      "abbr": "HUL",
       "w": 3,
       "d": 3,
-      "l": 1,
+      "l": 2,
       "pts": 12,
       "gf": 9,
-      "ga": 8,
-      "gd": 1,
-      "played": 7
+      "ga": 7,
+      "gd": 2,
+      "played": 8
     },
     {
-      "rank": 6,
+      "rank": 7,
+      "name": "Newcastle United FC",
+      "abbr": "NEW",
+      "w": 3,
+      "d": 2,
+      "l": 3,
+      "pts": 11,
+      "gf": 12,
+      "ga": 14,
+      "gd": -2,
+      "played": 8
+    },
+    {
+      "rank": 8,
       "name": "Aston Villa FC",
       "abbr": "AVL",
       "w": 3,
@@ -80,20 +106,20 @@
       "played": 8
     },
     {
-      "rank": 7,
+      "rank": 9,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 2,
       "d": 4,
-      "l": 1,
+      "l": 2,
       "pts": 10,
       "gf": 13,
-      "ga": 8,
-      "gd": 5,
-      "played": 7
+      "ga": 9,
+      "gd": 4,
+      "played": 8
     },
     {
-      "rank": 8,
+      "rank": 10,
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 2,
@@ -106,7 +132,7 @@
       "played": 7
     },
     {
-      "rank": 9,
+      "rank": 11,
       "name": "Everton FC",
       "abbr": "EVE",
       "w": 2,
@@ -119,7 +145,7 @@
       "played": 8
     },
     {
-      "rank": 10,
+      "rank": 12,
       "name": "Ipswich Town FC",
       "abbr": "IPS",
       "w": 3,
@@ -132,20 +158,20 @@
       "played": 8
     },
     {
-      "rank": 11,
-      "name": "Hull City AFC",
-      "abbr": "HUL",
+      "rank": 13,
+      "name": "AFC Bournemouth",
+      "abbr": "BOU",
       "w": 2,
       "d": 3,
-      "l": 2,
+      "l": 3,
       "pts": 9,
-      "gf": 8,
-      "ga": 7,
-      "gd": 1,
-      "played": 7
+      "gf": 11,
+      "ga": 13,
+      "gd": -2,
+      "played": 8
     },
     {
-      "rank": 12,
+      "rank": 14,
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 2,
@@ -158,7 +184,7 @@
       "played": 8
     },
     {
-      "rank": 13,
+      "rank": 15,
       "name": "Fulham FC",
       "abbr": "FUL",
       "w": 2,
@@ -171,56 +197,30 @@
       "played": 8
     },
     {
-      "rank": 14,
-      "name": "Newcastle United FC",
-      "abbr": "NEW",
-      "w": 2,
-      "d": 2,
-      "l": 3,
-      "pts": 8,
-      "gf": 10,
-      "ga": 14,
-      "gd": -4,
-      "played": 7
-    },
-    {
-      "rank": 15,
+      "rank": 16,
       "name": "Manchester United FC",
       "abbr": "MUN",
       "w": 1,
       "d": 4,
-      "l": 2,
+      "l": 3,
       "pts": 7,
       "gf": 10,
-      "ga": 10,
-      "gd": 0,
-      "played": 7
+      "ga": 12,
+      "gd": -2,
+      "played": 8
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "Crystal Palace FC",
       "abbr": "CRY",
       "w": 2,
       "d": 1,
-      "l": 4,
+      "l": 5,
       "pts": 7,
       "gf": 9,
-      "ga": 17,
-      "gd": -8,
-      "played": 7
-    },
-    {
-      "rank": 17,
-      "name": "AFC Bournemouth",
-      "abbr": "BOU",
-      "w": 1,
-      "d": 3,
-      "l": 3,
-      "pts": 6,
-      "gf": 9,
-      "ga": 13,
-      "gd": -4,
-      "played": 7
+      "ga": 19,
+      "gd": -10,
+      "played": 8
     },
     {
       "rank": 18,

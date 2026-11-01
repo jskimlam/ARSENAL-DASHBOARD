@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31 20:50 UTC",
+  "updated": "2026-11-01 03:39 UTC",
   "standings": [
     {
       "rank": 1,
@@ -81,19 +81,6 @@
     },
     {
       "rank": 7,
-      "name": "Aston Villa FC",
-      "abbr": "AVL",
-      "w": 4,
-      "d": 2,
-      "l": 3,
-      "pts": 14,
-      "gf": 10,
-      "ga": 12,
-      "gd": -2,
-      "played": 9
-    },
-    {
-      "rank": 8,
       "name": "AFC Bournemouth",
       "abbr": "BOU",
       "w": 3,
@@ -106,7 +93,7 @@
       "played": 9
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 3,
@@ -116,6 +103,19 @@
       "gf": 10,
       "ga": 10,
       "gd": 0,
+      "played": 9
+    },
+    {
+      "rank": 9,
+      "name": "Aston Villa FC",
+      "abbr": "AVL",
+      "w": 3,
+      "d": 3,
+      "l": 3,
+      "pts": 12,
+      "gf": 10,
+      "ga": 13,
+      "gd": -3,
       "played": 9
     },
     {
@@ -185,6 +185,19 @@
     },
     {
       "rank": 15,
+      "name": "Fulham FC",
+      "abbr": "FUL",
+      "w": 2,
+      "d": 3,
+      "l": 4,
+      "pts": 9,
+      "gf": 9,
+      "ga": 11,
+      "gd": -2,
+      "played": 9
+    },
+    {
+      "rank": 16,
       "name": "Coventry City FC",
       "abbr": "COV",
       "w": 3,
@@ -194,19 +207,6 @@
       "gf": 9,
       "ga": 16,
       "gd": -7,
-      "played": 9
-    },
-    {
-      "rank": 16,
-      "name": "Fulham FC",
-      "abbr": "FUL",
-      "w": 2,
-      "d": 2,
-      "l": 5,
-      "pts": 8,
-      "gf": 8,
-      "ga": 11,
-      "gd": -3,
       "played": 9
     },
     {

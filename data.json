@@ -1,8 +1,21 @@
 {
-  "updated": "2026-11-01 12:26 UTC",
+  "updated": "2026-11-01 21:32 UTC",
   "standings": [
     {
       "rank": 1,
+      "name": "Arsenal FC",
+      "abbr": "ARS",
+      "w": 8,
+      "d": 0,
+      "l": 1,
+      "pts": 24,
+      "gf": 14,
+      "ga": 5,
+      "gd": 9,
+      "played": 9
+    },
+    {
+      "rank": 2,
       "name": "Manchester City FC",
       "abbr": "MCI",
       "w": 7,
@@ -13,19 +26,6 @@
       "ga": 10,
       "gd": 10,
       "played": 9
-    },
-    {
-      "rank": 2,
-      "name": "Arsenal FC",
-      "abbr": "ARS",
-      "w": 7,
-      "d": 0,
-      "l": 1,
-      "pts": 21,
-      "gf": 13,
-      "ga": 5,
-      "gd": 8,
-      "played": 8
     },
     {
       "rank": 3,
@@ -59,12 +59,12 @@
       "abbr": "LIV",
       "w": 4,
       "d": 3,
-      "l": 1,
+      "l": 2,
       "pts": 15,
       "gf": 11,
-      "ga": 8,
-      "gd": 3,
-      "played": 8
+      "ga": 9,
+      "gd": 2,
+      "played": 9
     },
     {
       "rank": 6,

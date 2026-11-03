@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02 14:24 UTC",
+  "updated": "2026-11-03 00:16 UTC",
   "standings": [
     {
       "rank": 1,
@@ -81,6 +81,19 @@
     },
     {
       "rank": 7,
+      "name": "Everton FC",
+      "abbr": "EVE",
+      "w": 3,
+      "d": 4,
+      "l": 2,
+      "pts": 13,
+      "gf": 9,
+      "ga": 9,
+      "gd": 0,
+      "played": 9
+    },
+    {
+      "rank": 8,
       "name": "AFC Bournemouth",
       "abbr": "BOU",
       "w": 3,
@@ -93,7 +106,7 @@
       "played": 9
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 3,
@@ -106,7 +119,7 @@
       "played": 9
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Aston Villa FC",
       "abbr": "AVL",
       "w": 3,
@@ -119,7 +132,7 @@
       "played": 9
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Hull City AFC",
       "abbr": "HUL",
       "w": 2,
@@ -132,7 +145,7 @@
       "played": 9
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 2,
@@ -145,20 +158,20 @@
       "played": 9
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Newcastle United FC",
       "abbr": "NEW",
       "w": 3,
       "d": 2,
-      "l": 3,
+      "l": 4,
       "pts": 11,
       "gf": 12,
-      "ga": 14,
-      "gd": -2,
-      "played": 8
+      "ga": 15,
+      "gd": -3,
+      "played": 9
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "Ipswich Town FC",
       "abbr": "IPS",
       "w": 3,
@@ -169,19 +182,6 @@
       "ga": 18,
       "gd": -4,
       "played": 9
-    },
-    {
-      "rank": 14,
-      "name": "Everton FC",
-      "abbr": "EVE",
-      "w": 2,
-      "d": 4,
-      "l": 2,
-      "pts": 10,
-      "gf": 8,
-      "ga": 9,
-      "gd": -1,
-      "played": 8
     },
     {
       "rank": 15,

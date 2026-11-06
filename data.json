@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06 13:31 UTC",
+  "updated": "2026-11-06 22:36 UTC",
   "standings": [
     {
       "rank": 1,
@@ -55,6 +55,19 @@
     },
     {
       "rank": 5,
+      "name": "Everton FC",
+      "abbr": "EVE",
+      "w": 4,
+      "d": 4,
+      "l": 2,
+      "pts": 16,
+      "gf": 12,
+      "ga": 10,
+      "gd": 2,
+      "played": 10
+    },
+    {
+      "rank": 6,
       "name": "Liverpool FC",
       "abbr": "LIV",
       "w": 4,
@@ -67,7 +80,7 @@
       "played": 9
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Brentford FC",
       "abbr": "BRE",
       "w": 3,
@@ -77,19 +90,6 @@
       "gf": 16,
       "ga": 9,
       "gd": 7,
-      "played": 9
-    },
-    {
-      "rank": 7,
-      "name": "Everton FC",
-      "abbr": "EVE",
-      "w": 3,
-      "d": 4,
-      "l": 2,
-      "pts": 13,
-      "gf": 9,
-      "ga": 9,
-      "gd": 0,
       "played": 9
     },
     {
@@ -202,12 +202,12 @@
       "abbr": "COV",
       "w": 3,
       "d": 0,
-      "l": 6,
+      "l": 7,
       "pts": 9,
-      "gf": 9,
-      "ga": 16,
-      "gd": -7,
-      "played": 9
+      "gf": 10,
+      "ga": 19,
+      "gd": -9,
+      "played": 10
     },
     {
       "rank": 17,

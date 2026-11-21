@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21 05:01 UTC",
+  "updated": "2026-11-21 13:58 UTC",
   "standings": [
     {
       "rank": 1,
@@ -32,13 +32,13 @@
       "name": "Manchester City FC",
       "abbr": "MCI",
       "w": 7,
-      "d": 0,
+      "d": 1,
       "l": 3,
-      "pts": 21,
-      "gf": 21,
-      "ga": 13,
+      "pts": 22,
+      "gf": 22,
+      "ga": 14,
       "gd": 8,
-      "played": 10
+      "played": 11
     },
     {
       "rank": 4,
@@ -172,6 +172,19 @@
     },
     {
       "rank": 14,
+      "name": "Fulham FC",
+      "abbr": "FUL",
+      "w": 2,
+      "d": 5,
+      "l": 4,
+      "pts": 11,
+      "gf": 11,
+      "ga": 13,
+      "gd": -2,
+      "played": 11
+    },
+    {
+      "rank": 15,
       "name": "Ipswich Town FC",
       "abbr": "IPS",
       "w": 3,
@@ -181,19 +194,6 @@
       "gf": 15,
       "ga": 20,
       "gd": -5,
-      "played": 10
-    },
-    {
-      "rank": 15,
-      "name": "Fulham FC",
-      "abbr": "FUL",
-      "w": 2,
-      "d": 4,
-      "l": 4,
-      "pts": 10,
-      "gf": 10,
-      "ga": 12,
-      "gd": -2,
       "played": 10
     },
     {

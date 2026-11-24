@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23 16:59 UTC",
+  "updated": "2026-11-24 03:40 UTC",
   "standings": [
     {
       "rank": 1,
@@ -68,6 +68,19 @@
     },
     {
       "rank": 6,
+      "name": "Brentford FC",
+      "abbr": "BRE",
+      "w": 4,
+      "d": 5,
+      "l": 2,
+      "pts": 17,
+      "gf": 20,
+      "ga": 11,
+      "gd": 9,
+      "played": 11
+    },
+    {
+      "rank": 7,
       "name": "Leeds United FC",
       "abbr": "LEE",
       "w": 4,
@@ -78,19 +91,6 @@
       "ga": 9,
       "gd": 5,
       "played": 11
-    },
-    {
-      "rank": 7,
-      "name": "Everton FC",
-      "abbr": "EVE",
-      "w": 4,
-      "d": 4,
-      "l": 2,
-      "pts": 16,
-      "gf": 12,
-      "ga": 10,
-      "gd": 2,
-      "played": 10
     },
     {
       "rank": 8,
@@ -107,6 +107,19 @@
     },
     {
       "rank": 9,
+      "name": "Everton FC",
+      "abbr": "EVE",
+      "w": 4,
+      "d": 4,
+      "l": 3,
+      "pts": 16,
+      "gf": 12,
+      "ga": 14,
+      "gd": -2,
+      "played": 11
+    },
+    {
+      "rank": 10,
       "name": "Tottenham Hotspur FC",
       "abbr": "TOT",
       "w": 4,
@@ -117,19 +130,6 @@
       "ga": 11,
       "gd": 1,
       "played": 11
-    },
-    {
-      "rank": 10,
-      "name": "Brentford FC",
-      "abbr": "BRE",
-      "w": 3,
-      "d": 5,
-      "l": 2,
-      "pts": 14,
-      "gf": 16,
-      "ga": 11,
-      "gd": 5,
-      "played": 10
     },
     {
       "rank": 11,

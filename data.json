@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27 15:55 UTC",
+  "updated": "2026-11-28 00:55 UTC",
   "standings": [
     {
       "rank": 1,
@@ -98,12 +98,12 @@
       "abbr": "CHE",
       "w": 5,
       "d": 1,
-      "l": 5,
+      "l": 6,
       "pts": 16,
-      "gf": 20,
-      "ga": 20,
-      "gd": 0,
-      "played": 11
+      "gf": 22,
+      "ga": 23,
+      "gd": -1,
+      "played": 12
     },
     {
       "rank": 9,
@@ -172,6 +172,19 @@
     },
     {
       "rank": 14,
+      "name": "Nottingham Forest FC",
+      "abbr": "NOT",
+      "w": 3,
+      "d": 3,
+      "l": 6,
+      "pts": 12,
+      "gf": 12,
+      "ga": 17,
+      "gd": -5,
+      "played": 12
+    },
+    {
+      "rank": 15,
       "name": "Coventry City FC",
       "abbr": "COV",
       "w": 4,
@@ -184,7 +197,7 @@
       "played": 11
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "Fulham FC",
       "abbr": "FUL",
       "w": 2,
@@ -197,7 +210,7 @@
       "played": 11
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "Ipswich Town FC",
       "abbr": "IPS",
       "w": 3,
@@ -207,19 +220,6 @@
       "gf": 15,
       "ga": 22,
       "gd": -7,
-      "played": 11
-    },
-    {
-      "rank": 17,
-      "name": "Nottingham Forest FC",
-      "abbr": "NOT",
-      "w": 2,
-      "d": 3,
-      "l": 6,
-      "pts": 9,
-      "gf": 9,
-      "ga": 15,
-      "gd": -6,
       "played": 11
     },
     {
